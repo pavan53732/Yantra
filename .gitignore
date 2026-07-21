@@ -1,0 +1,35 @@
+# Dependencies
+dist/
+node_modules/
+yarn.lock
+*.log
+tmp/
+.env
+*.pem
+*.key
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Misc
+documents/
+.DS_Store
+*~
+cscope.files
+.cscope.in.out
+cscope.out
+cscope.pre.out
+.ktlint_cache
