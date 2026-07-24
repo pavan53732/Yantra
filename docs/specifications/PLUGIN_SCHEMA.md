@@ -1,5 +1,12 @@
-# Deprecated
+# Plugin Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/PLUGIN_SCHEMA.md`
+The plugin schema describes the structured representation of an extension or plugin that participates in Yantra workflows.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- plugin identity,
+- purpose,
+- extension boundary,
+- invocation contract,
+- capability exposure,
+- safety or governance metadata.

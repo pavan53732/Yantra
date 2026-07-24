@@ -1,5 +1,12 @@
-# Deprecated
+# Execution Graph Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/EXECUTION_GRAPH_SCHEMA.md`
+The execution graph schema describes the structured representation of task and step relationships within a Yantra mission or workflow.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- graph identity,
+- nodes,
+- edges or dependencies,
+- execution ordering metadata,
+- approval or verification checkpoints,
+- completion state.

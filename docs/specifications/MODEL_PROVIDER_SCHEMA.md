@@ -1,5 +1,12 @@
-# Deprecated
+# Model Provider Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/MODEL_PROVIDER_SCHEMA.md`
+The model provider schema describes the structured representation of an external provider configuration used by Yantra.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- provider identity,
+- provider type,
+- capability profile,
+- configuration metadata,
+- availability or fallback metadata,
+- security-sensitive references.
