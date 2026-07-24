@@ -1,0 +1,19 @@
+{
+  "aliases": [
+    {
+      "alias": "docs/specifications/README.md",
+      "canonical_target": "02_SPECIFICATIONS/",
+      "removal_milestone": "Phase 1.3"
+    },
+    {
+      "alias": "docs/README.md",
+      "canonical_target": "01_FOUNDATION/",
+      "removal_milestone": "Phase 1.3"
+    },
+    {
+      "alias": "docs/protocols/README.md",
+      "canonical_target": "02_SPECIFICATIONS/Protocols/",
+      "removal_milestone": "Phase 1.3"
+    }
+  ]
+}

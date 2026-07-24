@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "mission": {
+      "id": "ENTITY-MISSION",
+      "definition": "01_FOUNDATION/GLOSSARY.md",
+      "schema": "02_SPECIFICATIONS/Schemas",
+      "protocol": "02_SPECIFICATIONS/Protocols",
+      "contract": "03_IMPLEMENTATION/Planner",
+      "governance": "04_GOVERNANCE/Validation"
+    },
+    "planner": {
+      "id": "ENTITY-PLANNER",
+      "definition": "02_SPECIFICATIONS/Planner",
+      "schema": "02_SPECIFICATIONS/Schemas",
+      "protocol": "02_SPECIFICATIONS/Protocols",
+      "contract": "03_IMPLEMENTATION/Planner",
+      "governance": "04_GOVERNANCE/Readiness"
+    },
+    "memory": {
+      "id": "ENTITY-MEMORY",
+      "definition": "02_SPECIFICATIONS/Memory",
+      "schema": "02_SPECIFICATIONS/Schemas",
+      "protocol": "02_SPECIFICATIONS/Protocols",
+      "contract": "03_IMPLEMENTATION/Memory",
+      "governance": "04_GOVERNANCE/Validation"
+    }
+  },
+  "edges": [
+    {
+      "from": "ENTITY-MISSION",
+      "to": "ENTITY-PLANNER",
+      "type": "planned_by"
+    },
+    {
+      "from": "ENTITY-PLANNER",
+      "to": "ENTITY-MEMORY",
+      "type": "depends_on"
+    }
+  ]
+}
