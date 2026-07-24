@@ -1,0 +1,82 @@
+{
+  "planner": {
+    "required_inputs": [
+      "Mission",
+      "Requirements",
+      "Constraints"
+    ],
+    "expected_outputs": [
+      "Execution Graph"
+    ],
+    "owned_state": [
+      "Plan compilation state"
+    ],
+    "consumed_events": [
+      "MissionCreated",
+      "VerificationFailed"
+    ],
+    "published_events": [
+      "MissionPlanned"
+    ],
+    "required_schemas": [
+      "SCHEMA-MISSION-V1",
+      "SCHEMA-WORKFLOW-V1",
+      "SCHEMA-EXECUTION-GRAPH-V1"
+    ],
+    "required_protocols": [
+      "PROTOCOL-PLANNER-V1"
+    ],
+    "allowed_capabilities": [
+      "memory.read"
+    ],
+    "forbidden_capabilities": [
+      "workspace.write",
+      "terminal.exec"
+    ],
+    "required_invariants": [
+      "Planner cannot mutate workspace files"
+    ],
+    "test_obligations": [
+      "Produces valid DAG",
+      "Rejects unsatisfiable constraints"
+    ]
+  },
+  "verifier": {
+    "required_inputs": [
+      "Artifacts",
+      "Acceptance Criteria"
+    ],
+    "expected_outputs": [
+      "Verification result"
+    ],
+    "owned_state": [
+      "Verification execution state"
+    ],
+    "consumed_events": [
+      "TaskCompleted"
+    ],
+    "published_events": [
+      "VerificationPassed",
+      "VerificationFailed"
+    ],
+    "required_schemas": [
+      "SCHEMA-EVENT-V1"
+    ],
+    "required_protocols": [
+      "PROTOCOL-VERIFIER-V1"
+    ],
+    "allowed_capabilities": [
+      "workspace.read"
+    ],
+    "forbidden_capabilities": [
+      "workspace.write",
+      "terminal.exec"
+    ],
+    "required_invariants": [
+      "Verifier cannot modify implementation"
+    ],
+    "test_obligations": [
+      "Reports blocking vs recoverable failures correctly"
+    ]
+  }
+}

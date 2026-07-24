@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, re, json, sys
+import os, re, json, sys, hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,3 +110,90 @@ report = {
 
 (OUT / 'architecture-compliance-report.json').write_text(json.dumps(report, indent=2))
 print(json.dumps(report, indent=2))
+
+
+# Certification artifacts
+manifest = {
+  'architecture': {'version': '1.0.0', 'status': 'frozen-candidate'},
+  'counts': {
+    'schemas': sum(1 for d in report['specification_graph']['documents'] if '/specifications/' in d and d.endswith('_SCHEMA.md')),
+    'protocols': sum(1 for d in report['specification_graph']['documents'] if '/protocols/' in d and d.endswith('.md') and 'README' not in d),
+    'registries': sum(1 for d in report['specification_graph']['documents'] if '/canonical/' in d),
+    'state_machines': 7,
+    'capabilities': 7,
+    'agents': 12
+  },
+  'compiler_version': '1.0.0',
+  'minimum_compliance': '100%',
+  'implementation_authorized': report['implementation_authorised'] == 'YES'
+}
+(OUT / 'architecture-manifest.json').write_text(json.dumps(manifest, indent=2))
+
+contract_manifest = {
+  'planner': {
+    'schema': ['SCHEMA-MISSION-V1', 'SCHEMA-WORKFLOW-V1', 'SCHEMA-EXECUTION-GRAPH-V1'],
+    'protocol': ['PROTOCOL-PLANNER-V1'],
+    'owner': 'Planner',
+    'version': '1.0.0',
+    'dependencies': ['Mission', 'Workflow', 'Execution Graph', 'Event Registry']
+  },
+  'orchestrator': {
+    'schema': ['SCHEMA-TASK-V1', 'SCHEMA-AGENT-V1', 'SCHEMA-EVENT-V1'],
+    'protocol': ['PROTOCOL-AGENT-V1', 'PROTOCOL-TOOL-V1'],
+    'owner': 'Orchestrator',
+    'version': '1.0.0',
+    'dependencies': ['Tasks', 'Agents', 'Tool Protocol', 'State Registry']
+  },
+  'memory_engine': {
+    'schema': ['SCHEMA-MEMORY-V1'],
+    'protocol': ['PROTOCOL-MEMORY-V1'],
+    'owner': 'Memory Engine',
+    'version': '1.0.0',
+    'dependencies': ['Memory', 'Knowledge Graph', 'Error Registry']
+  }
+}
+(OUT / 'contract-manifest.json').write_text(json.dumps(contract_manifest, indent=2))
+
+fingerprint_source = json.dumps(report, sort_keys=True) + json.dumps(manifest, sort_keys=True) + json.dumps(contract_manifest, sort_keys=True)
+fingerprint = hashlib.sha256(fingerprint_source.encode()).hexdigest().upper()
+(OUT / 'architecture-fingerprint.txt').write_text(fingerprint + '\n')
+
+badges = {
+  'Architecture': 'PASS' if report['gates']['canonical_compliance'] == 'PASS' else 'FAIL',
+  'Specification': 'PASS' if report['gates']['traceability'] == 'PASS' else 'FAIL',
+  'Protocols': 'PASS' if report['gates']['protocol_consistency'] == 'PASS' else 'FAIL',
+  'Schemas': 'PASS' if report['gates']['state_consistency'] == 'PASS' else 'FAIL',
+  'Validation': 'PASS' if report['gates']['machine_validation'] == 'PASS' else 'FAIL',
+  'Implementation': 'LOCKED' if report['implementation_authorised'] == 'NO' else 'RELEASED'
+}
+(OUT / 'architecture-badges.json').write_text(json.dumps(badges, indent=2))
+
+implementation_contracts = {
+  'planner': {
+    'required_inputs': ['Mission', 'Requirements', 'Constraints'],
+    'expected_outputs': ['Execution Graph'],
+    'owned_state': ['Plan compilation state'],
+    'consumed_events': ['MissionCreated', 'VerificationFailed'],
+    'published_events': ['MissionPlanned'],
+    'required_schemas': ['SCHEMA-MISSION-V1', 'SCHEMA-WORKFLOW-V1', 'SCHEMA-EXECUTION-GRAPH-V1'],
+    'required_protocols': ['PROTOCOL-PLANNER-V1'],
+    'allowed_capabilities': ['memory.read'],
+    'forbidden_capabilities': ['workspace.write', 'terminal.exec'],
+    'required_invariants': ['Planner cannot mutate workspace files'],
+    'test_obligations': ['Produces valid DAG', 'Rejects unsatisfiable constraints']
+  },
+  'verifier': {
+    'required_inputs': ['Artifacts', 'Acceptance Criteria'],
+    'expected_outputs': ['Verification result'],
+    'owned_state': ['Verification execution state'],
+    'consumed_events': ['TaskCompleted'],
+    'published_events': ['VerificationPassed', 'VerificationFailed'],
+    'required_schemas': ['SCHEMA-EVENT-V1'],
+    'required_protocols': ['PROTOCOL-VERIFIER-V1'],
+    'allowed_capabilities': ['workspace.read'],
+    'forbidden_capabilities': ['workspace.write', 'terminal.exec'],
+    'required_invariants': ['Verifier cannot modify implementation'],
+    'test_obligations': ['Reports blocking vs recoverable failures correctly']
+  }
+}
+(OUT / 'implementation-contracts.json').write_text(json.dumps(implementation_contracts, indent=2))

@@ -1,0 +1,54 @@
+{
+  "planner": {
+    "schema": [
+      "SCHEMA-MISSION-V1",
+      "SCHEMA-WORKFLOW-V1",
+      "SCHEMA-EXECUTION-GRAPH-V1"
+    ],
+    "protocol": [
+      "PROTOCOL-PLANNER-V1"
+    ],
+    "owner": "Planner",
+    "version": "1.0.0",
+    "dependencies": [
+      "Mission",
+      "Workflow",
+      "Execution Graph",
+      "Event Registry"
+    ]
+  },
+  "orchestrator": {
+    "schema": [
+      "SCHEMA-TASK-V1",
+      "SCHEMA-AGENT-V1",
+      "SCHEMA-EVENT-V1"
+    ],
+    "protocol": [
+      "PROTOCOL-AGENT-V1",
+      "PROTOCOL-TOOL-V1"
+    ],
+    "owner": "Orchestrator",
+    "version": "1.0.0",
+    "dependencies": [
+      "Tasks",
+      "Agents",
+      "Tool Protocol",
+      "State Registry"
+    ]
+  },
+  "memory_engine": {
+    "schema": [
+      "SCHEMA-MEMORY-V1"
+    ],
+    "protocol": [
+      "PROTOCOL-MEMORY-V1"
+    ],
+    "owner": "Memory Engine",
+    "version": "1.0.0",
+    "dependencies": [
+      "Memory",
+      "Knowledge Graph",
+      "Error Registry"
+    ]
+  }
+}

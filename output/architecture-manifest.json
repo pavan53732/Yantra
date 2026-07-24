@@ -1,0 +1,17 @@
+{
+  "architecture": {
+    "version": "1.0.0",
+    "status": "frozen-candidate"
+  },
+  "counts": {
+    "schemas": 13,
+    "protocols": 9,
+    "registries": 8,
+    "state_machines": 7,
+    "capabilities": 7,
+    "agents": 12
+  },
+  "compiler_version": "1.0.0",
+  "minimum_compliance": "100%",
+  "implementation_authorized": false
+}

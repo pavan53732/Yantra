@@ -1,0 +1,8 @@
+{
+  "Architecture": "PASS",
+  "Specification": "PASS",
+  "Protocols": "PASS",
+  "Schemas": "PASS",
+  "Validation": "PASS",
+  "Implementation": "LOCKED"
+}
