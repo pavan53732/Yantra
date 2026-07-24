@@ -1,0 +1,299 @@
+{
+  "architecture_version": "v1.0.0-draft",
+  "status": "FROZEN_CANDIDATE",
+  "gates": {
+    "canonical_compliance": "PASS",
+    "traceability": "PASS",
+    "state_consistency": "PASS",
+    "protocol_consistency": "PASS",
+    "security_model": "PASS",
+    "versioning": "WARN",
+    "dependency_rules": "PASS",
+    "machine_validation": "PASS"
+  },
+  "implementation_authorised": "NO",
+  "issues": {
+    "missing_registries": [],
+    "broken_references": [
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./agent-framework.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./model-router.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./memory-system.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./mcp-system.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./ipc-security.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./verification-engine.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./capability-engine.md"
+      },
+      {
+        "from": "docs/specifications/STATE_MACHINES.md",
+        "to": "../architecture/EVENT_BUS.md"
+      },
+      {
+        "from": "docs/protocols/README.md",
+        "to": "../architecture/EVENT_BUS.md"
+      }
+    ],
+    "version_gaps": [
+      "docs/specifications/ARCHITECTURE_COMPLIANCE.md",
+      "docs/specifications/ARCHITECTURE_VALIDATION_REPORT_SCHEMA.md",
+      "docs/specifications/AUTONOMOUS_DECISION_POLICY.md",
+      "docs/specifications/DECISION_RECORD_TEMPLATE.md",
+      "docs/specifications/MISSION_DSL.md",
+      "docs/specifications/OBSERVABILITY.md",
+      "docs/specifications/STABLE_ID_POLICY.md",
+      "docs/specifications/STATE_MACHINES.md",
+      "docs/specifications/SYSTEM_GUARANTEES.md",
+      "docs/specifications/UNIFIED_ERROR_MODEL.md",
+      "docs/protocols/event-bus.md",
+      "docs/architecture/CAPABILITY_CONTRACTS.md",
+      "docs/architecture/event-driven-core.md",
+      "docs/architecture/system-overview.md"
+    ],
+    "example_validation": [
+      {
+        "file": "examples/agent.valid.json",
+        "expected": "pass",
+        "passed": true,
+        "reason": null
+      },
+      {
+        "file": "examples/mission.valid.json",
+        "expected": "pass",
+        "passed": true,
+        "reason": null
+      },
+      {
+        "file": "examples/agent.invalid.json",
+        "expected": "fail",
+        "passed": true,
+        "reason": "Expecting property name enclosed in double quotes: line 1 column 3 (char 2)"
+      },
+      {
+        "file": "examples/mission.invalid.json",
+        "expected": "fail",
+        "passed": true,
+        "reason": "Expecting property name enclosed in double quotes: line 1 column 3 (char 2)"
+      }
+    ]
+  },
+  "specification_graph": {
+    "documents": [
+      "docs/specifications/AGENT_SCHEMA.md",
+      "docs/specifications/ARCHITECTURE_COMPLIANCE.md",
+      "docs/specifications/ARCHITECTURE_VALIDATION_REPORT_SCHEMA.md",
+      "docs/specifications/AUTONOMOUS_DECISION_POLICY.md",
+      "docs/specifications/CAPABILITY_SCHEMA.md",
+      "docs/specifications/DECISION_RECORD_TEMPLATE.md",
+      "docs/specifications/EVENT_SCHEMA.md",
+      "docs/specifications/EXECUTION_GRAPH_SCHEMA.md",
+      "docs/specifications/KNOWLEDGE_GRAPH_SCHEMA.md",
+      "docs/specifications/MEMORY_SCHEMA.md",
+      "docs/specifications/MISSION_DSL.md",
+      "docs/specifications/MISSION_SCHEMA.md",
+      "docs/specifications/MODEL_PROVIDER_SCHEMA.md",
+      "docs/specifications/OBSERVABILITY.md",
+      "docs/specifications/PLUGIN_SCHEMA.md",
+      "docs/specifications/README.md",
+      "docs/specifications/STABLE_ID_POLICY.md",
+      "docs/specifications/STATE_MACHINES.md",
+      "docs/specifications/SYSTEM_GUARANTEES.md",
+      "docs/specifications/TASK_SCHEMA.md",
+      "docs/specifications/TOOL_SCHEMA.md",
+      "docs/specifications/UNIFIED_ERROR_MODEL.md",
+      "docs/specifications/VERIFICATION_FRAMEWORK.md",
+      "docs/specifications/WORKFLOW_SCHEMA.md",
+      "docs/protocols/README.md",
+      "docs/protocols/agent-protocol.md",
+      "docs/protocols/event-bus.md",
+      "docs/protocols/ipc-protocol.md",
+      "docs/protocols/memory-protocol.md",
+      "docs/protocols/planner-protocol.md",
+      "docs/protocols/plugin-protocol.md",
+      "docs/protocols/provider-protocol.md",
+      "docs/protocols/tool-protocol.md",
+      "docs/protocols/verifier-protocol.md",
+      "docs/architecture/AI_PROVIDER_CONTRACT.md",
+      "docs/architecture/CAPABILITY_CONTRACTS.md",
+      "docs/architecture/README.md",
+      "docs/architecture/event-driven-core.md",
+      "docs/architecture/system-overview.md",
+      "docs/canonical/CAPABILITY_REGISTRY.md",
+      "docs/canonical/ERROR_REGISTRY.md",
+      "docs/canonical/EVENT_REGISTRY.md",
+      "docs/canonical/PERMISSION_REGISTRY.md",
+      "docs/canonical/PROTOCOL_REGISTRY.md",
+      "docs/canonical/SCHEMA_REGISTRY.md",
+      "docs/canonical/STATE_REGISTRY.md",
+      "docs/canonical/TERMINOLOGY.md"
+    ],
+    "references": [
+      {
+        "from": "docs/specifications/MISSION_SCHEMA.md",
+        "to": "../../MISSION.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../../ARCHITECTURE_PRINCIPLES.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../roadmap/PHASE_0_5_SPECIFICATION_FREEZE.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../../SYSTEM_INVARIANTS.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../../FAILURE_MODEL.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../../MISSION.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./MISSION_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./TASK_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./AGENT_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./WORKFLOW_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./EXECUTION_GRAPH_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./EVENT_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./MEMORY_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./CAPABILITY_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./PLUGIN_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./TOOL_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./MODEL_PROVIDER_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../protocols/"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./STATE_MACHINES.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../architecture/CAPABILITY_CONTRACTS.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "../architecture/AI_PROVIDER_CONTRACT.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./MISSION_DSL.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./KNOWLEDGE_GRAPH_SCHEMA.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./OBSERVABILITY.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./VERIFICATION_FRAMEWORK.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./AUTONOMOUS_DECISION_POLICY.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./agent-framework.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./model-router.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./memory-system.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./mcp-system.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./ipc-security.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./verification-engine.md"
+      },
+      {
+        "from": "docs/specifications/README.md",
+        "to": "./capability-engine.md"
+      },
+      {
+        "from": "docs/specifications/STATE_MACHINES.md",
+        "to": "../architecture/EVENT_BUS.md"
+      },
+      {
+        "from": "docs/protocols/README.md",
+        "to": "../architecture/EVENT_BUS.md"
+      },
+      {
+        "from": "docs/architecture/README.md",
+        "to": "./system-overview.md"
+      },
+      {
+        "from": "docs/architecture/README.md",
+        "to": "./event-driven-core.md"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+name: Architecture Compliance
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'examples/**'
+      - 'tools/spec_compiler.py'
+      - '.github/workflows/architecture-compliance.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'examples/**'
+      - 'tools/spec_compiler.py'
+      - '.github/workflows/architecture-compliance.yml'
+
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run spec compiler
+        run: python tools/spec_compiler.py
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: architecture-compliance-report
+          path: output/architecture-compliance-report.json

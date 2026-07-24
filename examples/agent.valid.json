@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "agent_id": "AGENT-000021",
+  "role": "coder",
+  "mission_id": "MISSION-000001",
+  "capability_grants": [
+    "workspace.read"
+  ],
+  "status": "busy",
+  "spawned_at": "2026-07-25T00:00:00Z"
+}
