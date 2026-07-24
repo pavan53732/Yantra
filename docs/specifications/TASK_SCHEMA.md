@@ -1,5 +1,12 @@
-# Deprecated
+# Task Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/TASK_SCHEMA.md`
+The task schema describes the structured representation of a bounded task inside a broader workflow or mission.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- task identity,
+- task purpose,
+- scope,
+- dependencies,
+- execution state,
+- output or verification reference.

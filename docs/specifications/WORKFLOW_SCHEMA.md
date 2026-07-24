@@ -1,5 +1,12 @@
-# Deprecated
+# Workflow Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/WORKFLOW_SCHEMA.md`
+The workflow schema describes the structured representation of a repeatable Yantra workflow.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- workflow identity,
+- purpose,
+- ordered steps,
+- dependencies,
+- approval or verification checkpoints,
+- completion state.

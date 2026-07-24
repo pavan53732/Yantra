@@ -1,5 +1,12 @@
-# Deprecated
+# Event Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/EVENT_SCHEMA.md`
+The event schema describes the structured representation of an event emitted, consumed, or persisted inside Yantra workflows.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- event identity,
+- event type,
+- source,
+- timestamp,
+- payload shape,
+- traceability metadata.
