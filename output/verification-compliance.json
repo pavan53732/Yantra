@@ -1,0 +1,8 @@
+{
+  "phase": "2.0.6",
+  "status": "PASS",
+  "package": "@yantra/verification",
+  "rule_engine": true,
+  "artifact_validation": true,
+  "test_exit_code": 0
+}

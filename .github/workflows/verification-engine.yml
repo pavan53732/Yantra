@@ -9,7 +9,7 @@ on:
       - 'packages/verification/**'
       - '.github/workflows/verification-engine.yml'
 jobs:
-  verify-verification-engine:
+  verify-verification:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

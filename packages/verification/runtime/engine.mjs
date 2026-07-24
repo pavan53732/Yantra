@@ -1,12 +1,13 @@
-export function verifyMissionEvidence(input) {
-  const hasEvidence = input.evidence.length > 0;
-  const hasExecution = input.evidence.some((e) => e.type === 'execution' || e.type === 'filesystem' || e.type === 'git' || e.type === 'package-manager');
-  const hasVerification = input.evidence.some((e) => e.type === 'verification');
-  const outcomes = [
-    { category: 'correctness', passed: hasEvidence && hasExecution, blocking: true, confidence: hasExecution ? 0.8 : 0.2, summary: hasExecution ? 'Execution evidence present' : 'Execution evidence missing' },
-    { category: 'documentation', passed: true, blocking: false, confidence: 0.7, summary: 'Documentation verification deferred to repository reports' },
-    { category: 'security', passed: true, blocking: false, confidence: 0.6, summary: 'No immediate security violation detected in evidence payload' },
-    { category: 'packaging', passed: hasVerification, blocking: false, confidence: hasVerification ? 0.75 : 0.4, summary: hasVerification ? 'Verification evidence captured' : 'Verification evidence not captured' }
-  ];
-  return { missionId: input.missionId, passed: outcomes.filter((o) => o.blocking).every((o) => o.passed), outcomes };
+import { verifyEvidenceShape, verifyDocumentationPresence } from './rules.mjs';
+export class VerificationEngine {
+  run(input) {
+    const findings = [
+      ...verifyEvidenceShape(input.evidence),
+      ...verifyDocumentationPresence(input.docs ?? [])
+    ];
+    const blocking = findings.filter((f) => f.disposition === 'blocking' && f.severity === 'fail').length;
+    const warnings = findings.filter((f) => f.severity === 'warning').length;
+    const passed = findings.filter((f) => f.severity === 'pass').length;
+    return { status: blocking > 0 ? 'FAIL' : 'PASS', findings, summary: { total: findings.length, blocking, warnings, passed } };
+  }
 }

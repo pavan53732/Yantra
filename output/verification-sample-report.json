@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "id": "ver-evidence-shape-pass",
+      "category": "correctness",
+      "severity": "pass",
+      "disposition": "recoverable",
+      "summary": "Evidence items have expected shape"
+    },
+    {
+      "id": "ver-docs-pass",
+      "category": "documentation",
+      "severity": "pass",
+      "disposition": "recoverable",
+      "summary": "Required documentation is present"
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "blocking": 0,
+    "warnings": 0,
+    "passed": 2
+  }
+}

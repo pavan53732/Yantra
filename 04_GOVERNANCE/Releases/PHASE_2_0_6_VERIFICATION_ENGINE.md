@@ -1,13 +1,14 @@
 # Phase 2.0.6 — Verification Engine
 
 ## Scope
-Implements mission evidence verification and category-based reporting.
+Implements the Yantra verification engine for evidence-oriented runtime validation.
 
-## Constraints
-- No external policy engine required in this phase
-- Verification is evidence-driven and package-local
+## Included
+- Verification findings and summary model
+- Rule-based evidence validation
+- Documentation presence checks
+- Verification artifact generation
 
-## Completion Criteria
-- Verification package implemented
-- Verification tests pass
-- Mission evidence can be evaluated into category outcomes
+## Excluded
+- Advanced policy engine
+- Full performance/security scanners

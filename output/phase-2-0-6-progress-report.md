@@ -2,36 +2,28 @@
 
 ## What's New in This Phase
 - Added `@yantra/verification` package.
-- Added mission evidence verification engine.
-- Added verification workflow and tests.
+- Added verification rules, engine, tests, workflow, and sample verification artifact.
 
 ## Public API Changes
-- New package `@yantra/verification` exporting verification types and `verifyMissionEvidence()`.
+- Added verification engine and rule exports.
 
 ## Breaking Changes
 - None verified.
 
 ## Dependency Graph Changes
-- Added `@yantra/verification` depending on `@yantra/sdk`, `@yantra/core`, `@yantra/mission`, and `@yantra/capabilities`.
+- Added `@yantra/verification` depending on runtime packages through package manifest.
 
 ## Performance Impact
-- Minimal in current evidence-evaluation model.
+- Minimal rule-based in-memory verification.
 
 ## Security Considerations
-- Verification focuses on evidence classification and does not expand privileged execution scope.
+- Verification is read-only for the current phase and operates on provided evidence artifacts.
 
 ## Backward Compatibility
 - Additive only.
 
 ## Technical Debt Introduced
-- Verification categories are intentionally shallow and should later integrate policy and stronger analyzers.
+- Verification rules are minimal and do not yet cover full policy, performance, or licensing analysis.
 
 ## Technical Debt Resolved
-- Yantra now has a dedicated verification package instead of relying only on mission-runtime local verification hooks.
-
-## Engineering Metrics
-- Verification tests: 1 file
-- Verification test exit code: 0
-
-## ADRs Created or Updated
-- `04_GOVERNANCE/Releases/PHASE_2_0_6_VERIFICATION_ENGINE.md`
+- Verification is no longer documentation-only and now has executable runtime behavior.
