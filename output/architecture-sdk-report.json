@@ -1,0 +1,13 @@
+{
+  "package": "@yantra/sdk",
+  "entity_count": 36,
+  "generated_files": [
+    "packages/sdk/src/generated/spec-index.json",
+    "packages/sdk/src/types.ts",
+    "packages/sdk/src/schemas.ts",
+    "packages/sdk/src/validators.ts",
+    "packages/sdk/src/events.ts",
+    "packages/sdk/src/errors.ts",
+    "packages/sdk/src/capabilities.ts"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "generated_from": "02_SPECIFICATIONS",
+  "entity_count": 36,
+  "entities": [
+    {
+      "name": "OBSERVABILITY",
+      "kind": "architecture",
+      "path": "02_SPECIFICATIONS/Architecture/OBSERVABILITY.md",
+      "const": "OBSERVABILITY",
+      "ts": "Observability"
+    },
+    {
+      "name": "README",
+      "kind": "architecture",
+      "path": "02_SPECIFICATIONS/Architecture/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "STATE_MACHINES",
+      "kind": "architecture",
+      "path": "02_SPECIFICATIONS/Architecture/STATE_MACHINES.md",
+      "const": "STATE_MACHINES",
+      "ts": "StateMachines"
+    },
+    {
+      "name": "event-driven-core",
+      "kind": "architecture",
+      "path": "02_SPECIFICATIONS/Architecture/event-driven-core.md",
+      "const": "EVENT_DRIVEN_CORE",
+      "ts": "EventDrivenCore"
+    },
+    {
+      "name": "system-overview",
+      "kind": "architecture",
+      "path": "02_SPECIFICATIONS/Architecture/system-overview.md",
+      "const": "SYSTEM_OVERVIEW",
+      "ts": "SystemOverview"
+    },
+    {
+      "name": "AI_PROVIDER_CONTRACT",
+      "kind": "capabilities",
+      "path": "02_SPECIFICATIONS/Capabilities/AI_PROVIDER_CONTRACT.md",
+      "const": "AI_PROVIDER_CONTRACT",
+      "ts": "AiProviderContract"
+    },
+    {
+      "name": "CAPABILITY_CONTRACTS",
+      "kind": "capabilities",
+      "path": "02_SPECIFICATIONS/Capabilities/CAPABILITY_CONTRACTS.md",
+      "const": "CAPABILITY_CONTRACTS",
+      "ts": "CapabilityContracts"
+    },
+    {
+      "name": "README",
+      "kind": "capabilities",
+      "path": "02_SPECIFICATIONS/Capabilities/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "KNOWLEDGE_GRAPH_SCHEMA",
+      "kind": "knowledgegraph",
+      "path": "02_SPECIFICATIONS/KnowledgeGraph/KNOWLEDGE_GRAPH_SCHEMA.md",
+      "const": "KNOWLEDGE_GRAPH_SCHEMA",
+      "ts": "KnowledgeGraphSchema"
+    },
+    {
+      "name": "README",
+      "kind": "knowledgegraph",
+      "path": "02_SPECIFICATIONS/KnowledgeGraph/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "MISSION_DSL",
+      "kind": "mission",
+      "path": "02_SPECIFICATIONS/Mission/MISSION_DSL.md",
+      "const": "MISSION_DSL",
+      "ts": "MissionDsl"
+    },
+    {
+      "name": "README",
+      "kind": "mission",
+      "path": "02_SPECIFICATIONS/Mission/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "README",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "agent-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/agent-protocol.md",
+      "const": "AGENT_PROTOCOL",
+      "ts": "AgentProtocol"
+    },
+    {
+      "name": "ipc-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/ipc-protocol.md",
+      "const": "IPC_PROTOCOL",
+      "ts": "IpcProtocol"
+    },
+    {
+      "name": "memory-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/memory-protocol.md",
+      "const": "MEMORY_PROTOCOL",
+      "ts": "MemoryProtocol"
+    },
+    {
+      "name": "planner-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/planner-protocol.md",
+      "const": "PLANNER_PROTOCOL",
+      "ts": "PlannerProtocol"
+    },
+    {
+      "name": "plugin-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/plugin-protocol.md",
+      "const": "PLUGIN_PROTOCOL",
+      "ts": "PluginProtocol"
+    },
+    {
+      "name": "provider-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/provider-protocol.md",
+      "const": "PROVIDER_PROTOCOL",
+      "ts": "ProviderProtocol"
+    },
+    {
+      "name": "tool-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/tool-protocol.md",
+      "const": "TOOL_PROTOCOL",
+      "ts": "ToolProtocol"
+    },
+    {
+      "name": "verifier-protocol",
+      "kind": "protocols",
+      "path": "02_SPECIFICATIONS/Protocols/verifier-protocol.md",
+      "const": "VERIFIER_PROTOCOL",
+      "ts": "VerifierProtocol"
+    },
+    {
+      "name": "README",
+      "kind": "02_specifications",
+      "path": "02_SPECIFICATIONS/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "AGENT_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/AGENT_SCHEMA.md",
+      "const": "AGENT_SCHEMA",
+      "ts": "AgentSchema"
+    },
+    {
+      "name": "CAPABILITY_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/CAPABILITY_SCHEMA.md",
+      "const": "CAPABILITY_SCHEMA",
+      "ts": "CapabilitySchema"
+    },
+    {
+      "name": "EVENT_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/EVENT_SCHEMA.md",
+      "const": "EVENT_SCHEMA",
+      "ts": "EventSchema"
+    },
+    {
+      "name": "EXECUTION_GRAPH_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/EXECUTION_GRAPH_SCHEMA.md",
+      "const": "EXECUTION_GRAPH_SCHEMA",
+      "ts": "ExecutionGraphSchema"
+    },
+    {
+      "name": "MEMORY_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/MEMORY_SCHEMA.md",
+      "const": "MEMORY_SCHEMA",
+      "ts": "MemorySchema"
+    },
+    {
+      "name": "MISSION_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/MISSION_SCHEMA.md",
+      "const": "MISSION_SCHEMA",
+      "ts": "MissionSchema"
+    },
+    {
+      "name": "MODEL_PROVIDER_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/MODEL_PROVIDER_SCHEMA.md",
+      "const": "MODEL_PROVIDER_SCHEMA",
+      "ts": "ModelProviderSchema"
+    },
+    {
+      "name": "PLUGIN_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/PLUGIN_SCHEMA.md",
+      "const": "PLUGIN_SCHEMA",
+      "ts": "PluginSchema"
+    },
+    {
+      "name": "README",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "TASK_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/TASK_SCHEMA.md",
+      "const": "TASK_SCHEMA",
+      "ts": "TaskSchema"
+    },
+    {
+      "name": "TOOL_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/TOOL_SCHEMA.md",
+      "const": "TOOL_SCHEMA",
+      "ts": "ToolSchema"
+    },
+    {
+      "name": "WORKFLOW_SCHEMA",
+      "kind": "schemas",
+      "path": "02_SPECIFICATIONS/Schemas/WORKFLOW_SCHEMA.md",
+      "const": "WORKFLOW_SCHEMA",
+      "ts": "WorkflowSchema"
+    },
+    {
+      "name": "README",
+      "kind": "verifier",
+      "path": "02_SPECIFICATIONS/Verifier/README.md",
+      "const": "README",
+      "ts": "Readme"
+    },
+    {
+      "name": "VERIFICATION_FRAMEWORK",
+      "kind": "verifier",
+      "path": "02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md",
+      "const": "VERIFICATION_FRAMEWORK",
+      "ts": "VerificationFramework"
+    }
+  ]
+}
