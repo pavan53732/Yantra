@@ -2,8 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const src = path.resolve(process.cwd(), 'src');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const src = path.resolve(__dirname, '../src');
 
 test('mission runtime source files exist', () => {
   for (const file of ['engine.ts','parser.ts','planner.ts','coordinator.ts','execution-pipeline.ts','verification.ts','state-machine.ts','persistence.ts']) {
