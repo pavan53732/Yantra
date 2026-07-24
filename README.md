@@ -37,10 +37,11 @@ See `docs/specifications/` and `docs/adr/` for how specifications and architectu
 Yantra is built in five phases — notably, Electron and the Desktop UI don't appear until Phase 4:
 
 1. Phase 0 — Research
-2. Phase 1 — Product Definition
-3. Phase 2 — Architecture
-4. Phase 3 — Core Engine
-5. Phase 4 — Desktop Application
+2. Phase 0.5 — Engineering Specification Freeze ([drafting complete](./docs/roadmap/PHASE_0_5_SPECIFICATION_FREEZE.md), pending review)
+3. Phase 1 — Product Definition
+4. Phase 2 — Architecture
+5. Phase 3 — Core Engine
+6. Phase 4 — Desktop Application
 
 See [`docs/roadmap/`](./docs/roadmap/) for the full breakdown of each phase.
 
