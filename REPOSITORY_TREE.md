@@ -1,20 +1,17 @@
-# Repository Tree Guide
+# Repository Tree
 
-## Primary Structure
+Yantra is organised into product, specification, implementation, governance, and supporting workspace areas.
 
-- `01_FOUNDATION/` — authored foundation documents
-- `02_SPECIFICATIONS/` — authored specification documents
-- `03_IMPLEMENTATION/` — implementation contracts (authored and/or compiler-generated)
-- `04_GOVERNANCE/` — governance docs and generated reports
-- `.ai/` — minimal AI SDK surface
-- `missions/` — mission packs
-- `knowledge/` — reusable engineering memory
+## Major areas
 
-## Transitional Areas
+- `.ai/` — agent bootstrap and repository execution guidance.
+- `01_FOUNDATION/` — foundational principles and invariants.
+- `02_SPECIFICATIONS/` — contracts, schemas, protocols, and mission semantics.
+- `03_IMPLEMENTATION/` — implementation-oriented guidance by domain.
+- `04_GOVERNANCE/` — validation, readiness, compliance, and release controls.
+- `docs/` — canonical human-readable product, roadmap, architecture, and governance documents.
+- `apps/`, `packages/`, `tests/`, `tools/`, `scripts/`, `knowledge/`, `missions/` — product-adjacent execution and support areas.
 
-- `docs/` — legacy compatibility aliases during migration
-- `output/` — generated validation and reporting artifacts
+## Reading order
 
-## Legacy Root Files
-
-Some root markdown files are retained temporarily for compatibility. Each should point to its canonical replacement.
+Start with `README.md`, then `AGENTS.md`, then the canonical product and roadmap documents under `docs/`.

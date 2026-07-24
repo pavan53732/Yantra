@@ -1,27 +1,23 @@
 # Root Index
 
-## Canonical Entry Points
+This file provides a quick map of the most important repository entrypoints.
 
-- Bootstrap: `.ai/BOOTSTRAP.md`
-- Glossary: `01_FOUNDATION/GLOSSARY.md`
-- Repository Manifest: `repository.manifest.json`
-- Ownership Registry: `repository.ownership.json`
-- Repository Index: `repository.index.json`
+## Primary entrypoints
 
-## Canonical Layers
+- `README.md` — product identity and top-level navigation.
+- `AGENTS.md` — agent loading and canonical documentation order.
+- `docs/product/PRODUCT_REQUIREMENTS.md` — canonical product definition.
+- `docs/roadmap/PHASE_3_ROADMAP.md` — active roadmap.
+- `docs/architecture/` — product and system models.
 
-- `01_FOUNDATION/`
-- `02_SPECIFICATIONS/`
-- `03_IMPLEMENTATION/`
-- `04_GOVERNANCE/`
+## Staged execution layers
 
-## Supporting Areas
+- `01_FOUNDATION/` — durable principles and invariants.
+- `02_SPECIFICATIONS/` — contracts, protocols, schemas, and mission semantics.
+- `03_IMPLEMENTATION/` — implementation-facing guidance by domain.
+- `04_GOVERNANCE/` — readiness, validation, compliance, and release controls.
 
-- `.ai/`
-- `missions/`
-- `knowledge/`
-- `examples/`
-- `tests/`
-- `tools/`
+## Navigation support
 
-- docs/governance/DOCUMENTATION_GOVERNANCE.md — documentation authority, historical file policy, and docs/ versus numbered-folder relationship.
+- `REPOSITORY_TREE.md` — repository structure overview.
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md` — canonical documentation authority and historical-file policy.
