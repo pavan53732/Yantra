@@ -4,3 +4,4 @@
 - Protect package and layer boundaries.
 - Keep changes testable, reviewable, and documented.
 - Prefer maintainability and correctness over speed.
+- Update docs and tests whenever behavior changes.
