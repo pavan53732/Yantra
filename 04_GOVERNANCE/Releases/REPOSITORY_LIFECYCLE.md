@@ -1,3 +1,3 @@
 # Repository Lifecycle
 
-Draft -> Canonicalising -> Frozen Candidate -> Certified -> Released -> Maintained -> Deprecated
+This document describes the expectation that repository states move through explicit readiness and release stages rather than informal progression.

@@ -1,3 +1,3 @@
-# Architecture Regression Testing
+# Architecture Regression Tests
 
-Regression tests detect broken traceability, new dependency cycles, ownership violations, contract drift, registry violations, interface changes, and missing invariants.
+This specification defines the expectation that important architectural constraints can be checked repeatedly as the repository evolves.

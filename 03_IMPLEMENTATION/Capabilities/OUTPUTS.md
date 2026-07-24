@@ -1,3 +1,10 @@
-# Outputs
+# Capabilities Outputs
 
-Canonical implementation contract file for Capabilities.
+This document defines the primary outputs produced by the Capabilities implementation area.
+
+## Expected outputs
+
+- reviewable state changes,
+- traceable artifacts or signals,
+- execution or coordination metadata,
+- verification-relevant outcomes where applicable.

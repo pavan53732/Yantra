@@ -1,3 +1,10 @@
-# State Machine
+# Workspace State Machine
 
-Canonical implementation contract file for Workspace.
+This document outlines the expected implementation state progression for the Workspace area.
+
+## State expectations
+
+- states are explicit and reviewable,
+- transitions are bounded,
+- error or blocked states are visible,
+- completion semantics remain compatible with mission and verification rules.

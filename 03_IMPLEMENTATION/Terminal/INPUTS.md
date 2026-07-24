@@ -1,3 +1,10 @@
-# Inputs
+# Terminal Inputs
 
-Canonical implementation contract file for Terminal.
+This document defines the primary inputs expected by the Terminal implementation area.
+
+## Expected inputs
+
+- repository or workspace context,
+- mission or workflow context where applicable,
+- domain-specific configuration,
+- approved contracts or dependency references.

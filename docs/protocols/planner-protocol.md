@@ -1,5 +1,3 @@
-# Deprecated
+# Planner Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/planner-protocol.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This protocol defines how planning inputs, outputs, and handoffs are represented so planning remains reviewable and scope-aware.

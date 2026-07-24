@@ -1,5 +1,3 @@
-# Deprecated
+# IPC Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/ipc-protocol.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This protocol defines the expected message behavior across internal desktop boundaries so communication remains explicit, bounded, and reviewable.

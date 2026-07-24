@@ -1,5 +1,3 @@
-# Deprecated
+# Verification Framework
 
-Canonical location: `02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This specification defines the structural expectations for verification evidence, states, and completion gating across Yantra workflows.

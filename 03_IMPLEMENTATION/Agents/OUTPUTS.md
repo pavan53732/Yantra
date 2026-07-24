@@ -1,3 +1,10 @@
-# Outputs
+# Agents Outputs
 
-Canonical implementation contract file for Agents.
+This document defines the primary outputs produced by the Agents implementation area.
+
+## Expected outputs
+
+- reviewable state changes,
+- traceable artifacts or signals,
+- execution or coordination metadata,
+- verification-relevant outcomes where applicable.

@@ -1,3 +1,10 @@
-# Test Requirements
+# Planner Test Requirements
 
-Canonical implementation contract file for Planner.
+This document defines the minimum verification expectations for the Planner implementation area.
+
+## Minimum requirements
+
+- critical behavior is covered,
+- boundary handling is verified,
+- failure modes are exercised,
+- contract compliance is testable and reviewable.

@@ -1,5 +1,3 @@
-# Deprecated
+# Tool Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/tool-protocol.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This protocol defines how tools are invoked and how their outputs are surfaced inside governed Yantra workflows.

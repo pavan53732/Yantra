@@ -1,3 +1,3 @@
 # Living Architecture
 
-Every release produces an Architecture Manifest, Architecture Fingerprint, Architecture Diff, Compliance Report, Certification Report, Implementation Contracts, and Release Notes.
+This specification states that architecture guidance should remain current with the repository and be updated as meaningful structural decisions are made.

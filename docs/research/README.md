@@ -1,7 +1,3 @@
 # Research
 
-This directory contains research notes, spike implementations, and evaluation documents for technologies and approaches considered for the Yantra platform.
-
-## Documents
-
-*Research documents will be added here as the team explores different options.*
+The research area contains supporting investigation material that may inform decisions, but canonical product and architecture truth remains in the approved documentation chain.

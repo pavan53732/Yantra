@@ -1,11 +1,3 @@
 # Capability Registry
 
-Canonical capability identifiers.
-
-- CAP-FILESYSTEM
-- CAP-TERMINAL
-- CAP-GIT
-- CAP-MODEL-GENERATE
-- CAP-MODEL-EMBED
-- CAP-MEMORY-READ
-- CAP-MEMORY-WRITE
+The capability registry records the reusable capabilities recognised by the repository and the contracts that define their intended use.

@@ -1,5 +1,3 @@
-# Deprecated
+# Plugin Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/plugin-protocol.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This protocol defines how plugin interactions remain explicit, reviewable, and safe inside the Yantra product model.

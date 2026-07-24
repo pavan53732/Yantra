@@ -1,3 +1,11 @@
-# Implementation Checklist
+# Agents Implementation Checklist
 
-Canonical implementation contract file for Agents.
+Use this checklist when implementing or materially changing the Agents area.
+
+## Checklist
+
+- contracts updated,
+- inputs and outputs documented,
+- state handling defined,
+- tests updated,
+- dependent docs aligned.

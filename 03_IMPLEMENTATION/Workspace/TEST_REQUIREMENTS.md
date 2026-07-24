@@ -1,3 +1,10 @@
-# Test Requirements
+# Workspace Test Requirements
 
-Canonical implementation contract file for Workspace.
+This document defines the minimum verification expectations for the Workspace implementation area.
+
+## Minimum requirements
+
+- critical behavior is covered,
+- boundary handling is verified,
+- failure modes are exercised,
+- contract compliance is testable and reviewable.

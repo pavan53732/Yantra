@@ -1,3 +1,10 @@
-# Events
+# Agents Events
 
-Canonical implementation contract file for Agents.
+This document describes the notable events that may be emitted or consumed by the Agents implementation area.
+
+## Event expectations
+
+- events remain explicit,
+- event sources are attributable,
+- consumers stay bounded,
+- event handling does not bypass governance or verification controls.

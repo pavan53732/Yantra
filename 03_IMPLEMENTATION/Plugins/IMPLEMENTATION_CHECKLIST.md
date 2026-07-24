@@ -1,3 +1,11 @@
-# Implementation Checklist
+# Plugins Implementation Checklist
 
-Canonical implementation contract file for Plugins.
+Use this checklist when implementing or materially changing the Plugins area.
+
+## Checklist
+
+- contracts updated,
+- inputs and outputs documented,
+- state handling defined,
+- tests updated,
+- dependent docs aligned.

@@ -1,3 +1,10 @@
-# Outputs
+# Router Outputs
 
-Canonical implementation contract file for Router.
+This document defines the primary outputs produced by the Router implementation area.
+
+## Expected outputs
+
+- reviewable state changes,
+- traceable artifacts or signals,
+- execution or coordination metadata,
+- verification-relevant outcomes where applicable.

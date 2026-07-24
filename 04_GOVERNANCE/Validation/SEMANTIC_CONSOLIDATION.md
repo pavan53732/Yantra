@@ -1,3 +1,3 @@
 # Semantic Consolidation
 
-Phase 1.2 ensures exactly one authoritative definition for every concept.
+Semantic consolidation ensures overlapping repository documents and concepts converge on the same canonical meaning rather than drifting into parallel definitions.

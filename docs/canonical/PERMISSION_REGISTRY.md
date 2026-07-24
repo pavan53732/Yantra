@@ -1,14 +1,3 @@
 # Permission Registry
 
-Canonical permission model.
-
-- read
-- write
-- execute
-- spawn
-- cancel
-- approve
-- observe
-- administer
-
-All capabilities must map to one or more permissions.
+The permission registry records the important permission concepts and access expectations that affect Yantra workflows and governed execution.

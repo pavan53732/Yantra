@@ -1,3 +1,3 @@
 # Independent Implementation Test
 
-A separate implementation effort receives only specifications, generated contracts, compiler, and validation tooling.
+This specification describes the expectation that important implementation behavior can be evaluated independently against documented contracts and requirements.

@@ -1,5 +1,3 @@
-# Deprecated
+# Knowledge Graph Schema
 
-Canonical location: `02_SPECIFICATIONS/KnowledgeGraph/KNOWLEDGE_GRAPH_SCHEMA.md`
-
-This compatibility file remains temporarily and will be removed after the migration window.
+This schema defines the expected structured representation of graph-based repository knowledge used for grounding and traceability.

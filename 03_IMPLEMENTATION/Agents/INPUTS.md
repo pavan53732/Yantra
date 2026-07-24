@@ -1,3 +1,10 @@
-# Inputs
+# Agents Inputs
 
-Canonical implementation contract file for Agents.
+This document defines the primary inputs expected by the Agents implementation area.
+
+## Expected inputs
+
+- repository or workspace context,
+- mission or workflow context where applicable,
+- domain-specific configuration,
+- approved contracts or dependency references.

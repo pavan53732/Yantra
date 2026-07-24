@@ -1,3 +1,3 @@
 # Canonical Knowledge Graph
 
-The repository is modeled as entities and edges rather than files alone.
+This document captures the expectation that canonical repository knowledge relationships remain traceable and anchored to approved source documents.

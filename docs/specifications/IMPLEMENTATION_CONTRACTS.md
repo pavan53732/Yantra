@@ -1,3 +1,3 @@
 # Implementation Contracts
 
-Generated package contracts define required inputs, outputs, owned state, consumed/published events, required schemas, protocols, allowed and forbidden capabilities, invariants, and test obligations.
+This specification groups the repository contracts that implementation work must satisfy across domains, workflows, and governance controls.

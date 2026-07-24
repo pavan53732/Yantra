@@ -1,3 +1,10 @@
-# Inputs
+# Planner Inputs
 
-Canonical implementation contract file for Planner.
+This document defines the primary inputs expected by the Planner implementation area.
+
+## Expected inputs
+
+- repository or workspace context,
+- mission or workflow context where applicable,
+- domain-specific configuration,
+- approved contracts or dependency references.
