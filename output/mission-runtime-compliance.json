@@ -1,0 +1,9 @@
+{
+  "phase": "2.0.3",
+  "package": "@yantra/mission",
+  "imports_sdk_contracts": true,
+  "imports_core_infrastructure": true,
+  "implements_mission_runtime_only": true,
+  "no_ui_or_provider_specific_logic": true,
+  "status": "PASS"
+}
