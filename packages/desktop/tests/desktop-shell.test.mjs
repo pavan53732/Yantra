@@ -1,27 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { bootstrapDesktopShell } from '../runtime/main.mjs';
-import { createPreloadBridge } from '../runtime/preload.mjs';
-import { createInitialShellState, renderShellHtml } from '../runtime/renderer-shell.mjs';
+import { YantraDesktopApp } from '../runtime/app.mjs';
 
-test('desktop shell bootstrap returns secure main window model', () => {
-  const shell = bootstrapDesktopShell('/tmp/yantra-desktop');
-  assert.equal(shell.processModel, 'single-main-window');
-  assert.equal(shell.security.contextIsolation, true);
-  assert.equal(shell.security.nodeIntegration, false);
+test('desktop app bootstraps main window and session', () => {
+  const app = new YantraDesktopApp();
+  const launch = app.bootstrap();
+  const snap = app.snapshot();
+  assert.equal(launch.route, '/missions');
+  assert.equal(snap.state, 'ready');
+  assert.equal(snap.windows[0].state, 'visible');
 });
 
-test('preload bridge exposes mission, events, and capabilities channels', () => {
-  const bridge = createPreloadBridge();
-  assert.equal(bridge.mission.run, 'ipc:mission:run');
-  assert.equal(bridge.events.subscribe, 'ipc:events:subscribe');
-  assert.equal(bridge.capabilities.execute, 'ipc:capability:execute');
-});
-
-test('renderer shell initializes with home view and renders HTML', () => {
-  const state = createInitialShellState();
-  const html = renderShellHtml();
-  assert.equal(state.activeView, 'home');
-  assert.match(html, /Yantra Desktop/);
-  assert.match(html, /data-view="missions"/);
+test('desktop app launches and completes mission lifecycle', () => {
+  const app = new YantraDesktopApp();
+  app.bootstrap();
+  const launched = app.launchMission('mission-1');
+  assert.equal(launched.state, 'running-mission');
+  const ready = app.finishMission();
+  assert.equal(ready.state, 'ready');
 });

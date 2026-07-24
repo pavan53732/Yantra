@@ -1,0 +1,65 @@
+{
+  "boot": {
+    "sessionId": "desktop-session-1",
+    "mainWindowId": "win-main",
+    "route": "/missions"
+  },
+  "launched": {
+    "sessionId": "desktop-session-1",
+    "missionId": "desktop-mission-1",
+    "state": "running-mission"
+  },
+  "completed": {
+    "id": "desktop-session-1",
+    "state": "shutdown",
+    "windows": [
+      {
+        "id": "win-main",
+        "title": "Yantra",
+        "state": "visible",
+        "route": "/missions"
+      }
+    ]
+  },
+  "shutdown": {
+    "id": "desktop-session-1",
+    "state": "shutdown",
+    "windows": [
+      {
+        "id": "win-main",
+        "title": "Yantra",
+        "state": "visible",
+        "route": "/missions"
+      }
+    ]
+  },
+  "ipc": [
+    {
+      "channel": "desktop.boot.completed",
+      "payload": {
+        "sessionId": "desktop-session-1",
+        "windowId": "win-main"
+      }
+    },
+    {
+      "channel": "desktop.mission.launch",
+      "payload": {
+        "sessionId": "desktop-session-1",
+        "missionId": "desktop-mission-1"
+      }
+    },
+    {
+      "channel": "desktop.mission.complete",
+      "payload": {
+        "sessionId": "desktop-session-1",
+        "missionId": "desktop-mission-1"
+      }
+    },
+    {
+      "channel": "desktop.shutdown",
+      "payload": {
+        "sessionId": "desktop-session-1"
+      }
+    }
+  ]
+}

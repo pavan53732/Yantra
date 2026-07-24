@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import { YantraDesktopApp } from '/root/Yantra/packages/desktop/runtime/app.mjs';
+const app = new YantraDesktopApp();
+const boot = app.bootstrap();
+const launched = app.launchMission('desktop-mission-1');
+const completed = app.finishMission();
+const shutdown = app.shutdown();
+const result = { boot, launched, completed, shutdown, ipc: app.ipc.history() };
+fs.writeFileSync('/root/Yantra/output/desktop-session-sample.json', JSON.stringify(result, null, 2));
+console.log(JSON.stringify({ bootRoute: boot.route, ipcCount: result.ipc.length, finalState: shutdown.state }, null, 2));

@@ -1,0 +1,37 @@
+import type { DesktopSession, DesktopLaunchResult } from './types.js';
+import { transitionSession } from './state-machine.js';
+import { DesktopWindowManager } from './window-manager.js';
+import { MemoryIPC } from './ipc.js';
+export class YantraDesktopApp {
+  private session: DesktopSession = { id: 'desktop-session-1', state: 'idle', windows: [] };
+  readonly ipc = new MemoryIPC();
+  readonly windows = new DesktopWindowManager();
+  bootstrap(): DesktopLaunchResult {
+    this.session.state = transitionSession(this.session.state, 'booting');
+    const mainWindow = this.windows.createMainWindow('/missions');
+    this.windows.ready(mainWindow.id);
+    this.windows.show(mainWindow.id);
+    this.session.windows = this.windows.list();
+    this.session.state = transitionSession(this.session.state, 'ready');
+    this.ipc.send('desktop.boot.completed', { sessionId: this.session.id, windowId: mainWindow.id });
+    return { sessionId: this.session.id, mainWindowId: mainWindow.id, route: '/missions' };
+  }
+  launchMission(missionId: string) {
+    this.session.state = transitionSession(this.session.state, 'running-mission');
+    this.session.activeMissionId = missionId;
+    this.ipc.send('desktop.mission.launch', { sessionId: this.session.id, missionId });
+    return { sessionId: this.session.id, missionId, state: this.session.state };
+  }
+  finishMission() {
+    this.session.state = transitionSession(this.session.state, 'ready');
+    this.ipc.send('desktop.mission.complete', { sessionId: this.session.id, missionId: this.session.activeMissionId });
+    this.session.activeMissionId = undefined;
+    return this.session;
+  }
+  shutdown() {
+    this.session.state = transitionSession(this.session.state, 'shutdown');
+    this.ipc.send('desktop.shutdown', { sessionId: this.session.id });
+    return this.session;
+  }
+  snapshot() { return structuredClone(this.session); }
+}

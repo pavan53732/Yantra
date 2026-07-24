@@ -1,15 +1,16 @@
 # Phase 2.0.5 — Electron Desktop
 
 ## Scope
-Implements the thin desktop shell structure for Yantra.
+Implements a thin Electron-style desktop shell abstraction for Yantra.
 
-## Constraints
-- No advanced provider integrations
-- No business logic duplication in the renderer
-- Preload bridge remains minimal and explicit
+## Included
+- Desktop session lifecycle
+- Main window lifecycle
+- In-memory IPC transport
+- Mission launch integration surface
+- Desktop verification tests
 
-## Completion Criteria
-- Desktop package implemented
-- Main, preload, and renderer shell abstractions defined
-- Tests pass
-- Security defaults documented
+## Excluded
+- Real Electron binary integration
+- Native packaging
+- Advanced UI rendering

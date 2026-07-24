@@ -2,36 +2,29 @@
 
 ## What's New in This Phase
 - Added `@yantra/desktop` package.
-- Added desktop shell workflow and structural tests.
-- Added desktop shell bootstrap, preload bridge, and renderer shell abstractions.
+- Added desktop session lifecycle, window manager, IPC transport, and mission launch flow.
+- Added desktop shell workflow and sample desktop-session artifact.
 
 ## Public API Changes
-- New package `@yantra/desktop` exporting desktop types, bootstrap, preload bridge, and renderer shell helpers.
+- Added desktop app, IPC, window manager, and state-machine exports.
 
 ## Breaking Changes
 - None verified.
 
 ## Dependency Graph Changes
-- Added `@yantra/desktop` depending on `@yantra/sdk`, `@yantra/core`, `@yantra/mission`, and `@yantra/capabilities`.
+- Added `@yantra/desktop` depending on runtime packages through package manifest.
 
 ## Performance Impact
-- Minimal. Structural shell only.
+- Minimal in-memory desktop shell behavior.
 
 ## Security Considerations
-- Desktop shell defaults enforce context isolation, disabled node integration, and sandbox mode.
+- IPC is in-memory only in this phase; no native bridge or external process exposure was added.
 
 ## Backward Compatibility
 - Additive only.
 
 ## Technical Debt Introduced
-- No packaged Electron runtime installed in this environment; shell verification is structural and runtime-contract based.
+- Desktop layer is an Electron-style abstraction rather than a real Electron binary integration.
 
 ## Technical Debt Resolved
-- Yantra now has a desktop-shell contract instead of only backend/runtime packages.
-
-## Engineering Metrics
-- Desktop tests: 1 file
-- Desktop test exit code: 0
-
-## ADRs Created or Updated
-- `04_GOVERNANCE/Releases/PHASE_2_0_5_ELECTRON_DESKTOP.md`
+- Desktop package is no longer documentation-only.

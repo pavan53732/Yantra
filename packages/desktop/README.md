@@ -1,12 +1,13 @@
 # @yantra/desktop
 
-Thin desktop shell for Yantra Phase 2.0.5.
+Thin Electron-style desktop shell abstractions for Yantra.
 
 ## Scope
 - Main process bootstrap model
-- Preload bridge contract
-- Renderer shell model
-- Local development structure without provider-specific integrations
+- Window/session model
+- IPC contract
+- Desktop app state
+- Mission launch integration surface
 
 ## Verification
-- Node structural tests validate desktop package layout and shell contracts.
+- Node test suite validates desktop shell structure and runtime session behavior.

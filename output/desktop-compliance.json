@@ -1,0 +1,9 @@
+{
+  "phase": "2.0.5",
+  "status": "PASS",
+  "package": "@yantra/desktop",
+  "thin_shell": true,
+  "ipc_in_memory": true,
+  "mission_launch_surface": true,
+  "test_exit_code": 0
+}
