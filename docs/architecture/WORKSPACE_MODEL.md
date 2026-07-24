@@ -1,59 +1,44 @@
 # Workspace Model
 
-> **Canonical document.** For state machine details see
-> `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md` (Workspace section).
-> For invariants see `01_FOUNDATION/SYSTEM_INVARIANTS.md`.
+The workspace is the durable operating context for Yantra. It anchors repository state, active missions, memory, knowledge access, and user continuity across sessions.
 
 ## Purpose
 
-A Workspace is the primary operational container in Yantra. Every engineering
-action — mission creation, agent execution, knowledge indexing, provider
-configuration, verification — occurs within the context of an active Workspace.
+A workspace gives the user one stable place to open a repository, understand current engineering state, launch or resume missions, and review outputs without rebuilding context manually.
 
-## Layer Placement
+## Responsibilities
 
-```
-Product Shell
-  └── Workspace Layer   ← this document
-        └── Mission Layer
-              └── Agent + Knowledge + Capability Layers
-```
+- Bind Yantra to a repository or working folder.
+- Track current and recent mission context.
+- Expose workspace-level navigation, search, and state.
+- Coordinate access to memory, knowledge, verification, and agent activity.
+- Restore relevant user context when the workspace is reopened.
 
-## Components
+## Core state
 
-| Component | Responsibility |
-|---|---|
-| Workspace Manager | Create, open, close, switch workspaces |
-| Project Indexer | Crawl and index repository files into the knowledge layer |
-| Repository Explorer | File tree, search, git status surface |
-| Workspace State Store | Persist workspace metadata, recent missions, provider config |
-| Snapshot Engine | Write-before-commit snapshots for reversibility (Invariant 4) |
-| Terminal | Scoped terminal sessions attached to the workspace root |
-| Monaco Editor | File editing surface — a tool within the workspace, not the product |
+A workspace should model at least the following state categories:
 
-## State Model
+- repository identity and location,
+- indexing and discovery state,
+- active mission references,
+- recent activity and history,
+- workspace settings and provider preferences,
+- verification and review visibility.
 
-Workspace file state machine: `Clean → Dirty → Snapshotting → Snapshotted → Dirty`.
-Every write or delete transitions `Clean → Dirty` and triggers a snapshot
-before the operation is durable. See `STATE_MACHINES.md` (Workspace section).
+## User-facing behavior
 
-## Persistence
+The workspace should make it easy to:
 
-- Workspace metadata persisted to SQLite via the Knowledge layer.
-- Snapshots stored in a workspace-local `.yantra/snapshots/` directory.
-- Provider configuration stored encrypted; keys never written to plain disk.
+- open and switch repositories,
+- inspect current status,
+- resume interrupted work,
+- navigate from repository context to mission context,
+- review outputs and verification evidence.
 
-## Key Design Rules
+## Boundaries
 
-- One active workspace per application session.
-- Workspace switching requires saving or discarding pending mission state.
-- The editor and terminal are subordinate tools; the mission workflow is the
-  primary workspace experience.
-- Project indexing runs on open and on file change events; it is non-blocking.
+The workspace is not itself the mission runtime, memory engine, or provider implementation. It is the orchestration surface that exposes those capabilities coherently to the user.
 
-## Cross-References
+## Verification expectations
 
-- State machine: `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md`
-- Invariants: `01_FOUNDATION/SYSTEM_INVARIANTS.md`
-- Phase 3.1 deliverables: `docs/roadmap/PHASE_3_ROADMAP.md#phase-31--workspace`
-- Knowledge layer: `docs/architecture/MEMORY_MODEL.md`
+Workspace behavior should be verified for restoration, navigation consistency, mission continuity, and safe handling of repository-level state transitions.

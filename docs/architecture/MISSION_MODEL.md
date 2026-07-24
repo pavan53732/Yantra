@@ -1,78 +1,46 @@
 # Mission Model
 
-> **Canonical document.** For the full lifecycle state machine see
-> `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md` (Mission section).
-> For the mission data format see `02_SPECIFICATIONS/Mission/MISSION_DSL.md`.
+A mission is the primary unit of intentional engineering work in Yantra. It represents a bounded goal with explicit scope, planning, approval, execution, verification, and completion states.
 
 ## Purpose
 
-A Mission is the primary unit of engineering work in Yantra. It encapsulates
-user intent, an execution plan, agent collaboration, artifact outputs, approval
-gates, and verification status through a governed lifecycle. Everything an
-engineer asks Yantra to do becomes a Mission.
+The mission model ensures work is structured, reviewable, and traceable instead of being reduced to ad hoc prompts or disconnected actions.
 
-## Layer Placement
+## Mission lifecycle
 
-```
-Workspace Layer
-  └── Mission Layer   ← this document
-        └── Agent Layer (Planner, Executor, Verifier, ...)
-        └── Knowledge Layer (context for planning)
-        └── Capability Layer (tools agents invoke)
-```
+A mission should move through these logical stages:
 
-## Lifecycle States
+1. Defined
+2. Planned
+3. Approved
+4. Executing
+5. Verifying
+6. Completed or Blocked
 
-```
-Created → Planning → Waiting (approval) → Executing → Verifying → Completed
-                                                  ↓             ↓
-                                              Paused/Resuming  PartiallyCompleted
-Terminal exception states: Blocked | Cancelled | Archived
-```
+## Responsibilities
 
-See `STATE_MACHINES.md` for full transition table and trigger conditions.
+- Capture the goal, scope, and relevant repository context.
+- Link planning outputs to execution intent.
+- Preserve approval checkpoints before risky steps.
+- Record execution progress and important events.
+- Attach verification outcomes before completion.
 
-## Components
+## Core attributes
 
-| Component | Responsibility |
-|---|---|
-| Mission Dashboard | List, filter, and navigate all missions in the workspace |
-| Mission Creator | Accept natural language, template, or DSL input; compile to MISSION_DSL |
-| Mission Planner (Agent) | Decompose mission into execution graph of tasks |
-| Execution Orchestrator | Schedule and dispatch tasks to agents; track graph state |
-| Approval Gate | Surface plan to user when approval is required; block until approved |
-| Mission Timeline | Real-time log, progress graph, and agent activity view |
-| Verification Coordinator | Run acceptance criteria through the Verification Framework |
-| Artifact Store | Persist and surface mission outputs |
+A mission should include at least:
 
-## Approval Model
+- a clear objective,
+- scope and constraints,
+- planning artifacts,
+- approval state,
+- execution state,
+- verification state,
+- final outcome summary.
 
-The Planner agent generates an execution plan. If the plan contains any
-actions with a security boundary or privileged capability, it enters
-`Waiting` state and the user must approve before execution proceeds.
-Approval is explicit; it is never assumed or auto-granted.
+## Boundaries
 
-## Verification Hook
+A mission is not the same as a raw task list or chat thread. It is a governed execution container that coordinates multiple system capabilities toward one engineering outcome.
 
-On transition to `Verifying`, the Verification Coordinator evaluates each
-`acceptance_criteria` entry against the relevant category from
-`VERIFICATION_FRAMEWORK.md`. A `blocking` failure routes the mission back
-to `Executing` via re-planning. `Completed` is only reachable when all
-required criteria pass.
+## Verification expectations
 
-## Key Design Rules
-
-- A mission without a defined objective and at least one acceptance criterion
-  cannot leave `Created` state.
-- Free-form natural language input is compiled to MISSION_DSL before execution;
-  it never bypasses structured validation.
-- Mission state is persisted durably; restarts resume from the last
-  checkpointed state (`Paused → Resuming`).
-
-## Cross-References
-
-- State machine: `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md`
-- Mission DSL format: `02_SPECIFICATIONS/Mission/MISSION_DSL.md`
-- Verification framework: `02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md`
-- Phase 3.3 deliverables: `docs/roadmap/PHASE_3_ROADMAP.md#phase-33--mission-center`
-- Agent model: `docs/architecture/AGENT_MODEL.md`
+Mission behavior should be verified for lifecycle transitions, scope preservation, approval enforcement, interruption handling, and completion criteria.
