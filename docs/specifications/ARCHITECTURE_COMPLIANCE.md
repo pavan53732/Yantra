@@ -1,23 +1,14 @@
 # Architecture Compliance
 
-Phase 0.8 is Architecture Compliance, not additional specification writing.
+Architecture compliance defines how Yantra changes are checked against the documented product and system models.
 
-## Contract-Driven Rules
+## Purpose
 
-- Every concept must resolve to a canonical registry.
-- No specification may redefine a canonical term independently.
-- Every schema and protocol must provide executable examples.
-- Compliance is measured through binary gates, not subjective scores.
+Compliance exists to prevent drift between canonical architecture intent and repository changes.
 
-## Gates
+## Expectations
 
-- Gate A — Canonical Compliance
-- Gate B — Traceability
-- Gate C — State Consistency
-- Gate D — Protocol Consistency
-- Gate E — Security Model
-- Gate F — Versioning
-- Gate G — Dependency Rules
-- Gate H — Machine Validation
-
-Implementation is authorized only if all mandatory gates pass.
+- Changes should map to an existing architectural domain or add one explicitly.
+- Cross-layer coupling should be visible and justified.
+- Contracts, schemas, and workflow effects should remain traceable.
+- Deviations should be documented, not implied.
