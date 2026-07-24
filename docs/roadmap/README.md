@@ -1,16 +1,20 @@
 # Roadmap
 
-Yantra's roadmap should now be understood as a product realization sequence, not just a runtime build sequence. The product must move from engineering foundation work into a real Windows desktop application and then into autonomous engineering workflows and later production-platform capabilities.[cite:18][cite:21]
+Yantra's roadmap is now product-first and Windows-first. The engineering foundation already exists to enable the product; the next major phase is turning that foundation into a real Windows desktop application with a mission-oriented operating model.[cite:18][cite:21]
 
-## Phases
+## Roadmap files
 
-1. [Phase 0 — Research](./phase-0-research.md)
-2. [Phase 0.5 — Engineering Specification Freeze](./PHASE_0_5_SPECIFICATION_FREEZE.md)
-3. [Phase 1 — Product Definition](./phase-1-product-definition.md)
-4. [Phase 2 — Architecture](./phase-2-architecture.md)
-5. [Phase 3 — Core Engine](./phase-3-core-engine.md)
-6. [Phase 4 — Desktop Application](./phase-4-desktop-application.md)
+- `PHASE_3_ROADMAP.md` — Windows product foundation and autonomous engineering milestones
+- `PHASE_4_ROADMAP.md` — later platform expansion and collaboration capabilities[cite:18]
 
-## Product transition note
+## Product milestone model
 
-The current documentation should be read through the new product lens: Stage 1 established the substrate, Stage 2 must deliver the product foundation, Stage 3 must express autonomous engineering as a user-facing system, and Stage 4 should broaden into platform capabilities.[cite:18]
+- Phase 3.0 — Product Foundation
+- Phase 3.1 — Workspace
+- Phase 3.2 — AI Platform
+- Phase 3.3 — Mission Center
+- Phase 3.4 — Knowledge
+- Phase 3.5 — Agents
+- Phase 3.6 — Production[cite:18]
+
+The roadmap should be read as a product realization sequence rather than as a runtime-only infrastructure sequence.[cite:18][cite:21]

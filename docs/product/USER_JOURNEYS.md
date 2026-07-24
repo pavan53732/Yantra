@@ -3,23 +3,23 @@
 ## First-run setup
 
 1. Launch Yantra.
-2. Create or select a workspace.
-3. Configure providers.
-4. Open a project or repository.
-5. Allow workspace indexing.
-6. Land on the mission-oriented home surface.[cite:18]
+2. See a minimal, dark-first workspace setup flow.
+3. Create or open a workspace.
+4. Configure providers in Settings.
+5. Allow project indexing.
+6. Land on the product home with mission-oriented actions and recent workspace context.[cite:18]
 
-## Create and run a mission
+## Mission-centered engineering
 
-1. Start a mission from natural language, template, or structured workflow.
-2. Review the proposed plan.
-3. Approve or refine execution.
-4. Observe agent activity, logs, and verification checkpoints.
-5. Review outputs and completion artifacts.[cite:18][cite:21]
+1. Open Yantra.
+2. Review workspace and recent mission state.
+3. Create a mission from natural language, template, or workflow form.
+4. Approve mission execution stages.
+5. Observe mission timeline, logs, verification status, and agent activity.
+6. Review outputs and continue work from the same workspace.[cite:18]
 
-## Workspace-driven engineering
+## Workspace-driven development
 
-1. Open an existing workspace.
-2. Inspect projects, recent missions, memory, and verification state.
-3. Resume, revise, or create a new mission.
-4. Track execution through mission and agent surfaces rather than through raw internal runtime systems.[cite:18]
+1. Open a repository or folder.
+2. Inspect repository explorer, search, git status, terminal, and editor surfaces.
+3. Use those tools in support of the mission workflow rather than as the dominant product experience.[cite:18]

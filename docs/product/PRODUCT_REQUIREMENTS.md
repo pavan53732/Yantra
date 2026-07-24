@@ -2,123 +2,216 @@
 
 ## Purpose
 
-This document formalizes the current product direction for Yantra and converts the converged project vision into an implementation-grade reference for AI agents, planners, architects, and developers. It establishes a single source of truth so that roadmap, architecture, implementation, verification, and release decisions all trace back to an explicit product definition rather than evolving independently.[cite:18][cite:21][cite:27]
-
-Yantra should now be treated as a product-first engineering platform, not merely as a repository of runtime packages or a continuation of internal engine work. Earlier project phases were architecture-driven because the execution engine had to be established first; the next phase must be product-driven because the foundation now needs to become an installable, operable, trustworthy Windows application.[cite:18][cite:21]
+This document is the canonical source of truth for Yantra as a product. It defines what Yantra is, who it is for, how it should behave, what principles constrain it, and how implementation work must be derived from product intent rather than from disconnected feature requests or infrastructure preferences.[cite:18][cite:21][cite:27]
 
 ## Product identity
 
-### Definition
+Yantra is a Windows-native autonomous software engineering operating system that enables developers to plan, build, test, verify, package, and manage software through coordinated AI agents from a single engineering workspace.[cite:18]
 
-Yantra is a Windows-native autonomous software engineering platform that coordinates specialised AI agents to plan, design, build, test, verify, package, deploy, and maintain software from a unified engineering workspace.[cite:18]
+Yantra is not a cross-platform IDE, a chat application, an Electron demo, or an AI wrapper. It is a Windows desktop product whose core value is mission-oriented software engineering through governed multi-agent execution.[cite:18][cite:30]
 
-Yantra is not a ChatGPT wrapper, a Cursor clone, a VS Code fork, an Electron chat client, or a code-completion utility. It is intended to function as an engineering operating system in which missions, workspaces, agents, capabilities, memory, and verification are first-class product concepts.[cite:18][cite:30]
+## Problem solved
 
-### Problem statement
+Software engineering work is split across too many disconnected tools and workflows: planning in one place, editing in another, verification elsewhere, deployment elsewhere again, and AI support trapped inside isolated prompt windows. This fragmentation increases cognitive load, weakens traceability, and makes autonomous or semi-autonomous engineering unreliable and hard to supervise.[cite:21][cite:27]
 
-Modern AI development tools are fragmented: one tool chats, another edits code, another runs terminal workflows, another tracks tasks, and another verifies outputs. This fragmentation creates coordination overhead, weak traceability, inconsistent approval boundaries, poor long-running autonomy, and limited system-level reasoning across the full software lifecycle.[cite:21][cite:27]
-
-Yantra solves this by providing a mission-driven environment where planning, execution, agent collaboration, workspace state, memory, and verification operate as parts of one governed system. The product should enable users to move from intent to production-ready outcomes while preserving approvals, provenance, policy boundaries, and reviewability.[cite:21][cite:27][cite:31]
-
-### Differentiation
-
-Users should choose Yantra over AI coding tools because Yantra is designed to orchestrate the entire engineering lifecycle rather than optimize a single prompt-to-code interaction. Competing tools often emphasize assistant behavior inside an editor, while Yantra is positioned around coordinated engineering missions, specialised agent roles, explicit approvals, memory, verification, packaging, and eventually deployment and operational continuity.[cite:21][cite:27]
-
-Yantra's superpower is not autocomplete or chat quality in isolation. Its superpower is governed autonomous engineering: turning high-level intent into reviewed, verifiable, multi-step execution across planning, architecture, implementation, validation, packaging, and release with a coherent audit trail.[cite:18][cite:21][cite:27]
+Yantra solves this by creating a single engineering workspace where missions, agents, memory, verification, capabilities, and user approvals all participate in one operating model. The goal is not to expose internal engine complexity but to reduce engineering complexity for the user.[cite:18][cite:21]
 
 ## Product principles
 
-- Windows-first productization.
+- Windows desktop first.
+- Product-first execution.
 - Mission-first workflow design.
-- AI-assisted, human-supervised execution.
+- AI-agent-first orchestration.
+- Minimal UI.
+- Local-first operation.
+- Human-supervised autonomy.
 - Verification before completion.
-- Local-first operation with future platform expansion only when product maturity justifies it.
-- Product narrative before repository narrative.
-- Explicit approvals and policy boundaries before autonomous execution freedom.[cite:18][cite:21][cite:27]
+- Every feature must reduce engineering complexity for the user, not expose internal system complexity.[cite:18]
 
-## Product stages
+## UX direction
 
-### Stage 1 — Engineering foundation
+Yantra should not be designed as an IDE clone and should not be reduced to a chat application. The UI direction should be closer to Lovable, Linear, Raycast, Arc, and Vercel than to traditional docking-heavy IDEs.[cite:18]
 
-This stage corresponds to the already-established engine and platform substrate: SDK, runtime kernel, mission runtime, capability layer, desktop runtime abstractions, and verification systems. This layer exists to enable the product and should remain largely invisible to end users except where surfaced through stable product interfaces and observability views.[cite:21][cite:27]
+The intended interface should be clean, dark-first, typography-first, spacious, lightly animated, mission-oriented, and low-noise. Cards and focused workflows should be preferred over crowded panel systems where appropriate.[cite:18]
 
-### Stage 2 — Product foundation
+The editor is a supporting tool, not the center of the product. The center of the product is the engineering workflow built around workspaces, missions, agents, and knowledge.[cite:18]
 
-This is the next priority stage. Yantra becomes a real Windows application through a native Electron application shell, React frontend, secure IPC boundary, window lifecycle management, navigation, settings, workspace management, packaging, and Windows installer output. This is the first stage where ordinary users can install and use Yantra as a daily product rather than as an architecture project.[cite:18]
+## Platform strategy
 
-### Stage 3 — Autonomous engineering
+Yantra should target Windows only for the first release. Cross-platform ambitions should not shape the first product architecture in ways that increase complexity or reduce product quality. macOS and Linux can be addressed later once the Windows product is mature.[cite:18]
 
-This stage introduces the product's core differentiated value: structured multi-agent engineering execution. Instead of a single assistant, Yantra should coordinate mission flows through roles such as Planner, Architect, Researcher, Executor, Reviewer, Verifier, Documentation, and Release, with each role operating inside explicit policy and verification boundaries.[cite:18][cite:21][cite:27]
+## Product modules
 
-### Stage 4 — Production platform
+Navigation should remain focused and uncluttered. The primary top-level product modules should be:
 
-Once the Windows desktop product and autonomous workflows are mature, Yantra can expand toward remote agents, team collaboration, shared knowledge, cloud sync, enterprise policy control, extensibility, marketplace patterns, CI/CD integrations, and deployment automation. These are strategic expansions, not immediate Phase 3 requirements.[cite:18]
+- Home
+- Workspace
+- Missions
+- Agents
+- Knowledge
+- Terminal
+- Settings[cite:18]
 
-## Primary users
+Other concepts should remain contextual rather than becoming top-level clutter:
 
-Yantra should be designed first for AI-native software builders who want a governed autonomous engineering workspace, especially solo builders, advanced individual developers, and technically strong small teams.[cite:18]
+- Provider Manager inside Settings.
+- Verification inside Mission details.
+- Logs inside Mission details.
+- Git inside Workspace.
+- Memory inside Knowledge.[cite:18]
 
-## Core philosophy
+## Technical direction
 
-Yantra should be mission-first, agent-orchestrated, and workspace-grounded. It should not be primarily IDE-first or chat-first, even if it contains editing surfaces and chat interfaces. The dominant mental model should be that a user operates engineering missions within a workspace using coordinated agents and governed capabilities.[cite:18]
+### Desktop
 
-## Core user journey
+- Electron
+- Electron Builder[cite:18]
 
-1. User launches Yantra.
-2. User sees a product overview and chooses or creates a workspace.
-3. User configures one or more AI providers or imports existing provider settings.
-4. User opens or connects a project or repository.
-5. Yantra indexes the workspace and builds initial project understanding.
-6. User lands in a mission-oriented home surface showing workspace state, mission creation, recent activity, and system readiness.
-7. User starts a mission through natural language, template, or structured workflow.
-8. Agents plan and propose execution under explicit approval rules.
-9. User reviews progress, logs, outputs, and verification state through product surfaces rather than through raw internal package behavior.[cite:18]
+### Frontend
 
-## Workspace, mission, and agent model
+- React 19
+- Vite
+- TypeScript[cite:18]
 
-A workspace is the operational container binding repositories, project state, sessions, configuration, mission history, memory, provider settings, capabilities, indexing, and verification context.[cite:18]
+### UI
 
-A mission is a structured engineering objective with context, plan, execution graph, approvals, state, outputs, and verification. It is not merely a prompt.[cite:21]
+- Tailwind CSS
+- shadcn/ui
+- Radix UI
+- Framer Motion for lightweight, subtle motion[cite:18]
 
-Core agent roles should initially include Planner, Architect, Researcher, Executor, Reviewer, Verifier, Documentation, and Release, with each role operating under explicit capability, approval, and verification boundaries.[cite:18][cite:21][cite:27]
+### Editor
 
-## Approval and safety model
+- Monaco Editor
+- External VS Code or Cursor handoff when needed[cite:18]
 
-| Action | Default policy |
-|---|---|
-| Edit file | Approval required unless explicitly trusted |
-| Delete file | Approval required |
-| Run terminal command | Approval required |
-| Install package | Approval required |
-| Commit Git | Approval required |
-| Push Git | Approval required |
-| Merge PR | Approval required |
-| Deploy | Approval required |
+### State and data
 
-These defaults should favor governed autonomy, traceability, and safe trust expansion over unrestricted execution.[cite:18][cite:21][cite:27]
+- Zustand
+- TanStack Query
+- SQLite for local metadata
+- IndexedDB as renderer cache where appropriate
+- SQLite plus vector index for memory expansion in later Phase 3 work[cite:18]
 
-## Memory and knowledge
+## Phase 3 structure
 
-Yantra should support conversation memory, mission history, workspace memory, repository knowledge, user preferences, architecture decisions, conventions, and failed-attempt context, with retention scoped by mission, workspace, user, and long-term engineering value.[cite:18]
+### Phase 3.0 — Product Foundation
 
-## Documentation strategy
+Goal: transform Yantra into a real Windows application.[cite:18]
 
-Documentation must now become product-driven. The main questions should be what Yantra is, who it is for, why it exists, what users can do with it, how missions work, how agents collaborate, and how the product remains safe and verifiable.[cite:18][cite:21]
+Deliverables:
 
-## Canonical traceability chain
+- Electron
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- Electron Builder
+- Secure IPC
+- Windows packaging
+- Installer
+- Single-window shell
+- Provider Manager
+- Workspace Manager
+- Navigation
+- Settings[cite:18]
 
-Product Requirements Document  
-↓  
-Product Vision  
-↓  
-Roadmap  
-↓  
-Architecture  
-↓  
-Implementation Phases  
-↓  
-Codex Execution  
-↓  
-Verification  
-↓  
-Release[cite:18][cite:21]
+### Phase 3.1 — Workspace
+
+Deliver:
+
+- Workspace Home
+- Recent Projects
+- Open Folder
+- Repository Explorer
+- Search
+- Git Status
+- Terminal
+- Monaco Editor
+- File Tabs
+- Project Indexing[cite:18]
+
+### Phase 3.2 — AI Platform
+
+Deliver:
+
+- Provider abstraction
+- OpenAI
+- Claude
+- Gemini
+- Ollama
+- OpenRouter
+- Streaming
+- Tool Calling
+- Model selector
+- API key management
+- Cost tracking[cite:18]
+
+### Phase 3.3 — Mission Center
+
+Deliver:
+
+- Mission Dashboard
+- Create Mission
+- Mission Templates
+- Mission Timeline
+- Live Logs
+- Progress Graph
+- Verification Status
+- Execution Queue
+
+This should become the application's home screen.[cite:18]
+
+### Phase 3.4 — Knowledge
+
+Deliver:
+
+- Workspace Index
+- Semantic Search
+- Repository Memory
+- Architecture Memory
+- Conversation Memory
+- RAG
+- SQLite
+- Vector Index[cite:18]
+
+### Phase 3.5 — Agents
+
+Deliver canonical agents:
+
+- Planner
+- Architect
+- Researcher
+- Executor
+- Reviewer
+- Verifier
+- Documentation
+- Release
+
+Each agent should expose status, memory, capabilities, current task, logs, and history.[cite:18]
+
+### Phase 3.6 — Production
+
+Deliver:
+
+- Windows Installer (`.exe`)
+- Auto Update
+- Code Signing
+- Crash Reporting
+- Release Pipeline
+- Performance Profiling
+- Production Build Optimisation[cite:18]
+
+## Pre-implementation repository tasks
+
+Before UI implementation begins, the repository should complete one final preparation stage:
+
+1. Promote `PRODUCT_REQUIREMENTS.md` to the canonical specification.
+2. Rewrite the root `README.md` so it presents Yantra as a product.
+3. Create missing product and architecture documents.
+4. Consolidate or archive duplicate specifications.
+5. Restructure documentation under a unified `docs/` hierarchy while preserving historical material.
+6. Lock the detailed Phase 3.0–3.6 roadmap with objectives, deliverables, dependencies, acceptance criteria, verification requirements, and out-of-scope boundaries.
+7. Audit the repository for obsolete files, duplicate documentation, stale artifacts, dead code, and inconsistent naming.[cite:18]

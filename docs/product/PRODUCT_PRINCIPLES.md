@@ -1,12 +1,14 @@
 # Product Principles
 
-- Windows-first.
-- Mission-first.
-- Workspace-grounded.
-- AI-assisted, human-supervised.
+- Windows desktop first.
+- Product-first execution.
+- Mission-first workflow design.
+- AI-agent-first orchestration.
+- Minimal UI.
+- Local-first operation.
+- Human-supervised autonomy.
 - Verification before completion.
 - Safe autonomy over unrestricted autonomy.
-- Product narrative before repository narrative.
-- Explicit approvals, capability boundaries, and traceability by default.[cite:18][cite:21][cite:27]
+- Every feature must reduce engineering complexity for the user, not expose internal system complexity.[cite:18]
 
-These principles are intended to constrain roadmap and implementation decisions so that Yantra evolves as an engineering operating system rather than collapsing into a generic chat or IDE product.[cite:18]
+Yantra should evolve as a Windows product with clean workflows and deeply hidden internal complexity. The system can remain powerful internally while exposing only the context and controls users actually need.[cite:18]
