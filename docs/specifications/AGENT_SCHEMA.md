@@ -1,5 +1,12 @@
-# Deprecated
+# Agent Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/AGENT_SCHEMA.md`
+The agent schema describes the minimum structured shape required to represent an agent role in Yantra.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- identity,
+- role,
+- capability boundaries,
+- input and output contract references,
+- execution state,
+- verification or handoff metadata.

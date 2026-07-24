@@ -1,5 +1,13 @@
-# Deprecated
+# Mission Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/MISSION_SCHEMA.md`
+The mission schema describes the structured representation of a mission across its lifecycle.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- objective,
+- scope,
+- planning state,
+- approval state,
+- execution state,
+- verification state,
+- completion outcome.
