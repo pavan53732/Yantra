@@ -1,5 +1,12 @@
-# Deprecated
+# Capability Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/CAPABILITY_SCHEMA.md`
+The capability schema describes the structured representation of a reusable Yantra capability.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- identity,
+- purpose,
+- input contract,
+- output contract,
+- side-effect boundaries,
+- verification relevance.

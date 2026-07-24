@@ -1,5 +1,12 @@
-# Deprecated
+# Memory Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/MEMORY_SCHEMA.md`
+The memory schema describes the structured representation of stored contextual memory used by Yantra.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- memory identity,
+- source context,
+- scope,
+- retention characteristics,
+- retrieval metadata,
+- traceability metadata.

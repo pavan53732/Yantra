@@ -1,5 +1,12 @@
-# Deprecated
+# Tool Schema
 
-Canonical location: `02_SPECIFICATIONS/Schemas/TOOL_SCHEMA.md`
+The tool schema describes the structured representation of a tool that can be invoked inside Yantra workflows.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expected fields
+
+- tool identity,
+- purpose,
+- invocation contract,
+- output expectations,
+- side-effect boundaries,
+- error handling metadata.
