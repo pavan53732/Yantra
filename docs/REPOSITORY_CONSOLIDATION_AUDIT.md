@@ -1,0 +1,122 @@
+# Repository Consolidation Audit
+
+## Scope
+Repository preparation for Phase 3.0 only. No Electron or UI implementation was started.
+
+## Canonical documentation
+
+- 02_SPECIFICATIONS/Architecture/OBSERVABILITY.md
+- 02_SPECIFICATIONS/Architecture/README.md
+- 02_SPECIFICATIONS/Architecture/STATE_MACHINES.md
+- 02_SPECIFICATIONS/Architecture/event-driven-core.md
+- 02_SPECIFICATIONS/Architecture/system-overview.md
+- 02_SPECIFICATIONS/Capabilities/README.md
+- 02_SPECIFICATIONS/KnowledgeGraph/README.md
+- 02_SPECIFICATIONS/Mission/README.md
+- 02_SPECIFICATIONS/Protocols/README.md
+- 02_SPECIFICATIONS/README.md
+- 02_SPECIFICATIONS/Schemas/README.md
+- 02_SPECIFICATIONS/Verifier/README.md
+- 03_IMPLEMENTATION/Agents/README.md
+- 03_IMPLEMENTATION/Capabilities/README.md
+- 03_IMPLEMENTATION/Memory/README.md
+- 03_IMPLEMENTATION/Planner/README.md
+- 03_IMPLEMENTATION/Plugins/README.md
+- 03_IMPLEMENTATION/Router/README.md
+- 03_IMPLEMENTATION/Terminal/README.md
+- 03_IMPLEMENTATION/Verifier/README.md
+- 03_IMPLEMENTATION/Workspace/README.md
+- 04_GOVERNANCE/ArchitectureCompliance/README.md
+- 04_GOVERNANCE/CI/README.md
+- 04_GOVERNANCE/Certification/README.md
+- 04_GOVERNANCE/ChangeImpact/README.md
+- 04_GOVERNANCE/Compiler/README.md
+- 04_GOVERNANCE/GovernanceManifest/README.md
+- 04_GOVERNANCE/QualityGates/README.md
+- 04_GOVERNANCE/Readiness/README.md
+- 04_GOVERNANCE/Regression/README.md
+- 04_GOVERNANCE/Releases/README.md
+- 04_GOVERNANCE/Validation/README.md
+- README.md
+- apps/desktop/README.md
+- docs/adr/README.md
+- docs/api/README.md
+- docs/architecture/AGENT_MODEL.md
+- docs/architecture/AI_PROVIDER_CONTRACT.md
+- docs/architecture/CAPABILITY_CONTRACTS.md
+- docs/architecture/IPC_ARCHITECTURE.md
+
+## Historical / preserved
+
+- 04_GOVERNANCE/ChangeImpact/LEGACY_ALIAS_RETIREMENT.md
+- WORKLOG.md
+- docs/MIGRATION_STATUS.md
+- output/legacy_retirement_audit.md
+
+## Unclear / deferred review
+
+- .ai/BOOTSTRAP.md
+- .ai/LOADING_ORDER.md
+- .ai/MISSIONS.md
+- .ai/QUALITY_GATES.md
+- .ai/RULES.md
+- .github/ISSUE_TEMPLATE/bug_report.md
+- .github/ISSUE_TEMPLATE/feature_request.md
+- .github/pull_request_template.md
+- 01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md
+- 01_FOUNDATION/CORE_PRINCIPLES.md
+- 01_FOUNDATION/ENGINEERING_PRINCIPLES.md
+- 01_FOUNDATION/GLOSSARY.md
+- 01_FOUNDATION/MISSION.md
+- 01_FOUNDATION/PHILOSOPHY.md
+- 01_FOUNDATION/SUCCESS_CRITERIA.md
+- 01_FOUNDATION/SYSTEM_INVARIANTS.md
+- 01_FOUNDATION/VISION.md
+- 02_SPECIFICATIONS/Capabilities/AI_PROVIDER_CONTRACT.md
+- 02_SPECIFICATIONS/Capabilities/CAPABILITY_CONTRACTS.md
+- 02_SPECIFICATIONS/KnowledgeGraph/KNOWLEDGE_GRAPH_SCHEMA.md
+- 02_SPECIFICATIONS/Mission/MISSION_DSL.md
+- 02_SPECIFICATIONS/Protocols/agent-protocol.md
+- 02_SPECIFICATIONS/Protocols/ipc-protocol.md
+- 02_SPECIFICATIONS/Protocols/memory-protocol.md
+- 02_SPECIFICATIONS/Protocols/planner-protocol.md
+- 02_SPECIFICATIONS/Protocols/plugin-protocol.md
+- 02_SPECIFICATIONS/Protocols/provider-protocol.md
+- 02_SPECIFICATIONS/Protocols/tool-protocol.md
+- 02_SPECIFICATIONS/Protocols/verifier-protocol.md
+- 02_SPECIFICATIONS/Schemas/AGENT_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/CAPABILITY_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/EVENT_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/EXECUTION_GRAPH_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/MEMORY_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/MISSION_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/MODEL_PROVIDER_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/PLUGIN_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/TASK_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/TOOL_SCHEMA.md
+- 02_SPECIFICATIONS/Schemas/WORKFLOW_SCHEMA.md
+- 02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md
+- 03_IMPLEMENTATION/Agents/CONTRACT.md
+- 03_IMPLEMENTATION/Agents/EVENTS.md
+- 03_IMPLEMENTATION/Agents/IMPLEMENTATION_CHECKLIST.md
+- 03_IMPLEMENTATION/Agents/INPUTS.md
+- 03_IMPLEMENTATION/Agents/OUTPUTS.md
+- 03_IMPLEMENTATION/Agents/STATE_MACHINE.md
+- 03_IMPLEMENTATION/Agents/TEST_REQUIREMENTS.md
+- 03_IMPLEMENTATION/Capabilities/CONTRACT.md
+- 03_IMPLEMENTATION/Capabilities/EVENTS.md
+- 03_IMPLEMENTATION/Capabilities/IMPLEMENTATION_CHECKLIST.md
+- 03_IMPLEMENTATION/Capabilities/INPUTS.md
+- 03_IMPLEMENTATION/Capabilities/OUTPUTS.md
+- 03_IMPLEMENTATION/Capabilities/STATE_MACHINE.md
+- 03_IMPLEMENTATION/Capabilities/TEST_REQUIREMENTS.md
+- 03_IMPLEMENTATION/Memory/CONTRACT.md
+- 03_IMPLEMENTATION/Memory/EVENTS.md
+- 03_IMPLEMENTATION/Memory/IMPLEMENTATION_CHECKLIST.md
+- 03_IMPLEMENTATION/Memory/INPUTS.md
+- 03_IMPLEMENTATION/Memory/OUTPUTS.md
+
+## Freeze check
+- PRODUCT_REQUIREMENTS.md remains the canonical product definition.
+- Phase 3 roadmap docs align with the Windows-first product direction.
+- No conflicting implementation changes were introduced in this sprint.
