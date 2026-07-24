@@ -1,0 +1,215 @@
+{
+  "result": {
+    "missionId": "mission-sample-cli",
+    "success": true,
+    "finalState": "completed",
+    "evidence": [
+      {
+        "id": "ev-parse",
+        "type": "parse",
+        "summary": "Mission parsed successfully"
+      },
+      {
+        "id": "ev-plan",
+        "type": "plan",
+        "summary": "Mission plan created",
+        "details": {
+          "taskCount": 4
+        }
+      },
+      {
+        "id": "ev-task-analyze",
+        "type": "execution",
+        "summary": "Task coordinated: Analyze mission objective",
+        "details": {
+          "taskId": "task-analyze",
+          "kind": "analyze"
+        }
+      },
+      {
+        "id": "ev-task-create-package",
+        "type": "execution",
+        "summary": "Task coordinated: Create package.json",
+        "details": {
+          "taskId": "task-create-package",
+          "kind": "create-file"
+        }
+      },
+      {
+        "id": "ev-task-run-tests",
+        "type": "execution",
+        "summary": "Task coordinated: Run tests",
+        "details": {
+          "taskId": "task-run-tests",
+          "kind": "run-command"
+        }
+      },
+      {
+        "id": "ev-task-verify",
+        "type": "verification",
+        "summary": "Task coordinated: Verify mission output",
+        "details": {
+          "taskId": "task-verify",
+          "kind": "verify"
+        }
+      },
+      {
+        "id": "exec-task-analyze",
+        "type": "execution",
+        "summary": "Executed task: Analyze mission objective",
+        "details": {
+          "objective": "Create a new TypeScript CLI project with tests"
+        }
+      },
+      {
+        "id": "exec-task-create-package",
+        "type": "execution",
+        "summary": "Executed task: Create package.json",
+        "details": {
+          "path": "package.json"
+        }
+      },
+      {
+        "id": "exec-task-run-tests",
+        "type": "execution",
+        "summary": "Executed task: Run tests",
+        "details": {
+          "command": "npm test"
+        }
+      },
+      {
+        "id": "exec-task-verify",
+        "type": "verification",
+        "summary": "Executed task: Verify mission output",
+        "details": {}
+      },
+      {
+        "id": "ev-final-verification",
+        "type": "verification",
+        "summary": "Mission verification completed",
+        "details": {
+          "missionId": "mission-sample-cli",
+          "state": "verifying"
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "evt-1",
+        "type": "mission.parsed",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli"
+        }
+      },
+      {
+        "id": "evt-2",
+        "type": "mission.planned",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli",
+          "taskCount": 4
+        }
+      },
+      {
+        "id": "evt-3",
+        "type": "mission.coordinated",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli",
+          "taskCount": 4
+        }
+      },
+      {
+        "id": "evt-4",
+        "type": "mission.executed",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli"
+        }
+      },
+      {
+        "id": "evt-5",
+        "type": "mission.runtime.verified",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli"
+        }
+      },
+      {
+        "id": "evt-6",
+        "type": "mission.runtime.completed",
+        "source": "@yantra/mission",
+        "timestamp": "2026-07-24T20:29:02.156Z",
+        "payload": {
+          "missionId": "mission-sample-cli",
+          "finalState": "completed"
+        }
+      }
+    ]
+  },
+  "history": [
+    {
+      "id": "evt-1",
+      "type": "mission.parsed",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli"
+      }
+    },
+    {
+      "id": "evt-2",
+      "type": "mission.planned",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli",
+        "taskCount": 4
+      }
+    },
+    {
+      "id": "evt-3",
+      "type": "mission.coordinated",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli",
+        "taskCount": 4
+      }
+    },
+    {
+      "id": "evt-4",
+      "type": "mission.executed",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli"
+      }
+    },
+    {
+      "id": "evt-5",
+      "type": "mission.runtime.verified",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli"
+      }
+    },
+    {
+      "id": "evt-6",
+      "type": "mission.runtime.completed",
+      "source": "@yantra/mission",
+      "timestamp": "2026-07-24T20:29:02.156Z",
+      "payload": {
+        "missionId": "mission-sample-cli",
+        "finalState": "completed"
+      }
+    }
+  ]
+}

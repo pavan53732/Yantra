@@ -1,0 +1,10 @@
+{
+  "coverage_tool": "not configured",
+  "justification": "No repository coverage toolchain is configured for mission runtime yet; reporting verified test execution plus source/test file counts.",
+  "source_file_count": 14,
+  "test_file_count": 6,
+  "verified_behavior_tests": [
+    "mission-runtime-e2e.test.mjs",
+    "mission-runtime-behavior.test.mjs"
+  ]
+}
