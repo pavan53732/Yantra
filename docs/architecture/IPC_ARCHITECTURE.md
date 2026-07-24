@@ -1,67 +1,22 @@
 # IPC Architecture
 
-> **Canonical document.** For privilege levels see
-> `docs/architecture/SECURITY_MODEL.md`. For event bus see
-> `02_SPECIFICATIONS/Architecture/event-driven-core.md`.
+Yantra's IPC architecture defines how the desktop shell coordinates internal application modules while preserving security, clarity, and Windows desktop reliability.
 
 ## Purpose
 
-Yantra's Electron IPC architecture defines how the renderer process (React UI)
-communicates with the main process (Node.js, privileged desktop capabilities).
-All renderer access to privileged APIs flows through audited IPC contracts
-defined in the preload bridge. Direct Node.js or file system access from the
-renderer is forbidden.
+IPC exists to keep the product's internal parts coordinated without exposing unsafe or unstable boundaries to the user.
 
-## Process Architecture
+## Responsibilities
 
-```
-┌────────────────────┐       contextBridge        ┌────────────────────┐
-│  Renderer Process     │ ←─────────────── │  Main Process        │
-│  React + Vite + TS    │   preload.ts bridge   │  Node.js privileged  │
-│  sandboxed            │                       │  file, terminal, git │
-└────────────────────┘                       └────────────────────┘
-```
+- Move structured messages between shell and internal subsystems.
+- Preserve a clear privilege boundary between UI and privileged operations.
+- Support mission execution, workspace activity, and verification updates.
+- Keep communication traceable and bounded.
 
-## IPC Channel Inventory
+## Boundaries
 
-| Channel | Direction | Description | Privilege |
-|---|---|---|---|
-| `workspace:open` | Renderer → Main | Open a workspace folder | Low |
-| `workspace:index` | Main → Renderer | Indexing progress events | Low |
-| `mission:create` | Renderer → Main | Create a new mission | Low |
-| `mission:update` | Main → Renderer | Mission state change events | Low |
-| `agent:dispatch` | Main internal | Dispatch task to agent | Privileged |
-| `capability:invoke` | Main internal | Invoke a capability tool | Privileged |
-| `terminal:exec` | Renderer → Main | Execute terminal command (approval required) | High |
-| `terminal:output` | Main → Renderer | Stream terminal output | Low |
-| `fs:read` | Renderer → Main | Read file content | Low |
-| `fs:write` | Renderer → Main | Write file (approval required) | High |
-| `git:status` | Renderer → Main | Read git status | Low |
-| `git:commit` | Renderer → Main | Commit (approval required) | High |
-| `provider:complete` | Main internal | AI provider completion request | Medium |
-| `provider:stream` | Main → Renderer | Stream AI response tokens | Low |
-| `settings:get` | Renderer → Main | Read settings | Low |
-| `settings:set` | Renderer → Main | Write settings | Low |
+IPC should not become an unstructured message bus. It must remain explicit, documented, and suitable for a governed desktop product.
 
-## contextBridge Contract Rules
+## Verification expectations
 
-- The preload script exposes **only** the channels listed above.
-- No raw `ipcRenderer` or `ipcMain` is exposed to the renderer.
-- All channel names are string-typed enums — no dynamic channel names.
-- High-privilege channels (`terminal:exec`, `fs:write`, `git:commit`) check
-  for an active human approval token before dispatching to Main.
-- The renderer never receives raw file system handles or process references.
-
-## Security Constraints
-
-- `nodeIntegration: false` on all BrowserWindow instances.
-- `contextIsolation: true` on all BrowserWindow instances.
-- `sandbox: true` on all BrowserWindow instances.
-- CSP headers set on all renderer pages.
-- webSecurity: never disabled.
-
-## Cross-References
-
-- Security model: `docs/architecture/SECURITY_MODEL.md`
-- Event bus: `02_SPECIFICATIONS/Architecture/event-driven-core.md`
-- Phase 3.0 deliverables: `docs/roadmap/PHASE_3_ROADMAP.md#phase-30--product-foundation`
+IPC behavior should be checked for message safety, boundary enforcement, response handling, and failure isolation.

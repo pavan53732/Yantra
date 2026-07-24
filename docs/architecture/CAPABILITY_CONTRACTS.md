@@ -1,5 +1,23 @@
-# Deprecated
+# Capability Contracts
 
-Canonical location: `02_SPECIFICATIONS/Capabilities/CAPABILITY_CONTRACTS.md`
+Capability contracts define how reusable product capabilities are exposed to the rest of Yantra in a controlled, reviewable way.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Purpose
+
+A capability contract exists to prevent hidden coupling and to keep execution surfaces stable as the product grows.
+
+## Expectations
+
+- Each capability has a defined purpose.
+- Inputs and outputs are explicit.
+- Side effects are documented.
+- Failure modes are visible and bounded.
+- Interaction with missions, agents, and verification is traceable.
+
+## Boundaries
+
+Capabilities support product workflows, but they do not replace canonical mission, workspace, or governance models.
+
+## Verification expectations
+
+Capability contracts should be checked for interface clarity, dependency discipline, and correct use inside governed workflows.
