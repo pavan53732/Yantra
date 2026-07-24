@@ -1,0 +1,3 @@
+# Protocols
+
+Canonical protocol definitions.

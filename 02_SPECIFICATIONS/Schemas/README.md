@@ -1,0 +1,3 @@
+# Schemas
+
+Canonical schema definitions.
