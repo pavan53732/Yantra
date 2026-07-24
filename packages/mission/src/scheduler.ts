@@ -1,7 +1,5 @@
-import type { MissionTask } from './types';
+import type { MissionPlan, MissionTask } from './types';
 
-export class TaskScheduler {
-  schedule(tasks: MissionTask[]): MissionTask[] {
-    return [...tasks];
-  }
+export function scheduleTasks(plan: MissionPlan): MissionTask[] {
+  return [...plan.tasks];
 }

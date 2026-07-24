@@ -1,6 +1,6 @@
 import type { MissionState } from './types';
 
-const transitions: Record<MissionState, MissionState[]> = {
+const allowed: Record<MissionState, MissionState[]> = {
   created: ['parsed', 'failed'],
   parsed: ['planned', 'failed'],
   planned: ['coordinating', 'failed'],
@@ -11,13 +11,13 @@ const transitions: Record<MissionState, MissionState[]> = {
   failed: []
 };
 
-export function assertTransition(current: MissionState, next: MissionState): MissionState {
-  if (!transitions[current].includes(next)) {
-    throw new Error(`Invalid mission transition: ${current} -> ${next}`);
-  }
-  return next;
+export function canTransition(from: MissionState, to: MissionState): boolean {
+  return allowed[from].includes(to);
 }
 
-export function missionStateGraph(): Record<MissionState, MissionState[]> {
-  return transitions;
+export function transition(from: MissionState, to: MissionState): MissionState {
+  if (!canTransition(from, to)) {
+    throw new Error(`Invalid mission transition: ${from} -> ${to}`);
+  }
+  return to;
 }

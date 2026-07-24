@@ -1,8 +1,9 @@
 # @yantra/mission
 
-Yantra mission runtime.
+Yantra Mission Runtime.
 
-## Scope
+## Responsibilities
+- Mission engine
 - Mission parser
 - Mission context
 - Planner
@@ -11,10 +12,10 @@ Yantra mission runtime.
 - Task scheduler
 - Mission state machine
 - Mission persistence
-- Runtime event flow
+- Mission lifecycle
 - Initial verification integration
 
 ## Rules
-- Imports contracts from `@yantra/sdk`
-- Uses `@yantra/core` for runtime infrastructure
-- Does not implement advanced agents, provider-specific logic, or UI
+- Imports shared contracts only from `@yantra/sdk`
+- Uses `@yantra/core` as the runtime infrastructure layer
+- Avoids provider-specific implementations and UI concerns

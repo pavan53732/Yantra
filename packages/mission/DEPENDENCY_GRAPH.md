@@ -1,15 +1,15 @@
 # Mission Runtime Dependency Graph
 
 ```text
-runMission
-└── createRuntimeKernel (@yantra/core)
-    └── MissionEngine
-        ├── DefaultMissionParser
-        ├── DefaultMissionPlanner
-        ├── DefaultMissionCoordinator
-        │   └── TaskScheduler
-        ├── DefaultMissionVerifier
-        └── InMemoryMissionPersistence
+MissionEngine
+├── parseMission
+├── createMissionPlan
+├── scheduleTasks
+├── coordinateMission
+├── executeTasks
+├── verifyMission
+├── InMemoryMissionPersistence
+└── transition
 ```
 
 External dependencies:

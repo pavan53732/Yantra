@@ -1,54 +1,85 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-import { RuntimeEventTypes } from '@yantra/sdk';
-import type { EventBus, RuntimeLogger } from '@yantra/core';
-import { assertTransition } from './state-machine';
-import type { MissionEnvelope } from '@yantra/sdk';
-import type { MissionContext, MissionRuntimeDependencies, MissionResult } from './types';
+import type { RuntimeKernel } from '@yantra/core';
+import type { MissionEnvelope, RuntimeEvent } from '@yantra/sdk';
+import { parseMission } from './parser';
+import { createMissionPlan } from './planner';
+import { scheduleTasks } from './scheduler';
+import { coordinateMission } from './coordinator';
+import { executeTasks } from './execution-pipeline';
+import { verifyMission } from './verification';
+import { InMemoryMissionPersistence } from './persistence';
+import { transition } from './state-machine';
+import { MissionRuntimeEventTypes } from './events';
+import type { MissionContext, MissionResult } from './types';
+
+export interface MissionEngineOptions {
+  kernel: RuntimeKernel;
+  persistence?: InMemoryMissionPersistence;
+}
 
 export class MissionEngine {
-  constructor(
-    private readonly events: EventBus,
-    private readonly logger: RuntimeLogger,
-    private readonly dependencies: MissionRuntimeDependencies
-  ) {}
+  private readonly kernel: RuntimeKernel;
+  private readonly persistence: InMemoryMissionPersistence;
 
-  async run(input: MissionEnvelope, workspacePath: string): Promise<MissionResult> {
-    await fs.mkdir(workspacePath, { recursive: true });
-    const parsed = this.dependencies.parser.parse(input);
-
-    let context: MissionContext = {
-      missionId: parsed.envelope.id,
-      objective: parsed.envelope.objective,
-      workspacePath: path.resolve(workspacePath),
-      state: 'created',
-      evidence: []
-    };
-
-    context.state = assertTransition(context.state, 'parsed');
-    this.emit('mission.parsed', context.missionId);
-
-    context.plan = this.dependencies.planner.createPlan(parsed);
-    context.state = assertTransition(context.state, 'planned');
-    await this.dependencies.persistence.save(context);
-    this.emit(RuntimeEventTypes.MissionPlanned, context.missionId);
-
-    context = await this.dependencies.coordinator.execute(context);
-    await this.dependencies.persistence.save(context);
-
-    const result = await this.dependencies.verifier.verify(context);
-    this.emit(RuntimeEventTypes.MissionCompleted, context.missionId, { success: result.success });
-    this.logger.info('mission.completed', { missionId: context.missionId, success: result.success });
-    return result;
+  constructor(options: MissionEngineOptions) {
+    this.kernel = options.kernel;
+    this.persistence = options.persistence ?? new InMemoryMissionPersistence();
   }
 
-  private emit(type: string, missionId: string, payload: Record<string, unknown> = {}): void {
-    this.events.publish({
-      id: `evt-${missionId}-${type}`,
-      type,
-      source: '@yantra/mission',
-      timestamp: new Date().toISOString(),
-      payload: { missionId, ...payload }
-    });
+  async run(input: MissionEnvelope): Promise<MissionResult> {
+    const events: RuntimeEvent[] = [];
+    const publish = (type: string, payload: Record<string, unknown>) => {
+      const event = {
+        id: `evt-${events.length + 1}`,
+        type,
+        source: '@yantra/mission',
+        timestamp: new Date().toISOString(),
+        payload
+      };
+      this.kernel.events.publish(event);
+      events.push(event);
+    };
+
+    let context: MissionContext = parseMission(input);
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionParsed, { missionId: context.mission.id });
+
+    context.state = transition(context.state, 'planned');
+    context.plan = createMissionPlan(context);
+    context.updatedAt = new Date().toISOString();
+    context.evidence.push({ id: 'ev-plan', type: 'plan', summary: 'Mission plan created', details: { taskCount: context.plan.tasks.length } });
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionPlanned, { missionId: context.mission.id, taskCount: context.plan.tasks.length });
+
+    context.state = transition(context.state, 'coordinating');
+    const scheduled = scheduleTasks(context.plan);
+    const coordinationEvidence = await coordinateMission(context, scheduled);
+    context.evidence.push(...coordinationEvidence);
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionCoordinated, { missionId: context.mission.id, taskCount: scheduled.length });
+
+    context.state = transition(context.state, 'executing');
+    const executionEvidence = await executeTasks(scheduled);
+    context.evidence.push(...executionEvidence);
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionExecuted, { missionId: context.mission.id });
+
+    context.state = transition(context.state, 'verifying');
+    const verificationEvidence = await verifyMission(context);
+    context.evidence.push(verificationEvidence);
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionVerified, { missionId: context.mission.id });
+
+    context.state = transition(context.state, 'completed');
+    context.updatedAt = new Date().toISOString();
+    await this.persistence.save(context);
+    publish(MissionRuntimeEventTypes.MissionCompleted, { missionId: context.mission.id, finalState: context.state });
+
+    return {
+      missionId: context.mission.id,
+      success: true,
+      finalState: context.state,
+      evidence: context.evidence,
+      events
+    };
   }
 }

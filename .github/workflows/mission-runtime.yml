@@ -1,0 +1,28 @@
+name: mission-runtime
+
+on:
+  push:
+    paths:
+      - 'packages/mission/**'
+      - 'packages/core/**'
+      - 'packages/sdk/**'
+      - '.github/workflows/mission-runtime.yml'
+  pull_request:
+    paths:
+      - 'packages/mission/**'
+      - 'packages/core/**'
+      - 'packages/sdk/**'
+      - '.github/workflows/mission-runtime.yml'
+
+jobs:
+  mission:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify mission package files exist
+        run: |
+          test -f packages/mission/package.json
+          test -f packages/mission/src/engine.ts
+          test -f packages/mission/src/parser.ts
+          test -f packages/mission/src/planner.ts
+          test -f packages/mission/src/coordinator.ts

@@ -1,62 +1,16 @@
-import type { MissionPlan, MissionPlanner, ParsedMission } from './types';
+import type { MissionContext, MissionPlan, MissionTask } from './types';
 
-export class DefaultMissionPlanner implements MissionPlanner {
-  createPlan(input: ParsedMission): MissionPlan {
-    const missionId = input.envelope.id;
-    return {
-      missionId,
-      tasks: [
-        {
-          id: `${missionId}:task:create-package`,
-          title: 'Create package manifest',
-          action: 'create-file',
-          input: {
-            path: 'package.json',
-            content: JSON.stringify({ name: 'generated-cli', version: '1.0.0', type: 'module', scripts: { test: 'node --test' } }, null, 2)
-          }
-        },
-        {
-          id: `${missionId}:task:create-cli`,
-          title: 'Create CLI entrypoint',
-          action: 'create-file',
-          input: {
-            path: 'src/index.ts',
-            content: "export function main(){ return 'hello from yantra'; }
-"
-          }
-        },
-        {
-          id: `${missionId}:task:create-test`,
-          title: 'Create test file',
-          action: 'create-file',
-          input: {
-            path: 'tests/index.test.js',
-            content: "import test from 'node:test';
-import assert from 'node:assert/strict';
+export function createMissionPlan(context: MissionContext): MissionPlan {
+  const objective = context.mission.objective.toLowerCase();
+  const tasks: MissionTask[] = [
+    { id: 'task-analyze', title: 'Analyze mission objective', kind: 'analyze', input: { objective: context.mission.objective } }
+  ];
 
-test('cli',()=>{ assert.equal(1,1); });
-"
-          }
-        },
-        {
-          id: `${missionId}:task:init-git`,
-          title: 'Initialize git',
-          action: 'initialize-git',
-          input: {}
-        },
-        {
-          id: `${missionId}:task:run-test`,
-          title: 'Run tests',
-          action: 'run-command',
-          input: { command: 'node --test tests/index.test.js' }
-        },
-        {
-          id: `${missionId}:task:verify`,
-          title: 'Verify mission outputs',
-          action: 'verify',
-          input: {}
-        }
-      ]
-    };
+  if (objective.includes('typescript cli')) {
+    tasks.push({ id: 'task-create-package', title: 'Create package.json', kind: 'create-file', input: { path: 'package.json' } });
+    tasks.push({ id: 'task-run-tests', title: 'Run tests', kind: 'run-command', input: { command: 'npm test' } });
   }
+
+  tasks.push({ id: 'task-verify', title: 'Verify mission output', kind: 'verify' });
+  return { missionId: context.mission.id, tasks };
 }

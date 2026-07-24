@@ -1,7 +1,7 @@
 # Phase 2.0.3 — Mission Runtime
 
 ## Scope
-Implement the Yantra mission runtime.
+Implement the Mission Runtime only.
 
 ## Included
 - Mission engine
@@ -13,7 +13,7 @@ Implement the Yantra mission runtime.
 - Task scheduler
 - Mission state machine
 - Mission persistence
-- Runtime event flow
+- Runtime mission events
 - Mission lifecycle
 - Initial verification integration
 
@@ -21,7 +21,5 @@ Implement the Yantra mission runtime.
 - Advanced agents
 - Provider-specific implementations
 - Electron UI
+- Capability implementations beyond mission-runtime needs
 - Phase 2.0.4+ work
-
-## End-to-End Validation Target
-Mission -> Parse -> Plan -> Coordinate -> Execute -> Verify -> Complete

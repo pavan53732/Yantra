@@ -1,4 +1,32 @@
-import type { MissionEnvelope } from '@yantra/sdk';
+import type { MissionEnvelope, RuntimeEvent } from '@yantra/sdk';
+
+export interface MissionTask {
+  id: string;
+  title: string;
+  kind: 'analyze' | 'create-file' | 'run-command' | 'verify';
+  input?: Record<string, unknown>;
+}
+
+export interface MissionPlan {
+  missionId: string;
+  tasks: MissionTask[];
+}
+
+export interface MissionContext {
+  mission: MissionEnvelope;
+  plan?: MissionPlan;
+  state: MissionState;
+  evidence: MissionEvidence[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface MissionEvidence {
+  id: string;
+  type: 'parse' | 'plan' | 'execution' | 'verification';
+  summary: string;
+  details?: Record<string, unknown>;
+}
 
 export type MissionState =
   | 'created'
@@ -10,70 +38,15 @@ export type MissionState =
   | 'completed'
   | 'failed';
 
-export interface MissionTask {
-  id: string;
-  title: string;
-  action: 'create-file' | 'run-command' | 'initialize-git' | 'verify';
-  input: Record<string, unknown>;
-}
-
-export interface MissionPlan {
-  missionId: string;
-  tasks: MissionTask[];
-}
-
-export interface MissionVerificationEvidence {
-  type: 'file' | 'command' | 'git' | 'verification';
-  detail: string;
-  success: boolean;
-}
-
 export interface MissionResult {
   missionId: string;
   success: boolean;
   finalState: MissionState;
-  evidence: MissionVerificationEvidence[];
-}
-
-export interface ParsedMission {
-  envelope: MissionEnvelope;
-  normalizedObjective: string;
-}
-
-export interface MissionContext {
-  missionId: string;
-  objective: string;
-  workspacePath: string;
-  state: MissionState;
-  plan?: MissionPlan;
-  evidence: MissionVerificationEvidence[];
+  evidence: MissionEvidence[];
+  events: RuntimeEvent[];
 }
 
 export interface MissionPersistence {
   save(context: MissionContext): Promise<void>;
-  load(missionId: string): Promise<MissionContext | null>;
-}
-
-export interface MissionRuntimeDependencies {
-  parser: MissionParser;
-  planner: MissionPlanner;
-  coordinator: MissionCoordinator;
-  verifier: MissionVerifier;
-  persistence: MissionPersistence;
-}
-
-export interface MissionParser {
-  parse(input: MissionEnvelope): ParsedMission;
-}
-
-export interface MissionPlanner {
-  createPlan(input: ParsedMission): MissionPlan;
-}
-
-export interface MissionCoordinator {
-  execute(context: MissionContext): Promise<MissionContext>;
-}
-
-export interface MissionVerifier {
-  verify(context: MissionContext): Promise<MissionResult>;
+  load(missionId: string): Promise<MissionContext | undefined>;
 }
