@@ -1,20 +1,24 @@
 # Roadmap
 
-Yantra's roadmap is now product-first and Windows-first. The engineering foundation already exists to enable the product; the next major phase is turning that foundation into a real Windows desktop application with a mission-oriented operating model.[cite:18][cite:21]
+Yantra's roadmap is product-first and Windows-first. The engineering foundation already exists to enable the product; the next major step is repository consolidation before Phase 3.0 implementation.
 
-## Roadmap files
+## Canonical roadmap
 
-- `PHASE_3_ROADMAP.md` — Windows product foundation and autonomous engineering milestones
-- `PHASE_4_ROADMAP.md` — later platform expansion and collaboration capabilities[cite:18]
+- `PHASE_3_ROADMAP.md`
+- `PHASE_4_ROADMAP.md`
 
-## Product milestone model
+## Historical roadmap material
 
-- Phase 3.0 — Product Foundation
-- Phase 3.1 — Workspace
-- Phase 3.2 — AI Platform
-- Phase 3.3 — Mission Center
-- Phase 3.4 — Knowledge
-- Phase 3.5 — Agents
-- Phase 3.6 — Production[cite:18]
+- `phase-0-research.md`
+- `phase-1-product-definition.md`
+- `phase-2-architecture.md`
+- `phase-3-core-engine.md`
+- `phase-4-desktop-application.md`
+- `PHASE_0_5_SPECIFICATION_FREEZE.md`
+- `PHASE_0_7_SPECIFICATION_RELEASE.md`
+- `PHASE_0_8_ARCHITECTURE_VALIDATION.md`
+- `PHASE_0_9_ARCHITECTURE_CERTIFICATION.md`
 
-The roadmap should be read as a product realization sequence rather than as a runtime-only infrastructure sequence.[cite:18][cite:21]
+## Repository consolidation note
+
+The repository should be kept structurally stable and documentation-consistent before any Phase 3.0 implementation begins.

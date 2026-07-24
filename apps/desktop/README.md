@@ -1,20 +1,18 @@
 # Desktop Application
 
-The Electron-based desktop application for the Yantra platform.
+This directory is reserved for the shipped Windows desktop product boundary.
 
-## Structure
+## Purpose
 
-```
-apps/desktop/
-├── src/
-│   ├── main/           # Electron main process
-│   ├── renderer/       # React renderer process
-│   └── preload/        # Preload scripts
-├── assets/             # App icons and assets
-├── package.json
-└── tsconfig.json
-```
+- Host the Electron application shell.
+- Own the user-facing product experience.
+- Separate shipped product code from reusable packages.
 
-## Development
+## Status
 
-*Setup instructions will be added when the application is scaffolded.*
+- Reserved boundary for Phase 3.0.
+- No implementation code added during repository consolidation.
+
+## Relationship to packages
+
+Reusable engine and domain logic should remain in `packages/`. The desktop app should depend on those packages rather than absorbing their responsibilities.
