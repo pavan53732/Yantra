@@ -1,3 +1,6 @@
 # Architecture Principles
 
-No knowledge may exist exclusively in an AI prompt, chat conversation, or developer memory. Any knowledge required to build, operate, verify, or maintain Yantra must exist in the repository in a canonical, version-controlled form.
+- Keep the workspace, mission, agent, provider, memory, and verification domains explicit.
+- Separate orchestration concerns from external integrations.
+- Preserve Windows-first product direction.
+- Avoid undocumented coupling across layers.

@@ -1,3 +1,3 @@
 # Contributing
 
-Contributors should treat `docs/product/PRODUCT_REQUIREMENTS.md` as the canonical product specification and ensure that roadmap, architecture, implementation, and verification changes remain traceable to product intent.[cite:18][cite:21]
+Contributors should follow the canonical documentation chain before making changes and should keep all work aligned with the PRD, roadmap, architecture, and governance documents.
