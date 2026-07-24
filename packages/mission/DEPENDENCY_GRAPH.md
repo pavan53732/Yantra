@@ -1,17 +1,3 @@
-# Mission Runtime Dependency Graph
+# Dependency Graph
 
-```text
-MissionEngine
-├── parseMission
-├── createMissionPlan
-├── scheduleTasks
-├── coordinateMission
-├── executeTasks
-├── verifyMission
-├── InMemoryMissionPersistence
-└── transition
-```
-
-External dependencies:
-- `@yantra/sdk`
-- `@yantra/core`
+This document records the major dependency relationships that shape the mission package and related Yantra modules.

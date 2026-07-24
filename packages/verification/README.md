@@ -1,10 +1,3 @@
-# @yantra/verification
+# Verification Package
 
-Verification engine for Yantra mission evidence.
-
-## Scope
-- Verification categories
-- Rule-based checks
-- Blocking vs recoverable findings
-- Verification summary generation
-- Evidence validation
+This package contains verification-related functionality and supporting artifacts used by Yantra.

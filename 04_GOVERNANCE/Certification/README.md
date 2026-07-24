@@ -2,6 +2,9 @@
 
 Certification records whether a phase, subsystem, or repository state satisfies its documented release or readiness conditions.
 
-## Expectations
+## Focus
 
-Certification should be tied to explicit evidence, not implied confidence.
+- explicit evidence,
+- readiness status,
+- phase or subsystem confidence,
+- traceable certification decisions.

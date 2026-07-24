@@ -1,8 +1,3 @@
 # Resources
 
-Static resources shared across the project: icons, prompt templates, test
-fixtures, and other non-code assets.
-
-## Contents
-
-*Resources will be added here as needed.*
+This directory holds supporting resources that may assist Yantra documentation, development, or verification workflows.
