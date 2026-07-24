@@ -23,7 +23,6 @@ Yantra's roadmap is product-first and Windows-first. The engineering foundation 
 
 The repository should be kept structurally stable and documentation-consistent before any Phase 3.0 implementation begins.
 
-
 ## Historical file policy
 
 Historical files are retained for traceability only. They are not authoritative for current scope, sequencing, or phase naming. Where a historical file conflicts with `PHASE_3_ROADMAP.md`, the canonical roadmap wins.

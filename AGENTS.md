@@ -19,7 +19,6 @@
 - Governance
 - Release
 
-
 ## Navigation notes
 
 - Use `docs/` for canonical product, roadmap, and architecture guidance.
