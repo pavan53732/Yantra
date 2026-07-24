@@ -1,17 +1,12 @@
 # Decision Record Template
 
-## Decision ID
+Use decision records to capture meaningful changes to product, architecture, workflow, or governance intent.
 
-## Status
+## Minimum fields
 
-## Owner
-
-## Date
-
-## Alternatives
-
-## Risk
-
-## Impact
-
-## Reversal Cost
+- Title
+- Status
+- Context
+- Decision
+- Consequences
+- Related documents or contracts

@@ -1,3 +1,14 @@
 # Architecture Manifest
 
-The root contract describing architecture version, status, counts, compiler version, compliance target, and implementation authorization.
+The architecture manifest provides a structured view of Yantra's primary product and system domains.
+
+## Core domains
+
+- Workspace
+- Mission
+- Agents
+- Providers
+- Memory
+- Knowledge
+- Verification
+- Governance
