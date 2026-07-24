@@ -23,3 +23,5 @@
 - `examples/`
 - `tests/`
 - `tools/`
+
+- docs/governance/DOCUMENTATION_GOVERNANCE.md — documentation authority, historical file policy, and docs/ versus numbered-folder relationship.

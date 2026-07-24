@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 4 — Desktop Application
 
 **Goal:** Build the Electron-based Desktop UI as one client of the already-working Core Engine.

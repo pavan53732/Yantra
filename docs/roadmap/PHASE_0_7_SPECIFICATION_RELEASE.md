@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 0.7 — Specification Release
 
 This phase converts the spec set into a release artifact.

@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 0 — Research
 
 **Goal:** De-risk technology and design choices before committing to any architecture.

@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 1 — Product Definition
 
 **Goal:** Define what Yantra must do before defining how it is built.

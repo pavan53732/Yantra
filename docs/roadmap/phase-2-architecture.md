@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 2 — Architecture
 
 **Goal:** Design the layered engine architecture and its contracts before writing implementation code.

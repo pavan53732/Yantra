@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
+
 # Phase 3 — Core Engine
 
 **Goal:** Implement the engine — Mission Engine, Orchestrator, Capability Layer, Memory Layer, AI Router, Verification Engine — with zero dependency on any GUI framework.

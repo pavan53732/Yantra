@@ -103,3 +103,14 @@ Deliverables:
 - Release Pipeline
 - Performance Profiling
 - Production Build Optimisation[cite:18]
+
+
+## Architecture follow-through
+
+Phase execution must be read alongside the relevant architecture documents in `docs/architecture/`.
+
+Minimum expectation before implementation of a phase slice:
+
+- architecture intent is documented for affected domains,
+- dependencies and verification expectations are identified,
+- out-of-scope items remain excluded unless explicitly approved.

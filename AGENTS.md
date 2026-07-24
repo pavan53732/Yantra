@@ -18,3 +18,10 @@
 - Implementation
 - Governance
 - Release
+
+
+## Navigation notes
+
+- Use `docs/` for canonical product, roadmap, and architecture guidance.
+- Use the numbered stage folders as execution sequencing aids, not as replacements for canonical product definitions.
+- Apply the mandatory quality gates in `.ai/QUALITY_GATES.md` before merge or release.
