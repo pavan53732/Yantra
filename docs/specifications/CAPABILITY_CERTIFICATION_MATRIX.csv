@@ -1,0 +1,7 @@
+Capability,Certified,Owner,Notes
+Filesystem,Yes,Capability Layer,Certified by contract tests
+Git,Yes,Capability Layer,Certified by contract tests
+Terminal,Yes,Capability Layer,Certified by contract tests
+SQLite,Yes,Memory Engine,Certified by contract tests
+OpenAI Provider,Yes,AI Router,Certified by provider tests
+Claude Provider,Yes,AI Router,Certified by provider tests

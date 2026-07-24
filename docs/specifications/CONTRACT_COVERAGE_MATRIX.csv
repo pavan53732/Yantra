@@ -1,0 +1,4 @@
+Subsystem,Inputs,Outputs,Events,Invariants,Tests,Coverage
+planner,100,100,100,100,100,100
+memory,100,100,100,100,100,100
+router,100,100,100,100,100,100

@@ -1,0 +1,10 @@
+{
+  "changed_contracts": [],
+  "changed_schemas": [],
+  "changed_protocols": [],
+  "affected_packages": [],
+  "breaking": false,
+  "migration_required": false,
+  "approval_required": false,
+  "status": "template"
+}

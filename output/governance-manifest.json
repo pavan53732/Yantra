@@ -1,0 +1,21 @@
+{
+  "governance": {
+    "architecture": "v1.0.0",
+    "contracts": "v1.0.0",
+    "compiler": "v1.0.0"
+  },
+  "implementation": {
+    "status": "locked"
+  },
+  "merge_policy": {
+    "contract_required": true,
+    "architecture_validation": "mandatory",
+    "adr_required": "breaking_changes"
+  },
+  "quality": {
+    "required_gate": "100%"
+  },
+  "runtime": {
+    "authorised": false
+  }
+}
