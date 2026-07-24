@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Governs inter-process communication between the Yantra engine process (`packages/*`) and any UI client process (e.g. the Electron main/renderer split in `apps/desktop`), keeping the engine UI-agnostic per `ARCHITECTURE_PRINCIPLES.md`.
+Governs inter-process communication between the Yantra engine process (`packages/*`) and any UI client process (e.g. the Electron main/renderer split in `apps/desktop`), keeping the engine UI-agnostic per `01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`.
 
 ## Message Types
 
@@ -22,7 +22,7 @@ Governs inter-process communication between the Yantra engine process (`packages
 ## Error Semantics
 
 - Error codes: `unauthorized`, `mission_not_found`, `command_rejected` (policy violation), `engine_unavailable`.
-- A UI client crash or disconnect (per `FAILURE_MODEL.md` scenario 6, Electron crash) MUST NOT affect an in-progress Mission — the engine continues running headlessly and the client resumes its subscription on reconnect.
+- A UI client crash or disconnect (per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 6, Electron crash) MUST NOT affect an in-progress Mission — the engine continues running headlessly and the client resumes its subscription on reconnect.
 
 ## Retry Rules
 

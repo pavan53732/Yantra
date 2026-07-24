@@ -4,7 +4,7 @@ Shared packages and libraries that make up the Yantra engine — the AI
 Engineering Operating System (AEOS) core. Every package here is independently
 testable and communicates with other layers only through the
 [Event Bus](../docs/architecture/EVENT_BUS.md), per
-[`ARCHITECTURE_PRINCIPLES.md`](../docs/architecture/ARCHITECTURE_PRINCIPLES.md).
+[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../docs/architecture/01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md).
 
 ## Packages
 

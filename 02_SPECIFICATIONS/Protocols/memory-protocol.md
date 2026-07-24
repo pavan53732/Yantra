@@ -20,7 +20,7 @@ Governs how subsystems read from and write to the Memory Layer (see `MEMORY_SCHE
 
 ## Error Semantics
 
-- Error codes: `schema_invalid`, `store_unavailable`, `checksum_mismatch` (corruption per `FAILURE_MODEL.md` scenario 4), `conflict_detected`.
+- Error codes: `schema_invalid`, `store_unavailable`, `checksum_mismatch` (corruption per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 4), `conflict_detected`.
 - `store_unavailable` triggers fallback to last known-good snapshot, never returns partial/corrupt data silently.
 
 ## Retry Rules

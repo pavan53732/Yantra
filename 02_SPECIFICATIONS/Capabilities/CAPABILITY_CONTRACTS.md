@@ -34,7 +34,7 @@ Orchestrator never calls a provider-specific method.
 
 Contract:
 
-- `exec(command, options) -> { exit_code, stdout_ref, stderr_ref }` — MUST enforce `timeout_seconds` server-side (`FAILURE_MODEL.md` scenario 9)
+- `exec(command, options) -> { exit_code, stdout_ref, stderr_ref }` — MUST enforce `timeout_seconds` server-side (`01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 9)
 - `kill(process_id) -> { }`
 - `status(process_id) -> { state }`
 
@@ -46,7 +46,7 @@ Contract:
 
 - `commit(message, files) -> { commit_sha }`
 - `branch(name) -> { }`
-- `merge(branch) -> { conflicts: [] }` — conflicts are returned as structured data, never thrown as an unhandled error (`FAILURE_MODEL.md` scenario 8)
+- `merge(branch) -> { conflicts: [] }` — conflicts are returned as structured data, never thrown as an unhandled error (`01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 8)
 - `diff(ref_a, ref_b) -> { patch }`
 - `push(remote, branch) -> { }` — never force-pushes implicitly
 

@@ -11,4 +11,4 @@
 ## Exit Criteria
 
 - Desktop app fully functional using only the public engine API/Event Bus — no direct imports of internal engine packages that bypass the Mission API.
-- The same Core Engine remains independently usable via CLI, headless server, CI/CD, and IDE integrations, per the long-term vision in `ARCHITECTURE_PRINCIPLES.md`.
+- The same Core Engine remains independently usable via CLI, headless server, CI/CD, and IDE integrations, per the long-term vision in `01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`.

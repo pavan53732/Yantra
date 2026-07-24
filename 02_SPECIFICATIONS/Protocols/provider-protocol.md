@@ -17,7 +17,7 @@ Governs how the AI Router communicates with AI Providers implementing the common
 1. Router selects a provider by `priority` and `status: healthy` (see `MODEL_PROVIDER_SCHEMA.md`).
 2. Router emits `provider.generate_request` or `provider.stream_request`.
 3. On success, provider returns `provider.generate_response` or a `provider.stream_chunk`* sequence terminated by `provider.stream_end`.
-4. On failure, Router fails over to the next-priority provider per `FAILURE_MODEL.md` scenarios 1-2, emitting `ProviderFailed`.
+4. On failure, Router fails over to the next-priority provider per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenarios 1-2, emitting `ProviderFailed`.
 
 ## Error Semantics
 

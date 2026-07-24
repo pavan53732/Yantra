@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Defines the canonical shape of a Mission — the top-level unit of work in Yantra, as introduced in [`MISSION.md`](../../MISSION.md). Every client (chat, CLI, API, CI/CD, IDE) creates a Mission using this schema.
+Defines the canonical shape of a Mission — the top-level unit of work in Yantra, as introduced in [`01_FOUNDATION/MISSION.md`](../../01_FOUNDATION/MISSION.md). Every client (chat, CLI, API, CI/CD, IDE) creates a Mission using this schema.
 
 ## Schema
 

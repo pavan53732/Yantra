@@ -2,11 +2,11 @@
 
 **Status:** planned — no implementation yet (Phase 3, gated by an approved
 specification per
-[`ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/ARCHITECTURE_PRINCIPLES.md)).
+[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md)).
 
 ## Purpose
 
-Routes LLM requests across providers (OpenAI, Claude, OpenRouter, Qwen, local models), with fallback/retry policy per FAILURE_MODEL.md scenarios 1-2.
+Routes LLM requests across providers (OpenAI, Claude, OpenRouter, Qwen, local models), with fallback/retry policy per 01_FOUNDATION/SYSTEM_INVARIANTS.md scenarios 1-2.
 
 ## Layer
 

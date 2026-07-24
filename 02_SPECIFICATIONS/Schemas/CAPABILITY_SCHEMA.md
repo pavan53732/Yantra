@@ -27,7 +27,7 @@ Defines a Capability — a registered, contract-bound tool exposed to agents via
 
 - `capability_id` MUST be unique, dot-namespaced.
 - `risk_level: critical` MUST have `requires_approval: true`.
-- `allowed_roles` MUST be consistent with `SYSTEM_INVARIANTS.md`.
+- `allowed_roles` MUST be consistent with `01_FOUNDATION/SYSTEM_INVARIANTS.md`.
 
 ## Versioning Strategy
 

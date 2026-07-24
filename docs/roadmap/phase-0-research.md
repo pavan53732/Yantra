@@ -6,7 +6,7 @@
 
 - Survey existing multi-agent orchestration frameworks and their failure modes.
 - Evaluate AI provider APIs (OpenAI, Claude, OpenRouter, Qwen, Black Box AI) for capability, cost, and reliability characteristics relevant to the AI Router.
-- Evaluate vector DB / memory backends (Qdrant, LanceDB, SQLite+embeddings) against the Memory Layer's consistency and recovery requirements from `FAILURE_MODEL.md`.
+- Evaluate vector DB / memory backends (Qdrant, LanceDB, SQLite+embeddings) against the Memory Layer's consistency and recovery requirements from `01_FOUNDATION/SYSTEM_INVARIANTS.md`.
 - Survey event-bus / message-queue options suitable for a single-machine desktop deployment that can later scale to a headless server.
 
 ## Exit Criteria

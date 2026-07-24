@@ -4,7 +4,7 @@
 
 ## Scope
 
-- Finalize the layered architecture in `ARCHITECTURE_PRINCIPLES.md`.
+- Finalize the layered architecture in `01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`.
 - Author specifications in `docs/specifications/` for: Mission Engine, Multi-Agent Runtime, Capability Layer, Memory Layer, AI Router, Plugin System.
 - Author the Event Bus protocol (`docs/protocols/event-bus.md`) and core schemas (`docs/schemas/`).
 - Record irreversible or cross-cutting decisions as ADRs in `docs/adr/`.

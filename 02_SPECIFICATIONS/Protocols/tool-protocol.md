@@ -30,7 +30,7 @@ Governs how Agents invoke Capabilities and receive results (see `TOOL_SCHEMA.md`
 
 ## Timeouts
 
-- Every `tool.request` MUST specify or inherit a timeout; the Capability Layer enforces it server-side (not just client-side) per `FAILURE_MODEL.md` scenario 9.
+- Every `tool.request` MUST specify or inherit a timeout; the Capability Layer enforces it server-side (not just client-side) per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 9.
 
 ## Cancellation
 

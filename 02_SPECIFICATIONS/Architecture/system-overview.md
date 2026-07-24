@@ -47,13 +47,13 @@ calls, once components live in separate packages.
 - **Desktop UI** — Electron/React shell. A consumer of the engine, not part
   of it. Does not appear until Phase 4.
 - **Mission Engine** — owns Mission lifecycle, goals, constraints,
-  requirements, and completion criteria. See `MISSION.md`.
+  requirements, and completion criteria. See `01_FOUNDATION/MISSION.md`.
 - **Multi-Agent Runtime** — spawns, schedules, and supervises agents
   executing an Execution Graph.
 - **Capability Layer** — the set of tools/actions agents may invoke
   (filesystem, terminal, git, search, etc.), each with declared permissions.
 - **Memory Layer** — durable knowledge and state, versioned and queryable;
-  the only stateful agent role per `SYSTEM_INVARIANTS.md`.
+  the only stateful agent role per `01_FOUNDATION/SYSTEM_INVARIANTS.md`.
 - **AI Router** — abstracts model/provider selection (OpenAI, Claude,
   OpenRouter, local models) behind a single interface with failover.
 - **Plugin System** — sandboxed extension points (including MCP-style
@@ -62,7 +62,7 @@ calls, once components live in separate packages.
   Bus transport itself.
 
 Every layer must be independently testable and may only depend on the
-layer(s) directly beneath it. See `ARCHITECTURE_PRINCIPLES.md` for the full
+layer(s) directly beneath it. See `01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md` for the full
 rule set.
 
 ## Long-Term Client Model

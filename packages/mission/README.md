@@ -2,11 +2,11 @@
 
 **Status:** planned — no implementation yet (Phase 3, gated by an approved
 specification per
-[`ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/ARCHITECTURE_PRINCIPLES.md)).
+[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md)).
 
 ## Purpose
 
-Defines the Mission object, its lifecycle (Goals -> Constraints -> Requirements -> Plan -> Completion), and validation rules per MISSION.md.
+Defines the Mission object, its lifecycle (Goals -> Constraints -> Requirements -> Plan -> Completion), and validation rules per 01_FOUNDATION/MISSION.md.
 
 ## Layer
 

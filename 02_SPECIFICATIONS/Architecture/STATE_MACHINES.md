@@ -67,7 +67,7 @@ Requested -> Running -> Succeeded
                 \-> Cancelled
 ```
 
-- `TimedOut` and `Failed` are distinct terminal states (see `FAILURE_MODEL.md` scenario 9) — never collapsed.
+- `TimedOut` and `Failed` are distinct terminal states (see `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 9) — never collapsed.
 
 ## Plugin
 
@@ -77,7 +77,7 @@ Registered -> Enabled -> Disabled
               Crashed -> Disabled
 ```
 
-- `Crashed` always transitions to `Disabled` for the remainder of the Mission (`FAILURE_MODEL.md` scenario 5); re-enabling requires a new Mission or explicit operator action.
+- `Crashed` always transitions to `Disabled` for the remainder of the Mission (`01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 5); re-enabling requires a new Mission or explicit operator action.
 
 ## Workspace
 
@@ -98,7 +98,7 @@ Starting -> Running -> Completed
                \-> Killed
 ```
 
-- `TimedOut` triggers forced process kill per `FAILURE_MODEL.md` scenario 9; `Killed` is reserved for explicit cancellation.
+- `TimedOut` triggers forced process kill per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 9; `Killed` is reserved for explicit cancellation.
 
 ## Model Provider
 
@@ -108,7 +108,7 @@ Registered -> Healthy <-> Degraded -> Unavailable
                                       Healthy (after successful health check)
 ```
 
-- `Unavailable` causes the AI Router to skip the provider (`FAILURE_MODEL.md` scenarios 1-2) until a `provider.health_check` reports `Healthy` again.
+- `Unavailable` causes the AI Router to skip the provider (`01_FOUNDATION/SYSTEM_INVARIANTS.md` scenarios 1-2) until a `provider.health_check` reports `Healthy` again.
 
 ## Memory Synchronization
 

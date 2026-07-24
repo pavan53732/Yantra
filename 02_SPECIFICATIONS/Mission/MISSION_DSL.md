@@ -5,7 +5,7 @@
 A structured mission format the Planner consumes directly, instead of relying
 solely on conversational free-form text. Chat, CLI, API, and CI/CD clients all
 compile user intent down to this DSL before a Mission is created (see
-`MISSION_SCHEMA.md`, `MISSION.md`). This is a key differentiator: Yantra
+`MISSION_SCHEMA.md`, `01_FOUNDATION/MISSION.md`). This is a key differentiator: Yantra
 treats mission intent as structured data, not just a prompt string.
 
 ## Format

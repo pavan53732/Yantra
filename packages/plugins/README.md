@@ -2,11 +2,11 @@
 
 **Status:** planned — no implementation yet (Phase 3, gated by an approved
 specification per
-[`ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/ARCHITECTURE_PRINCIPLES.md)).
+[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md)).
 
 ## Purpose
 
-Plugin system and MCP integration: loads third-party capabilities into the Capability Layer under sandboxing per FAILURE_MODEL.md scenario 5.
+Plugin system and MCP integration: loads third-party capabilities into the Capability Layer under sandboxing per 01_FOUNDATION/SYSTEM_INVARIANTS.md scenario 5.
 
 ## Layer
 

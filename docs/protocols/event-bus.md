@@ -41,7 +41,7 @@ Every event on the bus shares a common envelope:
 - `type`: e.g. `mission.created`, `tool.requested`, `tool.finished`
 - `timestamp`: ISO-8601 timestamp
 - `payload`: type-specific structured data (schema defined in `docs/schemas/`)
-- `causedBy`: optional reference to the event that triggered this one (for explainability, per `SYSTEM_INVARIANTS.md`)
+- `causedBy`: optional reference to the event that triggered this one (for explainability, per `01_FOUNDATION/SYSTEM_INVARIANTS.md`)
 
 ## Delivery Guarantees
 
@@ -51,4 +51,4 @@ Every event on the bus shares a common envelope:
 
 ## Status
 
-This is a conceptual draft. The binding schema and transport (in-process emitter vs. message queue) must be finalized as an approved specification before implementation, per `ARCHITECTURE_PRINCIPLES.md`.
+This is a conceptual draft. The binding schema and transport (in-process emitter vs. message queue) must be finalized as an approved specification before implementation, per `01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`.

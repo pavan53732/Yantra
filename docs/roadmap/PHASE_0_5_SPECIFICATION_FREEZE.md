@@ -8,7 +8,7 @@ specifications alone.
 
 This phase produces documentation only. No implementation code lands in
 `packages/` or `apps/` during Phase 0.5, per
-[`ARCHITECTURE_PRINCIPLES.md`](../../ARCHITECTURE_PRINCIPLES.md).
+[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../../01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md).
 
 ## Milestone Checklist
 

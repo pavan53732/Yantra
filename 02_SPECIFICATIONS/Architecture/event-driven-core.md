@@ -24,12 +24,12 @@ This is the "happy path." Real executions interleave many `AgentSpawned` /
 `ToolRequested` / `ToolFinished` pairs, may loop back from a failed
 `VerificationPassed` (i.e. verification-failed) to `ExecutionStarted` again,
 and may pause on provider or connectivity failures as described in
-`FAILURE_MODEL.md`.
+`01_FOUNDATION/SYSTEM_INVARIANTS.md`.
 
 ## Why Events, Not Direct Calls
 
 - **Observability** — every state change is a fact on the bus, which gives
-  Yantra an audit trail for free (ties to `SYSTEM_INVARIANTS.md` #2 and #3).
+  Yantra an audit trail for free (ties to `01_FOUNDATION/SYSTEM_INVARIANTS.md` #2 and #3).
 - **Extensibility** — new subsystems (telemetry, a new UI surface, a
   webhook integration) can subscribe without touching existing code.
 - **Decoupling** — the Orchestrator does not need a compile-time dependency

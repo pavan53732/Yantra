@@ -26,7 +26,7 @@ Governs how the Plugin System loads, sandboxes, and communicates with third-part
 
 ## Retry Rules
 
-- A crashed plugin is not automatically restarted mid-Mission; it is disabled for the remainder of the Mission (per `FAILURE_MODEL.md` scenario 5) and may be manually re-enabled for future Missions.
+- A crashed plugin is not automatically restarted mid-Mission; it is disabled for the remainder of the Mission (per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 5) and may be manually re-enabled for future Missions.
 
 ## Timeouts
 

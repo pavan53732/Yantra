@@ -27,7 +27,7 @@ Governs how the Orchestrator (Multi-Agent Runtime) spawns, assigns work to, and 
 
 - Errors are typed: `spawn_failed`, `task_timeout`, `capability_denied`, `provider_unavailable`, `crashed`.
 - `capability_denied` is a hard error — never silently downgraded; the Task moves to `failed`.
-- `crashed` MUST emit `AgentCrashed` and is contained per `FAILURE_MODEL.md` scenario 5-pattern (isolated, doesn't cascade).
+- `crashed` MUST emit `AgentCrashed` and is contained per `01_FOUNDATION/SYSTEM_INVARIANTS.md` scenario 5-pattern (isolated, doesn't cascade).
 
 ## Retry Rules
 

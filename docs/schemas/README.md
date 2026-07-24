@@ -10,5 +10,5 @@ that flow through Yantra: Missions, Events, Agent Tasks, and Artifacts.
 - `agent-task.schema.json` — Agent Task shape *(coming soon — Phase 2)*
 - `artifact.schema.json` — Artifact shape *(coming soon — Phase 2)*
 
-See [`docs/specifications/MISSION.md`](../specifications/MISSION.md) for the
+See [`docs/specifications/01_FOUNDATION/MISSION.md`](../specifications/01_FOUNDATION/MISSION.md) for the
 conceptual Mission lifecycle these schemas formalize.
