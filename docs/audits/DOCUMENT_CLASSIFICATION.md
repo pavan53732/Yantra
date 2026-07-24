@@ -1,0 +1,302 @@
+# Document Classification
+
+## Totals
+
+- Canonical: 12
+- Supporting: 241
+- Historical: 11
+- Archived: 0
+- Generated: 8
+- Duplicate: 0
+- Obsolete: 0
+- Orphaned: 29
+
+## Canonical documents
+
+- `04_GOVERNANCE/Releases/README.md`
+- `README.md`
+- `docs/architecture/PRODUCT_ARCHITECTURE.md`
+- `docs/development/CONTRIBUTING.md`
+- `docs/product/PRODUCT_PRINCIPLES.md`
+- `docs/product/PRODUCT_REQUIREMENTS.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/USER_JOURNEYS.md`
+- `docs/roadmap/PHASE_3_ROADMAP.md`
+- `docs/roadmap/PHASE_4_ROADMAP.md`
+- `docs/roadmap/README.md`
+- `packages/README.md`
+
+## Potentially dead documentation
+
+Documents with no verified backlinks are not automatically obsolete, but they are effectively isolated unless directly discovered through folder navigation.
+
+- `.ai/BOOTSTRAP.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.ai/LOADING_ORDER.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.ai/MISSIONS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.ai/QUALITY_GATES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.ai/RULES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.github/ISSUE_TEMPLATE/bug_report.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.github/ISSUE_TEMPLATE/feature_request.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `.github/pull_request_template.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/CORE_PRINCIPLES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/ENGINEERING_PRINCIPLES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/GLOSSARY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/PHILOSOPHY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/SUCCESS_CRITERIA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/SYSTEM_INVARIANTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `01_FOUNDATION/VISION.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Architecture/OBSERVABILITY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Architecture/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Architecture/event-driven-core.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Architecture/system-overview.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Capabilities/AI_PROVIDER_CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Capabilities/CAPABILITY_CONTRACTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Capabilities/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/KnowledgeGraph/KNOWLEDGE_GRAPH_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/KnowledgeGraph/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Mission/MISSION_DSL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Mission/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/agent-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/ipc-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/memory-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/planner-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/plugin-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/provider-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/tool-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Protocols/verifier-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/AGENT_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/CAPABILITY_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/EVENT_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/EXECUTION_GRAPH_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/MEMORY_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/MISSION_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/MODEL_PROVIDER_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/PLUGIN_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/TASK_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/TOOL_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Schemas/WORKFLOW_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Verifier/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Agents/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Capabilities/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Memory/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Planner/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Plugins/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Router/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Terminal/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Verifier/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/CONTRACT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/EVENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/IMPLEMENTATION_CHECKLIST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/INPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/OUTPUTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/STATE_MACHINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `03_IMPLEMENTATION/Workspace/TEST_REQUIREMENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/ArchitectureCompliance/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/CI/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Certification/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/ChangeImpact/LEGACY_ALIAS_RETIREMENT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/ChangeImpact/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Compiler/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/GovernanceManifest/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/GovernanceManifest/REPOSITORY_MAP.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/QualityGates/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Readiness/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Regression/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/ENGINEERING_READINESS_REVIEW_PHASE_2_0_4.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_1_ARCHITECTURE_SDK.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_2_RUNTIME_KERNEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_3_MISSION_RUNTIME.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_4_CAPABILITY_LAYER.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_5_ELECTRON_DESKTOP.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_6_VERIFICATION_ENGINE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_EXECUTION_ORDER.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/PHASE_2_0_RUNTIME_FOUNDATION_DECISIONS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Releases/REPOSITORY_LIFECYCLE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Validation/CANONICAL_KNOWLEDGE_GRAPH.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Validation/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `04_GOVERNANCE/Validation/SEMANTIC_CONSOLIDATION.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `AGENT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `AGENTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `CLAUDE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `CONTRIBUTING.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `GEMINI.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `KILO.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `OPENAI.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `OPENHANDS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `REPOSITORY_TREE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `ROO.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `ROOT_INDEX.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `SECURITY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `WORKLOG.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `apps/desktop/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/MIGRATION_STATUS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/REPOSITORY_CONSOLIDATION_AUDIT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/adr/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/api/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/AGENT_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/IPC_ARCHITECTURE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/MEMORY_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/MISSION_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/PROVIDER_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/SECURITY_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/WORKSPACE_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/event-driven-core.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/architecture/system-overview.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/CAPABILITY_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/ERROR_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/EVENT_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/PERMISSION_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/PROTOCOL_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/SCHEMA_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/STATE_REGISTRY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/canonical/TERMINOLOGY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/decisions/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/development/CODING_STANDARDS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/examples/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/product/DESIGN_SYSTEM.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/product/UI_UX_GUIDELINES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/agent-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/event-bus.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/ipc-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/memory-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/planner-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/plugin-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/provider-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/tool-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/protocols/verifier-protocol.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/research/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/PHASE_0_5_SPECIFICATION_FREEZE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/PHASE_0_7_SPECIFICATION_RELEASE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/PHASE_0_8_ARCHITECTURE_VALIDATION.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/PHASE_0_9_ARCHITECTURE_CERTIFICATION.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/phase-0-research.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/phase-1-product-definition.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/phase-2-architecture.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/phase-3-core-engine.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/roadmap/phase-4-desktop-application.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/schemas/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/AGENT_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_COMPLIANCE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_FINGERPRINT.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_MANIFEST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_REGRESSION_TESTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_SDK.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/ARCHITECTURE_VALIDATION_REPORT_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/CAPABILITY_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/CHANGE_IMPACT_ANALYSIS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/CONTRACT_MANIFEST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/DECISION_RECORD_TEMPLATE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/EVENT_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/EXECUTION_GRAPH_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/GOVERNANCE_MANIFEST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/IMPLEMENTATION_CONTRACTS.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/IMPLEMENTATION_GOVERNANCE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/INDEPENDENT_IMPLEMENTATION_TEST.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/LIVING_ARCHITECTURE.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/MEMORY_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/MISSION_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/MODEL_PROVIDER_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/PLUGIN_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/STABLE_ID_POLICY.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/SYSTEM_GUARANTEES.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/TASK_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/TOOL_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/UNIFIED_ERROR_MODEL.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `docs/specifications/WORKFLOW_SCHEMA.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `examples/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Benchmarks/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Experiments/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Failures/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Lessons/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Patterns/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Performance/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `knowledge/Research/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/capabilities/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/core/DEPENDENCY_GRAPH.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/core/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/desktop/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/git/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/memory/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/mission/DEPENDENCY_GRAPH.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/mission/DESIGN.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/mission/MISSION_RUNTIME_DESIGN.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/mission/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/orchestrator/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/planner/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/plugins/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/router/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/runtime/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/sdk/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/shared/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/telemetry/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/terminal/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/ui/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/verification/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/verifier/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `packages/workspace/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `resources/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `scripts/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `tests/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
+- `tools/README.md` — isolated in backlink analysis; review whether it is dead, archival, or requires a reference path.
