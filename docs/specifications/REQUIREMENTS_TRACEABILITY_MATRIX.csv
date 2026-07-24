@@ -1,0 +1,3 @@
+Requirement,Architecture,Schema,Protocol,Package,Tests,Status
+RQ-001,SYSTEM_OVERVIEW,MISSION_SCHEMA,planner-protocol,planner,planner-tests,Planned
+RQ-002,SYSTEM_OVERVIEW,EVENT_SCHEMA,ipc-protocol,orchestrator,orchestrator-tests,Planned

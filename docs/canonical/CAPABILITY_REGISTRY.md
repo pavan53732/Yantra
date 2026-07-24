@@ -1,0 +1,11 @@
+# Capability Registry
+
+Canonical capability identifiers.
+
+- CAP-FILESYSTEM
+- CAP-TERMINAL
+- CAP-GIT
+- CAP-MODEL-GENERATE
+- CAP-MODEL-EMBED
+- CAP-MEMORY-READ
+- CAP-MEMORY-WRITE
