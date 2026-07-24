@@ -1,32 +1,42 @@
-name: Architecture Compliance
+name: Repository Canonicalization Validation
 
 on:
   pull_request:
     paths:
-      - 'docs/**'
-      - 'examples/**'
+      - '01_FOUNDATION/**'
+      - '02_SPECIFICATIONS/**'
+      - '03_IMPLEMENTATION/**'
+      - '04_GOVERNANCE/**'
+      - '.ai/**'
+      - 'missions/**'
+      - 'repository.manifest.json'
+      - 'repository.ownership.json'
       - 'tools/spec_compiler.py'
-      - '.github/workflows/architecture-compliance.yml'
   push:
     branches: [ main ]
     paths:
-      - 'docs/**'
-      - 'examples/**'
+      - '01_FOUNDATION/**'
+      - '02_SPECIFICATIONS/**'
+      - '03_IMPLEMENTATION/**'
+      - '04_GOVERNANCE/**'
+      - '.ai/**'
+      - 'missions/**'
+      - 'repository.manifest.json'
+      - 'repository.ownership.json'
       - 'tools/spec_compiler.py'
-      - '.github/workflows/architecture-compliance.yml'
 
 jobs:
-  compliance:
+  canonicalization:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Run spec compiler
+      - name: Run repository-aware compiler
         run: python tools/spec_compiler.py
-      - name: Upload report
+      - name: Upload canonicalization report
         uses: actions/upload-artifact@v4
         with:
-          name: architecture-compliance-report
-          path: output/architecture-compliance-report.json
+          name: canonicalization-report
+          path: output/phase-1-1-canonicalization-report.json

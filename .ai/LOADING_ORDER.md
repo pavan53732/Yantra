@@ -1,0 +1,7 @@
+# Loading Order
+
+1. `01_FOUNDATION/`
+2. `02_SPECIFICATIONS/`
+3. `03_IMPLEMENTATION/`
+4. `04_GOVERNANCE/`
+5. `missions/`

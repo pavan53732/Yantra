@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "mission": {
+      "owner": "02_SPECIFICATIONS/Mission",
+      "generated": false
+    },
+    "mission_schema": {
+      "owner": "02_SPECIFICATIONS/Schemas",
+      "generated": false
+    },
+    "planner_contract": {
+      "owner": "03_IMPLEMENTATION/Planner",
+      "generated": true,
+      "source": "02_SPECIFICATIONS/Planner"
+    },
+    "architecture_manifest": {
+      "owner": "04_GOVERNANCE/Certification",
+      "generated": true,
+      "source": "02_SPECIFICATIONS/Architecture"
+    },
+    "compliance_report": {
+      "owner": "04_GOVERNANCE/Validation",
+      "generated": true,
+      "source": "04_GOVERNANCE/Compiler"
+    },
+    "mission_pack": {
+      "owner": "missions",
+      "generated": true,
+      "source": "02_SPECIFICATIONS/Mission"
+    }
+  }
+}

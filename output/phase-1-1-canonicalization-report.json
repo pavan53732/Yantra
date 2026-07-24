@@ -1,0 +1,161 @@
+{
+  "migration": "phase-1.1-canonicalization",
+  "gates": {
+    "canonical_ownership": "PASS",
+    "repository_manifest": "PASS",
+    "ownership_registry": "PASS",
+    "repository_aware_compiler": "PASS",
+    "ai_bootstrap": "PASS",
+    "generated_artifacts": "PASS",
+    "legacy_compatibility": "PASS",
+    "reference_integrity": "PASS",
+    "ci_validation": "PASS"
+  },
+  "migration_status": "COMPLETE",
+  "issues": {
+    "broken_references": [],
+    "missing_owners": []
+  },
+  "entrypoints": {
+    "bootstrap": ".ai/BOOTSTRAP.md",
+    "glossary": "01_FOUNDATION/GLOSSARY.md"
+  },
+  "loading_order": [
+    "01_FOUNDATION",
+    "02_SPECIFICATIONS",
+    "03_IMPLEMENTATION",
+    "04_GOVERNANCE",
+    "missions"
+  ],
+  "ownership_registry": {
+    "artifacts": {
+      "mission": {
+        "owner": "02_SPECIFICATIONS/Mission",
+        "generated": false
+      },
+      "mission_schema": {
+        "owner": "02_SPECIFICATIONS/Schemas",
+        "generated": false
+      },
+      "planner_contract": {
+        "owner": "03_IMPLEMENTATION/Planner",
+        "generated": true,
+        "source": "02_SPECIFICATIONS/Planner"
+      },
+      "architecture_manifest": {
+        "owner": "04_GOVERNANCE/Certification",
+        "generated": true,
+        "source": "02_SPECIFICATIONS/Architecture"
+      },
+      "compliance_report": {
+        "owner": "04_GOVERNANCE/Validation",
+        "generated": true,
+        "source": "04_GOVERNANCE/Compiler"
+      },
+      "mission_pack": {
+        "owner": "missions",
+        "generated": true,
+        "source": "02_SPECIFICATIONS/Mission"
+      }
+    }
+  },
+  "specification_graph": {
+    "documents": [
+      "01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md",
+      "01_FOUNDATION/CORE_PRINCIPLES.md",
+      "01_FOUNDATION/ENGINEERING_PRINCIPLES.md",
+      "01_FOUNDATION/GLOSSARY.md",
+      "01_FOUNDATION/MISSION.md",
+      "01_FOUNDATION/PHILOSOPHY.md",
+      "01_FOUNDATION/SUCCESS_CRITERIA.md",
+      "01_FOUNDATION/SYSTEM_INVARIANTS.md",
+      "01_FOUNDATION/VISION.md",
+      "03_IMPLEMENTATION/Agents/CONTRACT.md",
+      "03_IMPLEMENTATION/Agents/EVENTS.md",
+      "03_IMPLEMENTATION/Agents/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Agents/INPUTS.md",
+      "03_IMPLEMENTATION/Agents/OUTPUTS.md",
+      "03_IMPLEMENTATION/Agents/README.md",
+      "03_IMPLEMENTATION/Agents/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Agents/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Capabilities/CONTRACT.md",
+      "03_IMPLEMENTATION/Capabilities/EVENTS.md",
+      "03_IMPLEMENTATION/Capabilities/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Capabilities/INPUTS.md",
+      "03_IMPLEMENTATION/Capabilities/OUTPUTS.md",
+      "03_IMPLEMENTATION/Capabilities/README.md",
+      "03_IMPLEMENTATION/Capabilities/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Capabilities/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Memory/CONTRACT.md",
+      "03_IMPLEMENTATION/Memory/EVENTS.md",
+      "03_IMPLEMENTATION/Memory/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Memory/INPUTS.md",
+      "03_IMPLEMENTATION/Memory/OUTPUTS.md",
+      "03_IMPLEMENTATION/Memory/README.md",
+      "03_IMPLEMENTATION/Memory/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Memory/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Planner/CONTRACT.md",
+      "03_IMPLEMENTATION/Planner/EVENTS.md",
+      "03_IMPLEMENTATION/Planner/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Planner/INPUTS.md",
+      "03_IMPLEMENTATION/Planner/OUTPUTS.md",
+      "03_IMPLEMENTATION/Planner/README.md",
+      "03_IMPLEMENTATION/Planner/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Planner/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Plugins/CONTRACT.md",
+      "03_IMPLEMENTATION/Plugins/EVENTS.md",
+      "03_IMPLEMENTATION/Plugins/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Plugins/INPUTS.md",
+      "03_IMPLEMENTATION/Plugins/OUTPUTS.md",
+      "03_IMPLEMENTATION/Plugins/README.md",
+      "03_IMPLEMENTATION/Plugins/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Plugins/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Router/CONTRACT.md",
+      "03_IMPLEMENTATION/Router/EVENTS.md",
+      "03_IMPLEMENTATION/Router/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Router/INPUTS.md",
+      "03_IMPLEMENTATION/Router/OUTPUTS.md",
+      "03_IMPLEMENTATION/Router/README.md",
+      "03_IMPLEMENTATION/Router/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Router/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Terminal/CONTRACT.md",
+      "03_IMPLEMENTATION/Terminal/EVENTS.md",
+      "03_IMPLEMENTATION/Terminal/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Terminal/INPUTS.md",
+      "03_IMPLEMENTATION/Terminal/OUTPUTS.md",
+      "03_IMPLEMENTATION/Terminal/README.md",
+      "03_IMPLEMENTATION/Terminal/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Terminal/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Verifier/CONTRACT.md",
+      "03_IMPLEMENTATION/Verifier/EVENTS.md",
+      "03_IMPLEMENTATION/Verifier/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Verifier/INPUTS.md",
+      "03_IMPLEMENTATION/Verifier/OUTPUTS.md",
+      "03_IMPLEMENTATION/Verifier/README.md",
+      "03_IMPLEMENTATION/Verifier/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Verifier/TEST_REQUIREMENTS.md",
+      "03_IMPLEMENTATION/Workspace/CONTRACT.md",
+      "03_IMPLEMENTATION/Workspace/EVENTS.md",
+      "03_IMPLEMENTATION/Workspace/IMPLEMENTATION_CHECKLIST.md",
+      "03_IMPLEMENTATION/Workspace/INPUTS.md",
+      "03_IMPLEMENTATION/Workspace/OUTPUTS.md",
+      "03_IMPLEMENTATION/Workspace/README.md",
+      "03_IMPLEMENTATION/Workspace/STATE_MACHINE.md",
+      "03_IMPLEMENTATION/Workspace/TEST_REQUIREMENTS.md",
+      "04_GOVERNANCE/ArchitectureCompliance/README.md",
+      "04_GOVERNANCE/CI/README.md",
+      "04_GOVERNANCE/Certification/README.md",
+      "04_GOVERNANCE/ChangeImpact/README.md",
+      "04_GOVERNANCE/Compiler/README.md",
+      "04_GOVERNANCE/GovernanceManifest/README.md",
+      "04_GOVERNANCE/GovernanceManifest/REPOSITORY_MAP.md",
+      "04_GOVERNANCE/QualityGates/README.md",
+      "04_GOVERNANCE/Readiness/README.md",
+      "04_GOVERNANCE/Regression/README.md",
+      "04_GOVERNANCE/Releases/README.md",
+      "04_GOVERNANCE/Validation/README.md"
+    ],
+    "references": []
+  },
+  "fingerprint": "59E5A606A51653221C13D0EE4FF43F75800E7DD600974522533D2C4A2C76BD2A"
+}

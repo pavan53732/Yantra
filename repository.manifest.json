@@ -1,0 +1,20 @@
+{
+  "repository": {
+    "name": "Yantra",
+    "version": "1.0.0"
+  },
+  "architecture": {
+    "status": "frozen_candidate"
+  },
+  "entrypoints": {
+    "bootstrap": ".ai/BOOTSTRAP.md",
+    "glossary": "01_FOUNDATION/GLOSSARY.md"
+  },
+  "loading_order": [
+    "01_FOUNDATION",
+    "02_SPECIFICATIONS",
+    "03_IMPLEMENTATION",
+    "04_GOVERNANCE",
+    "missions"
+  ]
+}
