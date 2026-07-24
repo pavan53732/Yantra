@@ -1,0 +1,8 @@
+{
+  "phase": "2.0.5",
+  "status": "PASS",
+  "package": "@yantra/desktop",
+  "thin_shell": true,
+  "secure_defaults": true,
+  "renderer_logic_minimal": true
+}

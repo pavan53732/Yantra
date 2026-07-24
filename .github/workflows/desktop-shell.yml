@@ -1,0 +1,19 @@
+name: desktop-shell
+on:
+  push:
+    paths:
+      - 'packages/desktop/**'
+      - '.github/workflows/desktop-shell.yml'
+  pull_request:
+    paths:
+      - 'packages/desktop/**'
+      - '.github/workflows/desktop-shell.yml'
+jobs:
+  verify-desktop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test packages/desktop/tests/*.test.mjs
