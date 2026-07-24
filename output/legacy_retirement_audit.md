@@ -1,40 +1,34 @@
 # Legacy Retirement Audit
 
-## Removed Files
+## Root Summary
 
-- `docs/README.md`
-- `docs/specifications/README.md`
-- `docs/protocols/README.md`
-- `docs/architecture/README.md`
+- Root markdown files: 17
+- docs markdown files: 72
 
-## Root Markdown Classification
+## Root File Classification
 
-| File | Classification |
+| File | Action |
 |---|---|
-| AGENTS.md | Keep |
-| ARCHITECTURE_PRINCIPLES.md | Compatibility shim |
-| CLAUDE.md | Keep |
-| CODE_OF_CONDUCT.md | Keep |
-| CONTRIBUTING.md | Keep |
-| FAILURE_MODEL.md | Compatibility shim |
-| GEMINI.md | Keep |
-| KILO.md | Keep |
-| MISSION.md | Compatibility shim |
-| OPENAI.md | Keep |
-| OPENHANDS.md | Keep |
-| README.md | Keep |
-| REPOSITORY_TREE.md | Keep |
-| ROO.md | Keep |
-| ROOT_INDEX.md | Keep |
-| SECURITY.md | Keep |
-| SYSTEM_INVARIANTS.md | Compatibility shim |
+| `AGENTS.md` | KEEP_ADAPTER |
+| `ARCHITECTURE_PRINCIPLES.md` | REMOVE_AFTER_PHASE_1_3 |
+| `CLAUDE.md` | KEEP_ADAPTER |
+| `CODE_OF_CONDUCT.md` | KEEP |
+| `CONTRIBUTING.md` | KEEP |
+| `FAILURE_MODEL.md` | REMOVE_AFTER_PHASE_1_3 |
+| `GEMINI.md` | KEEP_ADAPTER |
+| `KILO.md` | KEEP_ADAPTER |
+| `MISSION.md` | REMOVE_AFTER_PHASE_1_3 |
+| `OPENAI.md` | KEEP_ADAPTER |
+| `OPENHANDS.md` | KEEP_ADAPTER |
+| `README.md` | KEEP |
+| `REPOSITORY_TREE.md` | KEEP |
+| `ROO.md` | KEEP_ADAPTER |
+| `ROOT_INDEX.md` | KEEP |
+| `SECURITY.md` | KEEP |
+| `SYSTEM_INVARIANTS.md` | REMOVE_AFTER_PHASE_1_3 |
 
-## Docs Tree Policy
+## Recommendations
 
-- `docs/` should now be treated as a compatibility area, not as a canonical authored source.
-- Authoritative content must live only in the four canonical layers.
-- Remaining `docs/` files should either redirect to canonical locations or be retired in a later cleanup window.
-
-## Current Docs Markdown Count
-
-- `docs/` markdown files remaining: 72
+- Keep only true root entrypoints, community files, and agent adapters at the repository root.
+- Retire compatibility-era root files after Phase 1.3 verification.
+- Reduce `docs/` to explicit compatibility aliases only, then archive or remove duplicated legacy authored markdown.

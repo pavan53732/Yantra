@@ -1,0 +1,99 @@
+{
+  "root_markdown_count": 17,
+  "docs_markdown_count": 72,
+  "root_classification": [
+    {
+      "file": "AGENTS.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "ARCHITECTURE_PRINCIPLES.md",
+      "action": "REMOVE_AFTER_PHASE_1_3"
+    },
+    {
+      "file": "CLAUDE.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "CODE_OF_CONDUCT.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "FAILURE_MODEL.md",
+      "action": "REMOVE_AFTER_PHASE_1_3"
+    },
+    {
+      "file": "GEMINI.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "KILO.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "MISSION.md",
+      "action": "REMOVE_AFTER_PHASE_1_3"
+    },
+    {
+      "file": "OPENAI.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "OPENHANDS.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "README.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "REPOSITORY_TREE.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "ROO.md",
+      "action": "KEEP_ADAPTER"
+    },
+    {
+      "file": "ROOT_INDEX.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "SECURITY.md",
+      "action": "KEEP"
+    },
+    {
+      "file": "SYSTEM_INVARIANTS.md",
+      "action": "REMOVE_AFTER_PHASE_1_3"
+    }
+  ],
+  "recommendations": {
+    "keep_root_entrypoints": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "GEMINI.md",
+      "KILO.md",
+      "LICENSE",
+      "OPENAI.md",
+      "OPENHANDS.md",
+      "README.md",
+      "REPOSITORY_TREE.md",
+      "ROO.md",
+      "ROOT_INDEX.md",
+      "SECURITY.md"
+    ],
+    "remove_after_phase_1_3": [
+      "ARCHITECTURE_PRINCIPLES.md",
+      "FAILURE_MODEL.md",
+      "MISSION.md",
+      "SYSTEM_INVARIANTS.md"
+    ],
+    "docs_strategy": "Retain only explicit compatibility aliases in docs/; archive or remove duplicated legacy authored markdown after Phase 1.3 verification."
+  }
+}
