@@ -1,0 +1,19 @@
+name: capability-layer
+on:
+  push:
+    paths:
+      - 'packages/capabilities/**'
+      - '.github/workflows/capability-layer.yml'
+  pull_request:
+    paths:
+      - 'packages/capabilities/**'
+      - '.github/workflows/capability-layer.yml'
+jobs:
+  verify-capabilities:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test packages/capabilities/tests/*.test.mjs

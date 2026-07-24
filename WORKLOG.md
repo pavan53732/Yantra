@@ -45,3 +45,5 @@ e4b6dbf chore(cleanup): retire redundant legacy docs entrypoints and add retirem
 
 ## Current Note
 Phase 2.0.3 code exists in the repository, but full verification still requires executed tests, end-to-end mission evidence, and cleaner branch status before strict closeout.
+
+- Phase 2.0.4 Capability Layer implemented with local Filesystem, Terminal, Git, Node, and Package Manager capability providers.

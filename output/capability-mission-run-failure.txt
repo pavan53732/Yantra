@@ -1,0 +1,13 @@
+
+---STDERR---
+file:///root/Yantra/packages/capabilities/runtime/mission-executor.mjs:7
+  await c.filesystem.write(path.join(projectDir, 'src/index.js'), 'export const main = () => console.log("hello from yantra");
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)[39m
+[90m    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:146:18)[39m
+[90m    at #translate (node:internal/modules/esm/loader:497:12)[39m
+[90m    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:544:27)[39m
+
+Node.js v20.19.5

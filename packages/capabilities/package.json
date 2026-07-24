@@ -1,0 +1,12 @@
+{
+  "name": "@yantra/capabilities",
+  "version": "0.2.4",
+  "private": true,
+  "type": "module",
+  "description": "Yantra Phase 2.0.4 core capability implementations",
+  "dependencies": {
+    "@yantra/sdk": "0.2.4",
+    "@yantra/core": "0.2.4",
+    "@yantra/mission": "0.2.4"
+  }
+}

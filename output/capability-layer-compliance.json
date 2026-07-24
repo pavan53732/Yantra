@@ -1,0 +1,10 @@
+{
+  "phase": "2.0.4",
+  "status": "FAIL",
+  "package": "@yantra/capabilities",
+  "implements_core_capabilities": true,
+  "provider_agnostic_interfaces": true,
+  "mission_execution_supported": true,
+  "structured_evidence": true,
+  "reverse_dependency_violation": false
+}

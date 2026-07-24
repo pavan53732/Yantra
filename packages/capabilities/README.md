@@ -1,24 +1,14 @@
 # @yantra/capabilities
 
-**Status:** planned — no implementation yet (Phase 3, gated by an approved
-specification per
-[`01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md`](../../docs/architecture/01_FOUNDATION/ARCHITECTURE_PRINCIPLES.md)).
+Core capability implementations for Phase 2.0.4.
 
-## Purpose
+## Capabilities
+- Filesystem
+- Terminal
+- Git
+- Node
+- Package Manager
 
-Capability Engine: the registry of tools agents can call (composed with terminal, git, workspace, and plugin-provided capabilities).
-
-## Layer
-
-See [`docs/architecture/LAYERED_ARCHITECTURE.md`](../../docs/architecture/LAYERED_ARCHITECTURE.md)
-for this package's position in the layer stack and its allowed dependencies.
-
-## Boundary
-
-Never makes planning decisions.
-
-## Specification
-
-The binding specification for this package will live at
-`docs/specifications/capabilities-spec.md` (or an equivalent named spec) and must be
-approved before implementation begins here.
+## Verification
+- Node test suite validates capability behavior.
+- Mission runtime integration artifact verifies capability-backed mission execution.
