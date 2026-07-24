@@ -1,0 +1,86 @@
+{
+  "success": true,
+  "projectDir": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission",
+  "evidence": [
+    {
+      "id": "fs-write",
+      "type": "filesystem",
+      "summary": "Wrote project source file",
+      "details": {
+        "projectDir": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission"
+      }
+    },
+    {
+      "id": "pkg-init",
+      "type": "package-manager",
+      "summary": "Initialized package.json",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission",
+        "name": "sample-capability-mission"
+      }
+    },
+    {
+      "id": "fs-write-test",
+      "type": "filesystem",
+      "summary": "Wrote sample test file",
+      "details": {
+        "projectDir": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission"
+      }
+    },
+    {
+      "id": "git-init",
+      "type": "git",
+      "summary": "Initialized git repository",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission"
+      }
+    },
+    {
+      "id": "git-add",
+      "type": "git",
+      "summary": "Added files to git index",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission"
+      }
+    },
+    {
+      "id": "pkg-test",
+      "type": "package-manager",
+      "summary": "Executed package tests",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission",
+        "code": 0,
+        "stdout": "> sample-capability-mission@1.0.0 test\n> node --test\n\nTAP version 13\n# Subtest: truth\nok 1 - truth\n  ---\n  duration_ms: 1.202803\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 66.19732",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "git-commit",
+      "type": "git",
+      "summary": "Committed changes",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission",
+        "code": 0,
+        "stdout": "[master (root-commit) 1c64dc0] Initial capability mission scaffold\n 3 files changed, 10 insertions(+)\n create mode 100644 package.json\n create mode 100644 sample.test.js\n create mode 100644 src/index.js",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "git-status",
+      "type": "git",
+      "summary": "Collected git status",
+      "details": {
+        "cwd": "/tmp/yantra-cap-run-62tzcP/sample-capability-mission",
+        "stdout": ""
+      }
+    },
+    {
+      "id": "node-version",
+      "type": "node",
+      "summary": "Resolved node version",
+      "details": {
+        "nodeVersion": "v20.19.5"
+      }
+    }
+  ]
+}

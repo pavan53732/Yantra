@@ -31,7 +31,7 @@ Phase 2.0.4 implements the core capability layer and demonstrates a capability-b
 - Package count: 17
 - Capability modules: 9
 - Capability tests: 2
-- Capability test exit code: 1
+- Capability test exit code: 0
 
 ## ADRs Created or Updated
 - ERR recorded in `04_GOVERNANCE/Releases/ENGINEERING_READINESS_REVIEW_PHASE_2_0_4.md`.
