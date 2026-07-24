@@ -1,0 +1,40 @@
+{
+  "keep_root_entrypoints": [
+    "README.md",
+    "ROOT_INDEX.md",
+    "REPOSITORY_TREE.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "OPENAI.md",
+    "OPENHANDS.md",
+    "ROO.md",
+    "GEMINI.md",
+    "KILO.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "compatibility_root_files": [
+    "MISSION.md",
+    "ARCHITECTURE_PRINCIPLES.md",
+    "SYSTEM_INVARIANTS.md",
+    "FAILURE_MODEL.md"
+  ],
+  "removed_legacy_files": [
+    "docs/README.md",
+    "docs/specifications/README.md",
+    "docs/protocols/README.md",
+    "docs/architecture/README.md"
+  ],
+  "docs_policy": {
+    "retain_only_compatibility_shims": true,
+    "authoritative_content_must_live_in": [
+      "01_FOUNDATION",
+      "02_SPECIFICATIONS",
+      "03_IMPLEMENTATION",
+      "04_GOVERNANCE"
+    ],
+    "docs_target_state": "compatibility-only or retired"
+  }
+}
