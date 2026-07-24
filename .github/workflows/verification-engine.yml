@@ -1,0 +1,19 @@
+name: verification-engine
+on:
+  push:
+    paths:
+      - 'packages/verification/**'
+      - '.github/workflows/verification-engine.yml'
+  pull_request:
+    paths:
+      - 'packages/verification/**'
+      - '.github/workflows/verification-engine.yml'
+jobs:
+  verify-verification-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test packages/verification/tests/*.test.mjs

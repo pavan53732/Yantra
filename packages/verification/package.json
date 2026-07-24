@@ -1,0 +1,13 @@
+{
+  "name": "@yantra/verification",
+  "version": "0.2.6",
+  "private": true,
+  "type": "module",
+  "description": "Yantra verification engine",
+  "dependencies": {
+    "@yantra/sdk": "0.2.4",
+    "@yantra/core": "0.2.4",
+    "@yantra/mission": "0.2.4",
+    "@yantra/capabilities": "0.2.4"
+  }
+}
