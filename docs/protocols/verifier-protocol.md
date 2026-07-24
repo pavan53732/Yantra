@@ -1,5 +1,10 @@
-# Deprecated
+# Verifier Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/verifier-protocol.md`
+The verifier protocol defines how verification signals, outcomes, and evidence move through the Yantra workflow.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expectations
+
+- verification status is explicit,
+- outcomes remain attributable,
+- failed verification blocks completion unless explicitly handled,
+- protocol behavior supports review and repository confidence.

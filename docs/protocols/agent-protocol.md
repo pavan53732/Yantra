@@ -1,5 +1,10 @@
-# Deprecated
+# Agent Protocol
 
-Canonical location: `02_SPECIFICATIONS/Protocols/agent-protocol.md`
+The agent protocol defines how specialised agent roles exchange bounded inputs, outputs, and execution signals inside Yantra.
 
-This compatibility file remains temporarily and will be removed after the migration window.
+## Expectations
+
+- agent interactions remain attributable,
+- protocol messages stay scoped to the active workflow,
+- handoffs are explicit,
+- protocol behavior remains compatible with mission governance and verification.

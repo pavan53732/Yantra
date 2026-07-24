@@ -1,6 +1,5 @@
-# Agent Adapter
+# OpenHands Adapter
 
-1. Load `.ai/BOOTSTRAP.md`.
-2. Follow the loading order.
-3. Do not invent architecture.
-4. Treat specifications as immutable unless explicitly authorised.
+Use `AGENTS.md` as the canonical root instruction file.
+
+Then load `.ai/BOOTSTRAP.md` and follow the documented loading order, quality gates, and canonical documentation chain.
