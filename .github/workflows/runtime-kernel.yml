@@ -1,0 +1,26 @@
+name: runtime-kernel
+
+on:
+  push:
+    paths:
+      - 'packages/core/**'
+      - 'packages/sdk/**'
+      - '.github/workflows/runtime-kernel.yml'
+  pull_request:
+    paths:
+      - 'packages/core/**'
+      - 'packages/sdk/**'
+      - '.github/workflows/runtime-kernel.yml'
+
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify core package files exist
+        run: |
+          test -f packages/core/package.json
+          test -f packages/core/src/bootstrap.ts
+          test -f packages/core/src/container.ts
+          test -f packages/core/src/event-bus.ts
+          test -f packages/core/src/lifecycle.ts

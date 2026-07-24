@@ -1,0 +1,9 @@
+{
+  "phase": "2.0.2",
+  "package": "@yantra/core",
+  "imports_sdk_contracts_only_for_shared_contracts": true,
+  "defines_no_mission_or_agent_logic": true,
+  "deterministic_lifecycle_ordering": true,
+  "provider_agnostic_kernel": true,
+  "status": "PASS"
+}
