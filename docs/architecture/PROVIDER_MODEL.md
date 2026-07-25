@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Provider Model
 
 The provider model defines how Yantra connects to external AI and related service providers while keeping the product's mission workflow governed and reviewable.
@@ -20,3 +25,9 @@ Provider integration must not leak external service complexity into the core wor
 ## Verification expectations
 
 Provider behavior should be checked for configuration safety, response handling, fallback awareness, and clear interaction with the mission workflow.
+
+## See Also
+
+- `AI_PROVIDER_CONTRACT.md`
+- `PRODUCT_ARCHITECTURE.md`
+- `SECURITY_MODEL.md`

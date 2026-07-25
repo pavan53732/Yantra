@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Product Architecture
 
 > **Canonical overview document.** For detailed state machines see
@@ -82,3 +87,10 @@ more detailed architecture documents navigate.
 - Security: `docs/architecture/SECURITY_MODEL.md`
 - Verification: `02_SPECIFICATIONS/Verifier/VERIFICATION_FRAMEWORK.md`
 - State machines: `02_SPECIFICATIONS/Architecture/STATE_MACHINES.md`
+
+## See Also
+
+- `WORKSPACE_MODEL.md`
+- `MISSION_MODEL.md`
+- `AGENT_MODEL.md`
+- `PROVIDER_MODEL.md`

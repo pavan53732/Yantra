@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Security Model
 
 Yantra's security model defines the minimum safety expectations for a governed Windows desktop application that can access repositories, providers, and sensitive engineering context.
@@ -20,3 +25,9 @@ Security controls must support the workflow without making the product opaque. S
 ## Verification expectations
 
 Security behavior should be checked for access control, secret handling, boundary enforcement, and safe failure modes.
+
+## See Also
+
+- `IPC_ARCHITECTURE.md`
+- `PROVIDER_MODEL.md`
+- `VERIFICATION_MODEL.md`

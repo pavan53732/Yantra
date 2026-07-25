@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # AI Provider Contract
 
 This document defines the contract between Yantra and external AI providers.
@@ -27,3 +32,9 @@ The provider contract must not become a hidden policy layer. It supports executi
 ## Verification expectations
 
 The contract should be checked for request shape stability, error handling, compatibility with mission steps, and response traceability.
+
+## See Also
+
+- `PROVIDER_MODEL.md`
+- `MISSION_MODEL.md`
+- `SECURITY_MODEL.md`

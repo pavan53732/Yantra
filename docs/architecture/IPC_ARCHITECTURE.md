@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # IPC Architecture
 
 Yantra's IPC architecture defines how the desktop shell coordinates internal application modules while preserving security, clarity, and Windows desktop reliability.
@@ -20,3 +25,9 @@ IPC should not become an unstructured message bus. It must remain explicit, docu
 ## Verification expectations
 
 IPC behavior should be checked for message safety, boundary enforcement, response handling, and failure isolation.
+
+## See Also
+
+- `PRODUCT_ARCHITECTURE.md`
+- `SECURITY_MODEL.md`
+- `WORKSPACE_MODEL.md`

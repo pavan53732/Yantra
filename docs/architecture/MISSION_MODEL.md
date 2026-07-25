@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Mission Model
 
 A mission is the primary unit of intentional engineering work in Yantra. It represents a bounded goal with explicit scope, planning, approval, execution, verification, and completion states.
@@ -44,3 +49,10 @@ A mission is not the same as a raw task list or chat thread. It is a governed ex
 ## Verification expectations
 
 Mission behavior should be verified for lifecycle transitions, scope preservation, approval enforcement, interruption handling, and completion criteria.
+
+## See Also
+
+- `WORKSPACE_MODEL.md`
+- `AGENT_MODEL.md`
+- `VERIFICATION_MODEL.md`
+- `PRODUCT_ARCHITECTURE.md`

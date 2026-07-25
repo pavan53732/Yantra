@@ -1,25 +1,41 @@
-# @yantra/mission
+# Mission Package
 
-Yantra Mission Runtime.
+## Purpose
+
+Implements mission-oriented functionality that supports the governed Yantra workflow.
 
 ## Responsibilities
-- Mission engine
-- Mission parser
-- Mission context
-- Planner
-- Coordinator
-- Execution pipeline
-- Task scheduler
-- Mission state machine
-- Mission persistence
-- Mission lifecycle
-- Initial verification integration
 
-## Rules
-- Imports shared contracts only from `@yantra/sdk`
-- Uses `@yantra/core` as the runtime infrastructure layer
-- Avoids provider-specific implementations and UI concerns
+- represent mission state,
+- support mission lifecycle behavior,
+- integrate with planning, execution, and verification flows.
 
-## Verification
-- Node test suite added for structural and behavior validation.
-- Sample mission runtime execution artifact generated in `output/mission-runtime-sample-result.json`.
+## Public API
+
+Repository evidence unavailable.
+
+## Dependencies
+
+See `packages/mission/DEPENDENCY_GRAPH.md`.
+
+## Consumers
+
+Mission workflows, architecture models, and related implementation domains.
+
+## Architecture
+
+See `docs/architecture/MISSION_MODEL.md` and `packages/mission/MISSION_RUNTIME_DESIGN.md`.
+
+## Examples
+
+Evidence unavailable.
+
+## Testing
+
+See repository tests and governance quality gates.
+
+## Related Documentation
+
+- `docs/architecture/MISSION_MODEL.md`
+- `packages/mission/DEPENDENCY_GRAPH.md`
+- `packages/mission/MISSION_RUNTIME_DESIGN.md`

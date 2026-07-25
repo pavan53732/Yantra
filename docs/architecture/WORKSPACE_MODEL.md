@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Workspace Model
 
 The workspace is the durable operating context for Yantra. It anchors repository state, active missions, memory, knowledge access, and user continuity across sessions.
@@ -42,3 +47,9 @@ The workspace is not itself the mission runtime, memory engine, or provider impl
 ## Verification expectations
 
 Workspace behavior should be verified for restoration, navigation consistency, mission continuity, and safe handling of repository-level state transitions.
+
+## See Also
+
+- `MISSION_MODEL.md`
+- `MEMORY_MODEL.md`
+- `PRODUCT_ARCHITECTURE.md`

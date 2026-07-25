@@ -1,3 +1,9 @@
+Owner: Governance
+Status: Active
+Authority: Repository Governance
+Review Frequency: Quarterly
+Last Updated: 2026-07-25
+
 # Phase 2.0.1 — Architecture SDK
 
 ## Scope
@@ -25,3 +31,8 @@ Generate the internal `@yantra/sdk` package from canonical specifications.
 - Generated spec index is deterministic
 - Tests pass
 - CI gate validates generation output presence
+
+## Related Documents
+
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md`
+- `.ai/QUALITY_GATES.md`

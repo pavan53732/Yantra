@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Knowledge Model
 
 Yantra knowledge is the curated, reviewable repository of product, architecture, implementation, and mission-supporting material used by agents and humans.
@@ -22,3 +27,9 @@ Knowledge supports grounding and continuity, but it must not silently override t
 ## Verification expectations
 
 Knowledge behavior should be checked for source traceability, retrieval relevance, and safe alignment with canonical documents.
+
+## See Also
+
+- `MEMORY_MODEL.md`
+- `PRODUCT_ARCHITECTURE.md`
+- `VERIFICATION_MODEL.md`

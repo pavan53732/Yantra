@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Verification Model
 
 Verification is a first-class Yantra capability that confirms planning, implementation, and release work satisfies product, architectural, and governance requirements before completion.
@@ -22,3 +27,9 @@ Verification informs completion and release confidence, but it should remain exp
 ## Verification expectations
 
 Verification behavior must itself be checked for evidence quality, state clarity, and traceability back to requirements and affected changes.
+
+## See Also
+
+- `MISSION_MODEL.md`
+- `SECURITY_MODEL.md`
+- `PRODUCT_ARCHITECTURE.md`

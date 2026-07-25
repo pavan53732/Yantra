@@ -1,3 +1,9 @@
+Owner: Governance
+Status: Active
+Authority: Repository Governance
+Review Frequency: Quarterly
+Last Updated: 2026-07-25
+
 # Phase 2.0.4 — Capability Layer
 
 ## Scope
@@ -13,3 +19,8 @@ Implements core capability providers for Filesystem, Terminal, Git, Node, and Pa
 - Capability-backed mission execution demonstrated
 - Tests pass
 - Structured evidence produced
+
+## Related Documents
+
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md`
+- `.ai/QUALITY_GATES.md`

@@ -1,3 +1,9 @@
+Owner: Governance
+Status: Active
+Authority: Repository Governance
+Review Frequency: Quarterly
+Last Updated: 2026-07-25
+
 # Phase 2.0 — Runtime Foundation Decisions
 
 ## Approved Decisions
@@ -100,3 +106,8 @@ Implementation order:
 ## Success Criterion
 A user can create a mission such as: “Create a new TypeScript CLI project with tests.”
 Yantra should plan, execute, create files, run commands, initialize Git, run tests, verify results, and present evidence of success.
+
+## Related Documents
+
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md`
+- `.ai/QUALITY_GATES.md`

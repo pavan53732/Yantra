@@ -1,3 +1,9 @@
+Owner: Governance
+Status: Active
+Authority: Repository Governance
+Review Frequency: Quarterly
+Last Updated: 2026-07-25
+
 # Phase 2.0 Execution Order
 
 Approved execution order:
@@ -15,3 +21,8 @@ Recommended implementation defaults:
 - Lightweight tailored DI container
 - SQLite from first runtime milestone
 - Generated contract tests alongside SDK
+
+## Related Documents
+
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md`
+- `.ai/QUALITY_GATES.md`

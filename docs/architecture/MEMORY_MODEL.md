@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Memory Model
 
 Memory in Yantra preserves useful engineering context so missions and workspaces can continue without unnecessary reconstruction. It supports continuity, retrieval, and contextual grounding while remaining subordinate to canonical repository sources.
@@ -29,3 +34,9 @@ Memory is an aid to continuity and grounding. It must not silently override repo
 ## Verification expectations
 
 Memory behavior should be verified for retrieval relevance, traceability to source context, safe persistence, and correct interaction with canonical documents.
+
+## See Also
+
+- `WORKSPACE_MODEL.md`
+- `KNOWLEDGE_MODEL.md`
+- `MISSION_MODEL.md`

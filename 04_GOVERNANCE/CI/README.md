@@ -1,3 +1,9 @@
+Owner: Governance
+Status: Active
+Authority: Repository Governance
+Review Frequency: Quarterly
+Last Updated: 2026-07-25
+
 # Continuous Integration
 
 CI documentation defines the minimum automated verification expectations for repository changes.
@@ -8,3 +14,8 @@ CI documentation defines the minimum automated verification expectations for rep
 - verification output should be reviewable,
 - failing checks should block unsafe progression,
 - CI should support repository readiness rather than exist as a formality.
+
+## Related Documents
+
+- `docs/governance/DOCUMENTATION_GOVERNANCE.md`
+- `.ai/QUALITY_GATES.md`

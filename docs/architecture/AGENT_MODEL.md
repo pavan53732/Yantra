@@ -1,3 +1,8 @@
+Status: Canonical
+Owner: Architecture
+Source of Truth: Yes
+Review Cycle: Quarterly
+
 # Agent Model
 
 Agents in Yantra are specialised execution roles that contribute to mission progress within governed boundaries. They are first-class product concepts, but they operate in support of the mission workflow rather than as free-standing autonomous personalities.
@@ -36,3 +41,9 @@ Agents do not own product truth. Canonical specifications, repository state, and
 ## Verification expectations
 
 Agent behavior should be verified for role isolation, contract compliance, traceable output generation, and correct gate handling.
+
+## See Also
+
+- `MISSION_MODEL.md`
+- `CAPABILITY_CONTRACTS.md`
+- `PRODUCT_ARCHITECTURE.md`

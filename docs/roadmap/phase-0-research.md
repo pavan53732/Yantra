@@ -1,3 +1,6 @@
+Status: Historical
+Superseded By: `docs/roadmap/PHASE_3_ROADMAP.md`
+
 > [!WARNING]
 > Superseded historical document. This file is retained for traceability only and is not authoritative for current planning. Use `docs/roadmap/PHASE_3_ROADMAP.md` and the PRD as the canonical source.
 
