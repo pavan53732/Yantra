@@ -1,54 +1,29 @@
 # Yantra
 
-Yantra is a Windows-native autonomous software engineering operating system that enables developers to plan, build, test, verify, package, and manage software through coordinated AI agents from a single engineering workspace.
+Yantra is a Windows-first autonomous software engineering operating system. It is designed to help a user manage repository work through workspaces, missions, agents, memory, knowledge, verification, governance, and release control.
 
-Yantra is a Windows desktop product first. It is not a cross-platform IDE, a chat application, an Electron demo, or an AI wrapper. The product should be understood as a mission-first, AI-agent-first, local-first, human-supervised engineering system with a minimal, focused interface.
+## Canonical reading order
 
-## Product direction
+1. `AGENTS.md`
+2. `docs/product/PRODUCT_REQUIREMENTS.md`
+3. `docs/product/PRODUCT_VISION.md`
+4. `docs/product/PRODUCT_PRINCIPLES.md`
+5. `docs/product/USER_JOURNEYS.md`
+6. `docs/roadmap/PHASE_3_ROADMAP.md`
+7. `docs/architecture/`
+8. `03_IMPLEMENTATION/`
+9. `04_GOVERNANCE/`
+10. `04_GOVERNANCE/Releases/`
+11. `packages/`
 
-Yantra has moved beyond the stage where the repository should present itself mainly as an engineering framework project. The engineering substrate remains foundational, but the active priority is now delivering a real Windows application that users can install, trust, and use daily for engineering workflows.
+## Documentation overview
 
-The user-facing experience should emphasize clean workflows over exposed internal complexity. The editor is a tool inside the product, not the product itself; the product is the engineering workflow built around workspace context, missions, agents, memory, and verification.
+- `docs/product/` defines product intent and user-facing workflow.
+- `docs/architecture/` defines the product and system models.
+- `02_SPECIFICATIONS/` defines formal contracts, schemas, protocols, and model shapes.
+- `03_IMPLEMENTATION/` defines implementation-facing guidance by domain.
+- `04_GOVERNANCE/` defines quality gates, validation, readiness, release, and traceability controls.
+- `docs/canonical/` records repository-wide canonical registries.
 
-## Product principles
-
-- Windows desktop first.
-- Product-first execution.
-- Mission-first workflow design.
-- AI-agent-first orchestration.
-- Minimal UI.
-- Local-first operation.
-- Human-supervised autonomy.
-- Every feature must reduce engineering complexity for the user, not expose internal system complexity.
-
-## Documentation flow
-
-The canonical documentation chain is now:
-
-1. `docs/product/PRODUCT_REQUIREMENTS.md`
-2. `docs/product/PRODUCT_VISION.md`
-3. `docs/product/PRODUCT_PRINCIPLES.md`
-4. `docs/product/USER_JOURNEYS.md`
-5. `docs/product/UI_UX_GUIDELINES.md`
-6. `docs/product/DESIGN_SYSTEM.md`
-7. `docs/roadmap/PHASE_3_ROADMAP.md`
-8. Supporting architecture and implementation documents under `docs/architecture/` and the numbered execution folders.
-
-## Product docs
-
-- `docs/product/PRODUCT_REQUIREMENTS.md` — canonical product specification.
-- `docs/product/PRODUCT_VISION.md` — positioning and long-term direction.
-- `docs/product/PRODUCT_PRINCIPLES.md` — operating principles and decision constraints.
-- `docs/product/USER_JOURNEYS.md` — core end-user flows.
-- `docs/product/UI_UX_GUIDELINES.md` — interface philosophy and interaction rules.
-- `docs/product/DESIGN_SYSTEM.md` — visual and component system guidance.
-
-## Docs structure
-
-- `docs/product/` — product definition, UI, and user-facing operating model.
-- `docs/roadmap/` — product milestone planning.
-- `docs/architecture/` — system and domain architecture models.
-- `docs/development/` — contributor and engineering workflow guidance.
-- `docs/governance/` — release, verification, readiness, and policy artifacts.
-
-See `ROOT_INDEX.md` and `REPOSITORY_TREE.md` for repository navigation help.
+See `AGENTS.md` for canonical instruction loading.
+See `ROOT_INDEX.md` for repository navigation.

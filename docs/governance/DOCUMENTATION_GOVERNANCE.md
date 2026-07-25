@@ -16,23 +16,19 @@ The canonical documentation chain is:
 8. `docs/product/DESIGN_SYSTEM.md`
 9. `docs/roadmap/PHASE_3_ROADMAP.md`
 10. `docs/architecture/`
-11. `03_IMPLEMENTATION/`
-12. `04_GOVERNANCE/`
+11. `02_SPECIFICATIONS/`
+12. `03_IMPLEMENTATION/`
+13. `04_GOVERNANCE/`
+14. `04_GOVERNANCE/Releases/`
+15. `packages/`
 
 If documents conflict, the PRD is the source of truth.
 
-## Relationship between `docs/` and `01_`–`04_`
+## Relationship between `docs/` and execution layers
 
-Yantra currently uses two navigation systems for different purposes:
-
-- `docs/` is the human-readable, product-first canonical documentation tree.
-- `01_FOUNDATION/`, `02_SPECIFICATIONS/`, `03_IMPLEMENTATION/`, and `04_GOVERNANCE/` are the staged execution loading paths used by agent workflows.
-
-These trees are complementary, not competing:
-
-- Product intent and canonical definitions live in `docs/`.
-- Execution sequencing and stage-specific material live in `01_`–`04_`.
-- When overlap exists, `docs/` provides the canonical definition and the numbered folders should reference, not redefine, that content.
+- `docs/` is the canonical human-readable documentation tree.
+- `01_` to `04_` are staged execution and support layers.
+- Where overlap exists, `docs/` provides the canonical definition and the staged layers should reference, not redefine, that content.
 
 ## Historical documents
 
