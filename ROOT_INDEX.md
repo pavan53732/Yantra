@@ -22,3 +22,5 @@ This file provides a quick map of the most important repository entrypoints.
 - `docs/governance/DOCUMENTATION_GOVERNANCE.md` — documentation authority and historical-file policy.
 - `docs/canonical/` — canonical registries.
 - `packages/*/README.md` — package documentation.
+
+See `docs/governance/DOCUMENTATION_MANIFEST.md` for the authoritative documentation registry.

@@ -48,3 +48,5 @@ When changing product behavior, workflow, governance, or architecture:
 - update dependent docs second,
 - update historical notices or redirects if affected,
 - add verification notes when behavior changes.
+
+See `docs/governance/DOCUMENTATION_MANIFEST.md` for the authoritative documentation registry.

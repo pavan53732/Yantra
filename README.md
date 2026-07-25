@@ -27,3 +27,5 @@ Yantra is a Windows-first autonomous software engineering operating system. It i
 
 See `AGENTS.md` for canonical instruction loading.
 See `ROOT_INDEX.md` for repository navigation.
+
+See `docs/governance/DOCUMENTATION_MANIFEST.md` for the authoritative documentation registry.
